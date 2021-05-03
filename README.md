@@ -16,7 +16,7 @@ Hummus;
 
 Anteojos;
 
-Equipamiento Gimnasio (Pesas, mancuernas, asiento de trabajo, etc);
+Equipamiento para gimnasios (Pesas, mancuernas, asiento de trabajo, etc);
 
 Juegos varios (Sapo, Pool, Metegol);
 
