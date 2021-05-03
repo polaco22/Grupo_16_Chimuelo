@@ -21,11 +21,17 @@ Juegos varios (Sapo, Pool, Metegol);
 ### Páginas inspiración 
 
 URL https://tiendajuanvaldez.com/tu-cafe-ideal/
+
 URL https://countrystore.tabasco.com/
+
 URL https://www.merlegin.com/
+
 URL https://kyros.com.ar/
+
 URL https://www.palosantoargentina.com.ar/
+
 URL https://mirfitness.com.ar/
+
 URL http://www.tissusargentina.com.ar/index.php
 
 --------------------------------
@@ -99,7 +105,9 @@ Estadisticas ??
 ##### Acerca de Nosotros 
 
 Elizabeth; me dice Eli, soy diseñadora multimedial y profe de la UNLP. Me gusta viajar, la música, extraño ir a recitales, ando en skt y había empezado a tomar clases de surf. Amo el diseño minimalista y funcional, y me gusta el desafio de pensar y ponerme en los zapatos del otros para lograr empatizar con ellos y poder ofrecerles un diseño acorde a sus necesidades/gustos/experiencias. 
+
 Federico; Me dicen Fede o Pola y vivo en La Plata. Actualmente me desempeño en la administración contable. Me gusta el cine, los videojuegos, los juegos de mesa, la musica y el arte. Busco aprender y demostrar mi capacidad en cada nuevo desafio.
+
 Ignacio; me dicen nacho, vivo en Tandil, de formación contador pero trabajando muchos años en el sector comercial de empresa de consumo masivo, me gusta practicar deportes sobre todo en equipos (futbol, rugby), disfruto de compartir momentos con amigos, familia; me gusta viajar !!
 
 
