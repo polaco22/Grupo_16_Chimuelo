@@ -7,11 +7,17 @@
 ### Productos Potenciales: BrainStorming
 
 Cafe -general-; 
+
 Salsas Picantes (tabasco) -strong-;
+
 Gin / Fernet artesanal -soft-;
+
 Hummus;
+
 Anteojos;
-Material Gimnasio (Pesas, mancuernas, asiento de trabajo, etc);
+
+Equipamiento Gimnasio (Pesas, mancuernas, asiento de trabajo, etc);
+
 Juegos varios (Sapo, Pool, Metegol);
 
 
