@@ -43,7 +43,7 @@ URL http://www.tissusargentina.com.ar/index.php
 --------------------------------
 ##### Brief - Elección
 
-Elegimos el Proyecto = "" porque creemos que es versatil, que se puede comunicar mucho desde la página.
+Elegimos el Proyecto = "LookinGood" porque creemos que es versatil, que se puede comunicar mucho desde la página.
 Podemos general mucho codigo visual desde la estetica y a su vez contar una buena StoryTelling :) que en definitiva logre atrapar a nuestro consumidor para que nos elija y tenga una buena experiencia con el producto y con el proceso de compra;
 
 *Tipo de negocio*
