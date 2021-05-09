@@ -116,6 +116,3 @@ Federico; Me dicen Fede o Pola y vivo en La Plata. Actualmente me desempeño en 
 
 Ignacio; me dicen nacho, vivo en Tandil, de formación contador pero trabajando muchos años en el sector comercial de empresa de consumo masivo, me gusta practicar deportes sobre todo en equipos (futbol, rugby), disfruto de compartir momentos con amigos, familia; me gusta viajar !!
 
-
-
-asdasdasd
