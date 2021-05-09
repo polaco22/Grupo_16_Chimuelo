@@ -63,7 +63,7 @@ Lo comparte con quien quiere, es **buen anfitrión** y suele invitar a su casa.
 --------------------------------
 ##### REPOSITORIO EN GIT
 
-URL 
+URL https://github.com/polaco22/Grupo_16_LookingGood.git
 
 --------------------------------
 ##### Que debe "contener" el sitio ??
