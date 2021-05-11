@@ -20,7 +20,7 @@ Equipamiento para gimnasios (Pesas, mancuernas, asiento de trabajo, etc);
 
 Juegos varios (Sapo, Pool, Metegol);
 
-***En todos los casos el producto tiene que ser lo suficientemete versatil para ir acompañado de elementos complementarios, de merchandising entre otras cosas y que nos permita contar una linda historia***
+***En todos los casos el producto tiene que ser lo suficientemete versatil para ir acompañado de elementos complementarios, de merchandising entre otras cosas y que nos permita contar una linda historia.***
 
 --------------------------------
 ### Páginas inspiración: 
@@ -42,8 +42,9 @@ URL http://www.tissusargentina.com.ar/index.php
 --------------------------------
 ### Brief - Elección:
 
-Elegimos el Proyecto = "LookinGood" porque creemos que es versatil con el cual podemos comunicar mucho desde la página.
-Podemos generar mucho codigo visual desde la estetica y a su vez contar una buena StoryTelling :) que en definitiva logre atrapar a nuestro consumidor para que nos elija y tenga una buena experiencia con el producto y con el proceso de compra.
+Elegimos el Proyecto = "LookinGood" porque creemos que es versatil y nos permite comunicar mucho desde la página.
+Podemos generar mucho codigo visual muy profundo desde la estetica y a su vez podmeos contar una linda StoryTelling :) 
+que en definitiva ayude a nuestro consumidor a que nos elija y a que tenga una buena experiencia con el producto y el proceso de compra.
 
 *Tipo de negocio.*
 
