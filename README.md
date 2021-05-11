@@ -94,12 +94,12 @@ que sea innovador y que inspire a quien la visite a que efectivamente adquiera n
 pretenedemos que el usuario del sitio sea quien efectivamente compre y abone el producto.
 
 --------------------------------
-### REPOSITORIO EN GIT
+### REPOSITORIO EN GIT:
 
 URL https://github.com/polaco22/Grupo_16_LookingGood.git
 
 --------------------------------
-### Que debe "contener" el sitio ??
+### Que debe "contener" el sitio??:
 
 **Secciones**
 
@@ -114,7 +114,7 @@ Sitio Seguro,
 Productos mas vendidos, mas visitados.
 
 --------------------------------
-### Que debe "contemplar" el sitio??
+### Que debe "contemplar" el sitio??:
 
 ***Debemos responder preguntas que hacen al funcionamiento del sitio.***
 
@@ -125,7 +125,7 @@ Que pasa si lo quiere leer en otro idioma ??,
 Como es el proceso de loggeo ??, Que datos vamos a necesitar ??.
 
 --------------------------------
-##### Wireframe en Figma 
+##### Wireframe en Figma: 
 
 Primer Boceto del sitio a partir de las paginas relevadas y de las secciones planteadas;
 LayOut ?? Como queremos organizar la web para inducir la navegacion del cliente;
@@ -134,7 +134,7 @@ A dónde queremos que el cliente llegue Y que queremos que haga ??
 URL https://www.figma.com/file/wP69w1wQ7GYE8GaRnPvylP/Proyecto-E-commerce-DG-team-library?node-id=0%3A1
 
 --------------------------------
-### Consultas
+### Consultas:
 
 Hasta dónde es el alcance del trabajo ??
 Tenemos que pensar una posible integración con un software de gestión ??
@@ -142,7 +142,7 @@ Facturación y cobranzas ??
 Estadisticas ?? Tasa de conversion ??
 
 --------------------------------
-### Acerca de Nosotros 
+### Acerca de Nosotros: 
 
 Elizabeth; me dice Eli, soy diseñadora multimedial y profe de la UNLP. Me gusta viajar, la música, extraño ir a recitales, ando en skt y había empezado a tomar clases de surf. Amo el diseño minimalista y funcional, y me gusta el desafio de pensar y ponerme en los zapatos del otros para lograr empatizar con ellos y poder ofrecerles un diseño acorde a sus necesidades/gustos/experiencias. 
 
