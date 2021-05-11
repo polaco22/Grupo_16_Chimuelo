@@ -129,8 +129,13 @@ Como es el proceso de loggeo ??, Que datos vamos a necesitar ??.
 ### Wireframe en Figma: 
 
 Primer Boceto del sitio a partir de las paginas relevadas y de las secciones planteadas;
-LayOut ?? Como queremos organizar la web para inducir la navegacion del cliente;
+Incluye: Home (version Desktop y Mobile), Formulario Crea tu cuenta, Formulario Login, Listado de Productos y Carrito.
+
+Resta definir Lay out:
+Como queremos organizar la web para inducir la navegacion del cliente,
 A dónde queremos que el cliente llegue Y que queremos que haga ??
+
+
 
 URL https://www.figma.com/file/wP69w1wQ7GYE8GaRnPvylP/Proyecto-E-commerce-DG-team-library?node-id=0%3A1
 
