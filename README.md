@@ -125,7 +125,7 @@ Que pasa si lo quiere leer en otro idioma ??,
 Como es el proceso de loggeo ??, Que datos vamos a necesitar ??.
 
 --------------------------------
-##### Wireframe en Figma: 
+### Wireframe en Figma: 
 
 Primer Boceto del sitio a partir de las paginas relevadas y de las secciones planteadas;
 LayOut ?? Como queremos organizar la web para inducir la navegacion del cliente;
