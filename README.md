@@ -1,7 +1,7 @@
-# Proyecto Integrador.
+# Proyecto Integrador
 
 --------------------------------
-## E-Shop.
+## E-Shop
 
 --------------------------------
 ### Productos Potenciales - BrainStorming:
@@ -40,7 +40,7 @@ URL https://mirfitness.com.ar/
 URL http://www.tissusargentina.com.ar/index.php
 
 --------------------------------
-### Brief - Elección
+### Brief - Elección:
 
 Elegimos el Proyecto = "LookinGood" porque creemos que es versatil con el cual podemos comunicar mucho desde la página.
 Podemos generar mucho codigo visual desde la estetica y a su vez contar una buena StoryTelling :) que en definitiva logre atrapar a nuestro consumidor para que nos elija y tenga una buena experiencia con el producto y con el proceso de compra.
@@ -62,24 +62,24 @@ Tiene espiritu aventurero;
 Disfruta la ocasión y el momento de compartir con amigas/os o familia;
 Lo comparte con quien quiere, es **buen anfitrión** y suele invitar a su casa.
 
-*Nombre.*
+*Nombre*
 
 "LookinGood" fue elegido entre varias opciones porque creemos que representa los valores de la marca;
 es un juego de palabras que resumen el verse/sentirse bien !!, sinónimo de bienestar, de goce;
 la idea de que sea en inglés responde al aspiracional que tiene nuestro público objetivo;
 Y desde el punto de vista de la morfología creemos que hay un código entre el nombre y nuestro producto, las doble O son los ojos con los cuales nos vemos bien !!
 
-*Logo.*
+*Logo*
 
 Tratamos de generar un codigo visual con nuestro cliente, por eso elegimos a un mono como nuestro isologo;
 el mono representa la sabiduría, la aventura, el espiritu salvaje, el liderazgo y la vida en manada, en comunidad;
 Jugamos (e intentaremos hacerlo en toda la tienda) con los colores... el blanco y negro preponderante como sinónimo de minimalismo y el detalle de color en los anteojos con criterio hipnótico... queremos que se destaquen !!
 En el caso del anteojo en el logo elegimos el color "azul" que representa la libertad, lealtad, armonía, fidelidad, seriedad y verdad. El color azul se asocia a la fuerza y a la autoridad, a la energía física, a la inteligencia y al deporte.
 
-*Tipografías.*
+*Tipografías*
 
 
-*Qué queremos comunicar?.*
+*Qué queremos comunicar?*
 
 La esencia de nuestro proyecto es dar servicio y satisfacer la demanda de nuestro público objetivo;
 generando un vinculo muy fuerte no sólo desde la estetica de lo fashion sino tambien desde nuestro compromiso con el medio ambiente y la comunidad.
@@ -103,33 +103,33 @@ URL https://github.com/polaco22/Grupo_16_LookingGood.git
 
 **Secciones**
 
-Quienes somos ??;
-Como es nuestro proceso productivo ??;
-Que estas buscando ??;
-Catalogo de productos con precios, ofertas, cupones, medios de pago y delivery;
-Politica de devoluciones, Compensaciones, Garantias;
-Contactos y HelpDesk;
-Atención al cliente;
-Sitio Seguro;
+Quienes somos ??
+Como es nuestro proceso productivo ??
+Que estas buscando ??
+Catalogo de productos con precios, ofertas, cupones, medios de pago y delivery,
+Politica de devoluciones, Compensaciones, Garantias,
+Contactos y HelpDesK,
+Atención al cliente,
+Sitio Seguro,
 Productos mas vendidos, mas visitados.
 
 --------------------------------
-### Que debe "contemplar" el sitio ??
+### Que debe "contemplar" el sitio??
 
 ***Debemos responder preguntas que hacen al funcionamiento del sitio.***
 
-Que pasa si NO hay stock ?? como lo controlo ??
-Se puede seguir el proceso ??
-Que pasa si duplica el pick up o el pago ??
-Que pasa si lo quiere leer en otro idioma ??
-Como es el proceso de loggeo ?? Que datos vamos a necesitar ??.
+Que pasa si NO hay stock ?? como lo controlo ??,
+Se puede seguir el proceso ??,
+Que pasa si duplica el pick up o el pago ??,
+Que pasa si lo quiere leer en otro idioma ??,
+Como es el proceso de loggeo ??, Que datos vamos a necesitar ??.
 
 --------------------------------
 ##### Wireframe en Figma 
 
 Primer Boceto del sitio a partir de las paginas relevadas y de las secciones planteadas;
 LayOut ?? Como queremos organizar la web para inducir la navegacion del cliente;
-A dónde queremos que el cliente llegue Y que queremos que haga ??.
+A dónde queremos que el cliente llegue Y que queremos que haga ??
 
 URL https://www.figma.com/file/wP69w1wQ7GYE8GaRnPvylP/Proyecto-E-commerce-DG-team-library?node-id=0%3A1
 
