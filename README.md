@@ -91,6 +91,7 @@ eso es lo que nos diferencia de los demás y nos hace únicos !!.
 
 Que sea un sitio sencillo, amigable, fácil de usar;
 Que sea ágil y dinámico;
+Seguro respecto de la compra y de los datos;
 que sea innovador y que inspire a quien la visite a que efectivamente adquiera nuestro producto;
 pretenedemos que el usuario del sitio sea quien efectivamente compre y abone el producto.
 
@@ -119,11 +120,11 @@ Productos mas vendidos, mas visitados.
 
 ***Debemos responder preguntas que hacen al funcionamiento del sitio.***
 
-Que pasa si NO hay stock ?? como lo controlo ??,
-Se puede seguir el proceso ??,
-Que pasa si duplica el pick up o el pago ??,
-Que pasa si lo quiere leer en otro idioma ??,
-Como es el proceso de loggeo ??, Que datos vamos a necesitar ??.
+Que pasa si NO hay stock ?? como lo controlo ??
+Se puede seguir el proceso ??
+Que pasa si duplica el pick up o el pago ??
+Que pasa si lo quiere leer en otro idioma ??
+Como es el proceso de loggeo ?? Que datos vamos a necesitar ??
 
 --------------------------------
 ### Wireframe en Figma: 
