@@ -79,6 +79,13 @@ En el caso del anteojo en el logo elegimos el color "azul" que representa la lib
 
 *Tipografías*
 
+Quite Maginal
+
+
+*Paleta cromática*
+
+
+
 
 *Qué queremos comunicar?*
 
@@ -130,13 +137,11 @@ Como es el proceso de loggeo ?? Que datos vamos a necesitar ??
 ### Wireframe en Figma: 
 
 Primer Boceto del sitio a partir de las paginas relevadas y de las secciones planteadas;
-Incluye: Home (version Desktop y Mobile), Formulario Crea tu cuenta, Formulario Login, Listado de Productos y Carrito.
+Incluye: Home (version Desktop y Mobile), Formulario Crea tu cuenta, Formulario Login, Perfil de usuuario, Listado de Productos y Carrito.
 
 Resta definir Lay out:
 Como queremos organizar la web para inducir la navegacion del cliente,
 A dónde queremos que el cliente llegue Y que queremos que haga ??
-
-
 
 URL https://www.figma.com/file/wP69w1wQ7GYE8GaRnPvylP/Proyecto-E-commerce-DG-team-library?node-id=0%3A1
 
