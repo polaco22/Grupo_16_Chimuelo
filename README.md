@@ -84,7 +84,7 @@ En el caso del anteojo en el logo elegimos el color "azul" que representa la lib
 
 La esencia de nuestro proyecto es dar servicio y satisfacer la demanda de nuestro público objetivo;
 generando un vinculo muy fuerte no sólo desde la estetica de lo fashion sino tambien desde nuestro compromiso con el medio ambiente y la comunidad.
-Nuestra historia cuenta que todos nuestros productos son fabricados con componentes reciclados y que con cada venta de uno de nuestros productos se colaboran con las comunidades que viven en los montes del norte de nuestro país. Tenemos una conciencia muy profunda del bienestar general, es nuestra esencia y la compartimos con nuestros clientes... 
+Nuestra historia cuenta que todos nuestros productos son fabricados con componentes reciclados y que con cada venta de uno de nuestros productos se colabora con las comunidades que viven en los montes del norte de nuestro país. Tenemos una conciencia muy profunda del bienestar general, es nuestra esencia y la compartimos con nuestros clientes... 
 eso es lo que nos diferencia de los demás y nos hace únicos !!.  
 
 *Qué esperamos del sitio?*
