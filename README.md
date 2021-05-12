@@ -46,13 +46,13 @@ Elegimos el Proyecto = "LookinGood" porque creemos que es versatil y nos permite
 Podemos generar un codigo visual muy profundo desde la estetica y a su vez podmeos contar una linda StoryTelling :) 
 que en definitiva ayude a nuestro consumidor a que nos elija y a que tenga una buena experiencia con el producto y el proceso de compra.
 
-*Tipo de negocio.*
+*Tipo de negocio*
 
 100% online SIN tiendas fisicas;
 
 B2C SIN venta mayorista.
 
-*Target consumidor.*
+*Target consumidor*
 
 Mujer y/o Varon, 30-55 años, Profesional con +10 años trayectoria;
 Soltera/o o casada/o con no más de 2 hijos, open mind a las nuevas tendencias en general;
