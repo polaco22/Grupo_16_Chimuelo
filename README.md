@@ -79,13 +79,14 @@ En el caso del anteojo en el logo elegimos el color "azul" que representa la lib
 
 *Tipografías*
 
-Quite Maginal
-
+Quite Maginal (Logo)
+Open Sans (Family)
 
 *Paleta cromática*
 
-
-
+#003ef2 (Azul)
+#fff (Blanco)
+#000 (Negro)
 
 *Qué queremos comunicar?*
 
@@ -137,7 +138,7 @@ Como es el proceso de loggeo ?? Que datos vamos a necesitar ??
 ### Wireframe en Figma: 
 
 Primer Boceto del sitio a partir de las paginas relevadas y de las secciones planteadas;
-Incluye: Home (version Desktop y Mobile), Formulario Crea tu cuenta, Formulario Login, Perfil de usuuario, Listado de Productos y Carrito.
+Incluye: Home (version Desktop y Mobile), Formulario Crea tu cuenta, Formulario Login, Formulario Contacto, Nosotros, Perfil de usuario, Listado de Productos y Carrito.
 
 Resta definir Lay out:
 Como queremos organizar la web para inducir la navegacion del cliente,
