@@ -75,7 +75,7 @@ En el caso del anteojo en el logo elegimos el color "azul" que representa la lib
 
 *Tipografías*
 
-  - <p style=" color:red"> Quite Maginal </p> (Logo)
+  - Quite Maginal (Logo)
   - Open Sans (Family)
 
 *Paleta cromática*
