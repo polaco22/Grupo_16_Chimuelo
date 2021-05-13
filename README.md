@@ -58,7 +58,7 @@ Lo comparte con quien quiere, es **buen anfitrión** y suele invitar a su casa.
 
 *Nombre*
 
-"LookinGood" fue elegido entre varias opciones porque creemos que representa los valores de la marca;
+***`"LookinGood"`*** fue elegido entre varias opciones porque creemos que representa los valores de la marca;
 es un juego de palabras que resumen el verse/sentirse bien !!, sinónimo de bienestar, de goce;
 la idea de que sea en inglés responde al aspiracional que tiene nuestro público objetivo;
 Y desde el punto de vista de la morfología creemos que hay un código entre el nombre y nuestro producto, las doble O son los ojos con los cuales nos vemos bien !!
