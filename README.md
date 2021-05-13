@@ -150,9 +150,9 @@ A dónde queremos que el cliente llegue Y que queremos que haga ??
 --------------------------------
 ### Acerca de Nosotros: 
 
-Elizabeth; me dice Eli, soy diseñadora multimedial y profe de la UNLP. Me gusta viajar, la música, extraño ir a recitales, ando en skt y había empezado a tomar clases de surf. Amo el diseño minimalista y funcional, y me gusta el desafio de pensar y ponerme en los zapatos del otros para lograr empatizar con ellos y poder ofrecerles un diseño acorde a sus necesidades/gustos/experiencias. 
+> Me dicen Eli, soy diseñadora multimedial y profe de la UNLP. Me gusta viajar, la música, extraño ir a recitales, ando en skt y había empezado a tomar clases de surf. Amo el diseño minimalista y funcional, y me gusta el desafio de pensar y ponerme en los zapatos del otros para lograr empatizar con ellos y poder ofrecerles un diseño acorde a sus necesidades/gustos/experiencias. -Elizabeth;
 
-Federico; Me dicen Fede o Pola y vivo en La Plata. Actualmente me desempeño en la administración contable. Me gusta el cine, los videojuegos, los juegos de mesa, la musica y el arte. Busco aprender y demostrar mi capacidad en cada nuevo desafio.
+> Me dicen Fede o Pola y vivo en La Plata. Actualmente me desempeño en la administración contable. Me gusta el cine, los videojuegos, los juegos de mesa, la musica y el arte. Busco aprender y demostrar mi capacidad en cada nuevo desafio. -Federico;
 
-Ignacio; me dicen nacho, vivo en Tandil, de formación contador pero trabajando muchos años en el sector comercial de empresa de consumo masivo, me gusta practicar deportes sobre todo en equipos (futbol, rugby), disfruto de compartir momentos con amigos, familia; me gusta viajar !!
+> Me dicen nacho, vivo en Tandil, de formación contador pero trabajando muchos años en el sector comercial de empresa de consumo masivo, me gusta practicar deportes sobre todo en equipos (futbol, rugby), disfruto de compartir momentos con amigos, familia; me gusta viajar !! -Ignacio;
 
