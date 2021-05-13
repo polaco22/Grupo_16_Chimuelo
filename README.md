@@ -6,9 +6,9 @@
 --------------------------------
 ### Productos Potenciales - BrainStorming:
 
--Cafe -general-
+*Cafe -general-
 
--Salsas Picantes (tabasco) -strong-
+*Salsas Picantes (tabasco) -strong-
 
 *Gin / Fernet artesanal -soft-
 
