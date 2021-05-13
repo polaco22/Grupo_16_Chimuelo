@@ -106,7 +106,7 @@ pretenedemos que el usuario del sitio sea quien efectivamente compre y abone el 
 --------------------------------
 ### REPOSITORIO EN GIT:
 
-URL https://github.com/polaco22/Grupo_16_LookingGood.git
+[LINK] (https://github.com/polaco22/Grupo_16_LookingGood.git)
 
 --------------------------------
 ### Que debe "contener" el sitio??:
