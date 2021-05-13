@@ -36,7 +36,7 @@
 --------------------------------
 ### Brief - Elección:
 
-Elegimos el Proyecto ***`"LookinGood"`*** porque creemos que es versatil y nos permite comunicar mucho desde la página.
+Elegimos el Proyecto ***`<span style="color:red">"LookinGood"</span>`*** porque creemos que es versatil y nos permite comunicar mucho desde la página.
 Podemos generar un codigo visual muy profundo desde la estetica y a su vez podemos contar una linda StoryTelling :) 
 que en definitiva ayude a nuestro consumidor a que nos elija y a que tenga una buena experiencia con el producto y el proceso de compra.
 
