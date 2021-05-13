@@ -10,34 +10,34 @@
 
 * Salsas Picantes (tabasco) -strong-
 
-*Gin / Fernet artesanal -soft-
+* Gin / Fernet artesanal -soft-
 
-*Hummus
+* Hummus
 
-*Anteojos
+* Anteojos
 
-*Equipamiento para gimnasios (Pesas, mancuernas, asiento de trabajo, etc)
+* Equipamiento para gimnasios (Pesas, mancuernas, asiento de trabajo, etc)
 
-*Juegos varios (Sapo, Pool, Metegol)
+* Juegos varios (Sapo, Pool, Metegol)
 
 ***En todos los casos el producto tiene que ser lo suficientemete versatil para ir acompañado de elementos complementarios (como su merchandising entre otras cosas) y que nos permita contar una linda historia.***
 
 --------------------------------
 ### Páginas inspiración: 
 
-URL https://tiendajuanvaldez.com/tu-cafe-ideal/
+[LINK 1](https://tiendajuanvaldez.com/tu-cafe-ideal/)
 
-URL https://countrystore.tabasco.com/
+[LINK 2](https://countrystore.tabasco.com/)
 
-URL https://www.merlegin.com/
+[LINK 3](https://www.merlegin.com/)
 
-URL https://kyros.com.ar/
+[LINK 4](https://kyros.com.ar/)
 
-URL https://www.palosantoargentina.com.ar/
+[LINK 5](https://www.palosantoargentina.com.ar/)
 
-URL https://mirfitness.com.ar/
+[LINK 6](https://mirfitness.com.ar/)
 
-URL http://www.tissusargentina.com.ar/index.php
+[LINK 7](http://www.tissusargentina.com.ar/index.php)
 
 --------------------------------
 ### Brief - Elección:
@@ -106,33 +106,33 @@ pretenedemos que el usuario del sitio sea quien efectivamente compre y abone el 
 --------------------------------
 ### REPOSITORIO EN GIT:
 
-[LINK] (https://github.com/polaco22/Grupo_16_LookingGood.git)
+[LINK 8](https://github.com/polaco22/Grupo_16_LookingGood.git)
 
 --------------------------------
 ### Que debe "contener" el sitio??:
 
 **Secciones**
 
-Quienes somos ??
-Como es nuestro proceso productivo ??
-Que estas buscando ??
-Catalogo de productos con precios, ofertas, cupones, medios de pago y delivery,
-Politica de devoluciones, Compensaciones, Garantias,
-Contactos y HelpDesK,
-Atención al cliente,
-Sitio Seguro,
-Productos mas vendidos, mas visitados.
+- Quienes somos ??
+- Como es nuestro proceso productivo ??
+- Que estas buscando ??
+- Catalogo de productos con precios, ofertas, cupones, medios de pago y delivery,
+- Politica de devoluciones, Compensaciones, Garantias,
+- Contactos y HelpDesK,
+- Atención al cliente,
+- Sitio Seguro,
+- Productos mas vendidos & mas visitados.
 
 --------------------------------
 ### Que debe "contemplar" el sitio??:
 
 ***Debemos responder preguntas que hacen al funcionamiento del sitio.***
 
-Que pasa si NO hay stock ?? como lo controlo ??
-Se puede seguir el proceso ??
-Que pasa si duplica el pick up o el pago ??
-Que pasa si lo quiere leer en otro idioma ??
-Como es el proceso de loggeo ?? Que datos vamos a necesitar ??
+- Que pasa si NO hay stock ?? como lo controlo ??
+- Se puede seguir el proceso ??
+- Que pasa si duplica el pick up o el pago ??
+- Que pasa si lo quiere leer en otro idioma ??
+- Como es el proceso de loggeo & Que datos vamos a necesitar ??
 
 --------------------------------
 ### Wireframe en Figma: 
@@ -144,7 +144,7 @@ Resta definir Lay out:
 Como queremos organizar la web para inducir la navegacion del cliente,
 A dónde queremos que el cliente llegue Y que queremos que haga ??
 
-URL https://www.figma.com/file/wP69w1wQ7GYE8GaRnPvylP/Proyecto-E-commerce-DG-team-library?node-id=0%3A1
+[LINK 9](https://www.figma.com/file/wP69w1wQ7GYE8GaRnPvylP/Proyecto-E-commerce-DG-team-library?node-id=0%3A1)
 
 --------------------------------
 ### Consultas:
