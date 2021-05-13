@@ -72,14 +72,14 @@ En el caso del anteojo en el logo elegimos el color "azul" que representa la lib
 
 *Tipografías*
 
-Quite Maginal (Logo)
-Open Sans (Family)
+  - Quite Maginal (Logo)
+  - Open Sans (Family)
 
 *Paleta cromática*
 
-#003ef2 (Azul)
-#fff (Blanco)
-#000 (Negro)
+  - #003ef2 (Azul)
+  - #fff (Blanco)
+  - #000 (Negro)
 
 *Qué queremos comunicar?*
 
