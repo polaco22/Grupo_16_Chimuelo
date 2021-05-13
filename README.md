@@ -20,17 +20,11 @@
 ### Páginas inspiración: 
 
 [LINK Cafe](https://tiendajuanvaldez.com/tu-cafe-ideal/)
-
 [LINK SalsasPicantes](https://countrystore.tabasco.com/)
-
 [LINK Gin](https://www.merlegin.com/)
-
 [LINK Hummus](https://kyros.com.ar/)
-
 [LINK Gafas](https://www.palosantoargentina.com.ar/)
-
 [LINK GyM](https://mirfitness.com.ar/)
-
 [LINK Juegos](http://www.tissusargentina.com.ar/index.php)
 
 --------------------------------
