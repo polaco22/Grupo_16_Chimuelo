@@ -142,10 +142,10 @@ A dónde queremos que el cliente llegue Y que queremos que haga ??
 --------------------------------
 ### Consultas:
 
-Hasta dónde es el alcance del trabajo ??
-Tenemos que pensar una posible integración con un software de gestión ??
-Facturación y cobranzas ??
-Estadisticas ?? Tasa de conversion ??
+1 Hasta dónde es el alcance del trabajo ??
+2 Tenemos que pensar una posible integración con un software de gestión ??
+3 Facturación y cobranzas ??
+4 Estadisticas ?? Tasa de conversion ??
 
 --------------------------------
 ### Acerca de Nosotros: 
