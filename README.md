@@ -5,7 +5,7 @@
 
 --------------------------------
 ### Productos Potenciales - BrainStorming:
-<p><span style="color:blue">some *blue* text</span></p>
+
 * Cafe -general-
 * Salsas Picantes (tabasco) -strong-
 * Gin / Fernet artesanal -soft-
