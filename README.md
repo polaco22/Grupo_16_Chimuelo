@@ -14,7 +14,7 @@
 
 * Hummus
 
-* Anteojos
+* Gafas
 
 * Equipamiento para gimnasios (Pesas, mancuernas, asiento de trabajo, etc)
 
@@ -25,19 +25,19 @@
 --------------------------------
 ### Páginas inspiración: 
 
-[LINK 1](https://tiendajuanvaldez.com/tu-cafe-ideal/)
+[LINK Cafe](https://tiendajuanvaldez.com/tu-cafe-ideal/)
 
-[LINK 2](https://countrystore.tabasco.com/)
+[LINK SalsasPicantes](https://countrystore.tabasco.com/)
 
-[LINK 3](https://www.merlegin.com/)
+[LINK Gin](https://www.merlegin.com/)
 
-[LINK 4](https://kyros.com.ar/)
+[LINK Hummus](https://kyros.com.ar/)
 
-[LINK 5](https://www.palosantoargentina.com.ar/)
+[LINK Gafas](https://www.palosantoargentina.com.ar/)
 
-[LINK 6](https://mirfitness.com.ar/)
+[LINK GyM](https://mirfitness.com.ar/)
 
-[LINK 7](http://www.tissusargentina.com.ar/index.php)
+[LINK Juegos](http://www.tissusargentina.com.ar/index.php)
 
 --------------------------------
 ### Brief - Elección:
@@ -106,7 +106,7 @@ pretenedemos que el usuario del sitio sea quien efectivamente compre y abone el 
 --------------------------------
 ### REPOSITORIO EN GIT:
 
-[LINK 8](https://github.com/polaco22/Grupo_16_LookingGood.git)
+[RepositorioEnGit](https://github.com/polaco22/Grupo_16_LookingGood.git)
 
 --------------------------------
 ### Que debe "contener" el sitio??:
@@ -144,7 +144,7 @@ Resta definir Lay out:
 Como queremos organizar la web para inducir la navegacion del cliente,
 A dónde queremos que el cliente llegue Y que queremos que haga ??
 
-[LINK 9](https://www.figma.com/file/wP69w1wQ7GYE8GaRnPvylP/Proyecto-E-commerce-DG-team-library?node-id=0%3A1)
+[BocetoEnFigma](https://www.figma.com/file/wP69w1wQ7GYE8GaRnPvylP/Proyecto-E-commerce-DG-team-library?node-id=0%3A1)
 
 --------------------------------
 ### Consultas:
