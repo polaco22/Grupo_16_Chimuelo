@@ -97,7 +97,7 @@ Que sea un sitio sencillo, amigable, fácil de usar;
 Que sea ágil y dinámico;
 Seguro respecto de la compra y de los datos;
 que sea innovador y que inspire a quien la visite a que efectivamente adquiera nuestro producto;
-pretenedemos que el usuario del sitio sea quien efectivamente compre y abone el producto.
+pretendemos que el usuario del sitio sea quien efectivamente compre y abone el producto.
 
 --------------------------------
 ### REPOSITORIO EN GIT:
