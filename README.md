@@ -36,14 +36,14 @@
 --------------------------------
 ### Brief - Elección:
 
-Elegimos el Proyecto = **`"LookinGood"`** porque creemos que es versatil y nos permite comunicar mucho desde la página.
+Elegimos el Proyecto = #**`"LookinGood"`**# porque creemos que es versatil y nos permite comunicar mucho desde la página.
 Podemos generar un codigo visual muy profundo desde la estetica y a su vez podmeos contar una linda StoryTelling :) 
 que en definitiva ayude a nuestro consumidor a que nos elija y a que tenga una buena experiencia con el producto y el proceso de compra.
 
 *Tipo de negocio*
 
-  `- 100% online SIN tiendas fisicas`
-  `- B2C SIN venta mayorista`
+  `100% online SIN tiendas fisicas`
+  `B2C SIN venta mayorista`
 
 *Target consumidor*
 
@@ -65,6 +65,7 @@ Y desde el punto de vista de la morfología creemos que hay un código entre el 
 
 *Logo*
 
+![logo](https://www.w3schools.com/colors/colors_picker.asp?colorhex=003ef2) `logo`
 Tratamos de generar un codigo visual con nuestro cliente, por eso elegimos a un mono como nuestro isologo;
 el mono representa la sabiduría, la aventura, el espiritu salvaje, el liderazgo y la vida en manada, en comunidad;
 Jugamos (e intentaremos hacerlo en toda la tienda) con los colores... el blanco y negro preponderante como sinónimo de minimalismo y el detalle de color en los anteojos con criterio hipnótico... queremos que se destaquen !!
