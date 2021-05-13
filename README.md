@@ -36,8 +36,7 @@
 --------------------------------
 ### Brief - Elección:
 
-Elegimos el Proyecto = ```LookinGood ___ 
-porque creemos que es versatil y nos permite comunicar mucho desde la página.
+Elegimos el Proyecto = "LookinGood" porque creemos que es versatil y nos permite comunicar mucho desde la página.
 Podemos generar un codigo visual muy profundo desde la estetica y a su vez podmeos contar una linda StoryTelling :) 
 que en definitiva ayude a nuestro consumidor a que nos elija y a que tenga una buena experiencia con el producto y el proceso de compra.
 
@@ -151,9 +150,9 @@ A dónde queremos que el cliente llegue Y que queremos que haga ??
 --------------------------------
 ### Acerca de Nosotros: 
 
-> Me dicen Eli, soy diseñadora multimedial y profe de la UNLP. Me gusta viajar, la música, extraño ir a recitales, ando en skt y había empezado a tomar clases de surf. Amo el diseño minimalista y funcional, y me gusta el desafio de pensar y ponerme en los zapatos del otros para lograr empatizar con ellos y poder ofrecerles un diseño acorde a sus necesidades/gustos/experiencias. -Elizabeth.
-
-> Me dicen Fede o Pola y vivo en La Plata. Actualmente me desempeño en la administración contable. Me gusta el cine, los videojuegos, los juegos de mesa, la musica y el arte. Busco aprender y demostrar mi capacidad en cada nuevo desafio. -Federico.
-
-> Me dicen Nacho, vivo en Tandil, de formación contador pero trabajando muchos años en el sector comercial de empresa de consumo masivo, me gusta practicar deportes sobre todo en equipos (futbol, rugby), disfruto de compartir momentos con amigos, familia; me gusta viajar !! -Ignacio.
-
+```> Me dicen Eli, soy diseñadora multimedial y profe de la UNLP. Me gusta viajar, la música, extraño ir a recitales, ando en skt y había empezado a tomar clases de surf. Amo el diseño minimalista y funcional, y me gusta el desafio de pensar y ponerme en los zapatos del otros para lograr empatizar con ellos y poder ofrecerles un diseño acorde a sus necesidades/gustos/experiencias. -Elizabeth.
+___
+```> Me dicen Fede o Pola y vivo en La Plata. Actualmente me desempeño en la administración contable. Me gusta el cine, los videojuegos, los juegos de mesa, la musica y el arte. Busco aprender y demostrar mi capacidad en cada nuevo desafio. -Federico.
+___
+```> Me dicen Nacho, vivo en Tandil, de formación contador pero trabajando muchos años en el sector comercial de empresa de consumo masivo, me gusta practicar deportes sobre todo en equipos (futbol, rugby), disfruto de compartir momentos con amigos, familia; me gusta viajar !! -Ignacio.
+___
