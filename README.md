@@ -36,8 +36,8 @@
 --------------------------------
 ### Brief - Elección:
 
-Elegimos el Proyecto <span style="font-family:Papyrus; font-size:4em;">***`"LookinGood"`***</span> porque creemos que es versatil y nos permite comunicar mucho desde la página.
-Podemos generar un codigo visual muy profundo desde la estetica y a su vez podmeos contar una linda StoryTelling :) 
+Elegimos el Proyecto ***`"LookinGood"`*** porque creemos que es versatil y nos permite comunicar mucho desde la página.
+<span style="font-family:Papyrus; font-size:4em;">Podemos</span> generar un codigo visual muy profundo desde la estetica y a su vez podmeos contar una linda StoryTelling :) 
 que en definitiva ayude a nuestro consumidor a que nos elija y a que tenga una buena experiencia con el producto y el proceso de compra.
 
 *Tipo de negocio*
