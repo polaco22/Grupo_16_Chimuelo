@@ -7,17 +7,11 @@
 ### Productos Potenciales - BrainStorming:
 
 * Cafe -general-
-
 * Salsas Picantes (tabasco) -strong-
-
 * Gin / Fernet artesanal -soft-
-
 * Hummus
-
 * Gafas
-
 * Equipamiento para gimnasios (Pesas, mancuernas, asiento de trabajo, etc)
-
 * Juegos varios (Sapo, Pool, Metegol)
 
 ***En todos los casos el producto tiene que ser lo suficientemete versatil para ir acompañado de elementos complementarios (como su merchandising entre otras cosas) y que nos permita contar una linda historia.***
@@ -48,9 +42,8 @@ que en definitiva ayude a nuestro consumidor a que nos elija y a que tenga una b
 
 *Tipo de negocio*
 
-100% online SIN tiendas fisicas;
-
-B2C SIN venta mayorista.
+  - 100% online SIN tiendas fisicas
+  - B2C SIN venta mayorista
 
 *Target consumidor*
 
