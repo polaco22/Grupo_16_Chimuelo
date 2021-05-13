@@ -19,13 +19,13 @@
 --------------------------------
 ### Páginas inspiración: 
 
-[LINK Cafe](https://tiendajuanvaldez.com/tu-cafe-ideal/)
-[LINK SalsasPicantes](https://countrystore.tabasco.com/)
-[LINK Gin](https://www.merlegin.com/)
-[LINK Hummus](https://kyros.com.ar/)
-[LINK Gafas](https://www.palosantoargentina.com.ar/)
-[LINK GyM](https://mirfitness.com.ar/)
-[LINK Juegos](http://www.tissusargentina.com.ar/index.php)
+[Cafe](https://tiendajuanvaldez.com/tu-cafe-ideal/)
+[SalsasPicantes](https://countrystore.tabasco.com/)
+[Gin](https://www.merlegin.com/)
+[Hummus](https://kyros.com.ar/)
+[Gafas](https://www.palosantoargentina.com.ar/)
+[GyM](https://mirfitness.com.ar/)
+[Juegos](http://www.tissusargentina.com.ar/index.php)
 
 --------------------------------
 ### Brief - Elección:
@@ -74,9 +74,9 @@ En el caso del anteojo en el logo elegimos el color "azul" que representa la lib
 
 *Paleta cromática*
 
-  1. ![#003ef2](https://www.w3schools.com/colors/colors_picker.asp?colorhex=003ef2) `#003ef2`
-  2. ![#fff](https://www.w3schools.com/colors/colors_picker.asp?colorhex=FFFFFF) `#fff`
-  3. ![#000](https://www.w3schools.com/colors/colors_picker.asp?colorhex=000000) `#000`
+  - ![#003ef2](https://www.w3schools.com/colors/colors_picker.asp?colorhex=003ef2) `#003ef2`
+  - ![#fff](https://www.w3schools.com/colors/colors_picker.asp?colorhex=FFFFFF) `#fff`
+  - ![#000](https://www.w3schools.com/colors/colors_picker.asp?colorhex=000000) `#000`
 
 *Qué queremos comunicar?*
 
