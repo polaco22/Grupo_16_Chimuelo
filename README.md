@@ -74,9 +74,9 @@ En el caso del anteojo en el logo elegimos el color "azul" que representa la lib
 
 *Paleta cromática*
 
-  - ![#003ef2](https://www.w3schools.com/colors/colors_picker.asp?colorhex=003ef2) `#003ef2`
-  - ![#fff](https://www.w3schools.com/colors/colors_picker.asp?colorhex=FFFFFF) `#fff`
-  - ![#000](https://www.w3schools.com/colors/colors_picker.asp?colorhex=000000) `#000`
+  - [#003ef2](https://www.w3schools.com/colors/colors_picker.asp?colorhex=003ef2) `#003ef2`
+  - [#fff](https://www.w3schools.com/colors/colors_picker.asp?colorhex=FFFFFF) `#fff`
+  - [#000](https://www.w3schools.com/colors/colors_picker.asp?colorhex=000000) `#000`
 
 *Qué queremos comunicar?*
 
