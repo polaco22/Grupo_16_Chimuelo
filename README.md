@@ -36,7 +36,7 @@
 --------------------------------
 ### Brief - Elección:
 
-Elegimos el Proyecto = "LookinGood" porque creemos que es versatil y nos permite comunicar mucho desde la página.
+Elegimos el Proyecto = `**"LookinGood"**` porque creemos que es versatil y nos permite comunicar mucho desde la página.
 Podemos generar un codigo visual muy profundo desde la estetica y a su vez podmeos contar una linda StoryTelling :) 
 que en definitiva ayude a nuestro consumidor a que nos elija y a que tenga una buena experiencia con el producto y el proceso de compra.
 
@@ -77,10 +77,9 @@ En el caso del anteojo en el logo elegimos el color "azul" que representa la lib
 
 *Paleta cromática*
 
-  1. ![#e63946](https://www.w3schools.com/colors/colors_picker.asp) `#e63946`
-  - #003ef2 (Azul)
-  - #fff (Blanco)
-  - #000 (Negro)
+  1. ![#003ef2](https://www.w3schools.com/colors/colors_picker.asp?colorhex=003ef2) `#003ef2`
+  2. ![#fff](https://www.w3schools.com/colors/colors_picker.asp?colorhex=FFFFFF) `#fff`
+  3. ![#000](https://www.w3schools.com/colors/colors_picker.asp?colorhex=000000) `#000`
 
 *Qué queremos comunicar?*
 
