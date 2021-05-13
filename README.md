@@ -65,7 +65,7 @@ Y desde el punto de vista de la morfología creemos que hay un código entre el 
 
 *Logo*
 
-![logo](https://github.com/polaco22/Grupo_16_LookingGood/blob/main/design/LogoFinal.jpeg) `logo`
+![logo](https://github.com/polaco22/Grupo_16_LookingGood/blob/main/design/LogoFinal.jpeg)____
 Tratamos de generar un codigo visual con nuestro cliente, por eso elegimos a un mono como nuestro isologo;
 el mono representa la sabiduría, la aventura, el espiritu salvaje, el liderazgo y la vida en manada, en comunidad;
 Jugamos (e intentaremos hacerlo en toda la tienda) con los colores... el blanco y negro preponderante como sinónimo de minimalismo y el detalle de color en los anteojos con criterio hipnótico... queremos que se destaquen !!
