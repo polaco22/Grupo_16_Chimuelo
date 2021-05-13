@@ -142,15 +142,14 @@ A dónde queremos que el cliente llegue Y que queremos que haga ??
 --------------------------------
 ### Consultas:
 
-1 Hasta dónde es el alcance del trabajo ??
-2 Tenemos que pensar una posible integración con un software de gestión ??
-3 Facturación y cobranzas ??
-4 Estadisticas ?? Tasa de conversion ??
+1. Hasta dónde es el alcance del trabajo ??
+2. Tenemos que pensar una posible integración con un software de gestión ??
+3. Facturación y cobranzas ??
+4. Estadisticas ?? Tasa de conversion ??
 
 --------------------------------
 ### Acerca de Nosotros: 
 
-```
 > Me dicen Eli, soy diseñadora multimedial y profe de la UNLP. Me gusta viajar, la música, extraño ir a recitales, ando en skt y había empezado a tomar clases de surf. Amo el diseño minimalista y funcional, y me gusta el desafio de pensar y ponerme en los zapatos del otros para lograr empatizar con ellos y poder ofrecerles un diseño acorde a sus necesidades/gustos/experiencias. -Elizabeth.
 
 > Me dicen Fede o Pola y vivo en La Plata. Actualmente me desempeño en la administración contable. Me gusta el cine, los videojuegos, los juegos de mesa, la musica y el arte. Busco aprender y demostrar mi capacidad en cada nuevo desafio. -Federico.
