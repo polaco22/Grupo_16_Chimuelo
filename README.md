@@ -63,7 +63,7 @@ Y desde el punto de vista de la morfología creemos que hay un código entre el 
 
 *Logo*
 
-![logo](https://github.com/polaco22/Grupo_16_LookingGood/blob/main/design/LogoFinal.jpeg)
+![logo](https://github.com/polaco22/Grupo_16_LookingGood/blob/main/public/design/LogoFinal.jpeg)
 
 
 Tratamos de generar un codigo visual con nuestro cliente, por eso elegimos a un mono como nuestro isologo;
