@@ -63,7 +63,7 @@ Y desde el punto de vista de la morfología creemos que hay un código entre el 
 
 *Logo*
 
-![logo](https://github.com/polaco22/Grupo_16_LookingGood/blob/main/design/LogoFinal.jpeg)
+![logo](https://github.com/polaco22/Grupo_16_LookingGood/blob/main/public/design/LogoFinal.jpeg)
 
 
 Tratamos de generar un codigo visual con nuestro cliente, por eso elegimos a un mono como nuestro isologo;
@@ -139,6 +139,11 @@ Como queremos organizar la web para inducir la navegacion del cliente,
 A dónde queremos que el cliente llegue Y que queremos que haga ??
 
 [BocetoEnFigma](https://www.figma.com/file/wP69w1wQ7GYE8GaRnPvylP/Proyecto-E-commerce-DG-team-library?node-id=0%3A1)
+
+--------------------------------
+### Tablero en Trello: 
+
+[TableroEnTrello](https://trello.com/b/ooE47Rdu/lookingood)
 
 --------------------------------
 ### Consultas:
