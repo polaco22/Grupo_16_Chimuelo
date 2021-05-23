@@ -1,1 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+header{
+    display: flex;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    max-width: 100%;
+}
+
+.header-top{
+    display: flex;
+    padding: 20px;
+    background-color: rgb(201, 201, 201);
+}
+.header-top img{
+    width: 10vw;
+    align-content: center;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    font-weight: bold;
+    background-color: rgb(201, 201, 201);
+}
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: rgb(201, 201, 201);
+    
+}
+.nav-bar ul li a{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: right;
+    text-decoration: none;
+    color: #003ef2;
+    font-size: 24px;
+    background-color: rgb(201, 201, 201);
+}
+
+/* ==================== footer ======================= */
+.contenedorfooter{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.formasdepago{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 10%;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer i{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 15px;
+}
