@@ -1,0 +1,11 @@
+.posnav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+        
+.disnav {
+    display: inline;
+    }
