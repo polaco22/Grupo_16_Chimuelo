@@ -50,7 +50,100 @@ header{
     font-size: 24px;
     background-color: rgb(201, 201, 201);
 }
+/* ==================== slider ======================= */
 
+.b-slider{     
+    text-align: center;  
+    margin: 25px auto
+  }
+  .b-slider__inner{
+    position: relative; 
+  }
+  [id^=b-slider__switch-]{
+    display: none;
+  }
+  [id^=b-slider__switch-] ~ label{  
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    background: #40E0D0;
+    border: 2px solid #40E0D0;
+    cursor: pointer;
+    margin: -20px 5px 0;  
+    position: relative;
+    z-index: 99;
+    border-radius: 50%;
+  }
+  [id^=b-slider__switch-] + label{
+    display: none;
+  }
+  #b-slider__switch-1:checked ~ label[for=b-slider__switch-1],
+  #b-slider__switch-2:checked ~ label[for=b-slider__switch-2],
+  #b-slider__switch-3:checked ~ label[for=b-slider__switch-3]{
+    background: #6A5ACD;
+    cursor: text;  
+  }
+  
+  .b-slider__items{
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    margin-bottom: -20px;    
+    padding-bottom: 30%;
+  }
+  [class*=b-slider__item-]{
+    opacity: 0;
+    -webkit-transition: opacity .5s linear;
+    transition: opacity .5s linear;
+  }
+  [class*=b-slider__item-],
+  [class*=b-slider__item-] > img{
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    
+  }
+  #b-slider__switch-1:checked ~ label ~ .b-slider__items .b-slider__item-1,
+  #b-slider__switch-2:checked ~ label ~ .b-slider__items .b-slider__item-2,
+  #b-slider__switch-3:checked ~ label ~ .b-slider__items .b-slider__item-3{
+    z-index: 1;
+    opacity: 1;
+  }
+/* ---------- FIN SLIDER ---------- */
+/* ---------- SECCION DE PRODUCTOS ---------- */
+section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+}
+
+section article div img {
+    display: block;
+	width: 100%;
+    padding: 10px;
+}
+section article div img:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+     
+h2 {
+    font-family: 'Open Sans';
+    color: #003ef2;
+    font-weight: bold;
+}
+p {
+    color: #222;
+    font-size: 14px;
+}
+.descripcionAnteojos {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- FIN SECCION DE PRODUCTOS ---------- */
 /* ==================== footer ======================= */
 .contenedorfooter{
     display: flex;
