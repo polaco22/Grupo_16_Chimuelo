@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <p>Este es el HEADER</p> 
+    </header>
+  
+    
+    <main>
+        <form action="/" method="POST" class="register-form">
+
+            <fieldset class="register-field">
+                <label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="usuario"></label>
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">                  
+            </fieldset>  
+
+            <fieldset class="register-field">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >                  
+            </fieldset> 
+
+            <h4>Fecha de nacimiento</h4>
+            <fieldset class="register-field">
+                <label for="fecha"></label>
+                <input type="date" name="fecha" id="fecha" value="1900-01-01">                  
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="domicilio"></label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required pattern="[A-Za-z0-9]+" title="usar solo minúsculas y números sin espacios">                  
+            </fieldset> 
+
+            <h4>Perfil de Usuario</h4>
+            <fieldset class="register-field-radio">
+                <label for="comprador"><input type="radio" name="perfil" id="comprador" value="Comprador"> Comprador</label>
+                <label for="vendedor"><input type="radio" name="perfil" id="vendedor" value="Vendedor"> Vendedor</label>                   
+            </fieldset> 
+
+            <h4>Intereses</h4>
+            <fieldset class="register-field-check">
+                <label for="electro" ><input type="checkbox" name="intereses" id="electro" value="electro"> Electro</label>
+                <label for="moda"><input type="checkbox" name="intereses" id="moda" value="moda"> Moda</label> 
+                <label for="hogar"><input type="checkbox" name="intereses" id="hogar" value="hogar"> Hogar</label>
+                <label for="jugueteria"><input type="checkbox" name="intereses" id="jugueteria" value="jugueteria"> Jugueteria</label> 
+                <label for="vidaSana"><input type="checkbox" name="intereses" id="vidaSana" value="vidaSana"> Vida Sana</label>                 
+            </fieldset> 
+            
+            <h4>Foto de Perfil</h4>
+            <fieldset class="register-field-pic">
+                <input type="file" name="avatar" accept=".jpg" multiple>                    
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="confirmarContraseña"></label>
+                <input type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmá tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
+            </fieldset> 
+
+            <fieldset class="register-field-button">
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>        
+    </main>
+
+    <footer>
+        <p>Este es el HEADER</p> 
+    </footer>
+
+</body>
+</html>

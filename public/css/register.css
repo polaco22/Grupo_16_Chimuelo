@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+/*---------------- REGLA GENERAL ----------------*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: open sans;
+}
+
+/*---------------- ESTILOS PARA LAS ETIQUETAS ----------------*/
+
+/*---------------- ARMANDO CLASES CON ESTILOS PARA FORMULARIOS ----------------*/
+.register-form {
+    padding: 20px 15px;
+    margin-bottom: 15px;  
+}
+.register-field {
+    background-color: #ebebeb;
+    border: none;
+    padding: 20px 15px;
+    display:block;
+    margin-bottom: 15px;
+}
+.register-field input {
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+}
+.register-field-radio {
+    background-color: #ebebeb;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+.register-field-check {
+    background-color: #ebebeb;
+    border: none;
+    padding: 10px 10px;
+    display:flex;
+    flex-direction: column;  
+    margin-bottom: 15px;
+}
+.register-field-button {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 20px 15px;
+}
+.register-field-radio label {
+    text-align: left;
+    padding: 20px 15px;
+}
+.register-field-check label {
+    margin-bottom: 25px;
+}
+.register-field-button button {
+    background-color: #1259c3;
+    color: white;
+    font-size: 13px;
+    width: 49.5%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;     
+}
+.register-field-pic {
+    font-size: 13px;
+    width: 49%;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/*---------------- DAMOS ESTILOS A LAS OPCIONES DEL HEADER ----------------*/
+
+/*---------------- DAMOS ESTILO AL FORMULARIO DE BUSQUEDA----------------*/
+
+/*---------------- INCLUIMOS BANNER Y SU ESTILO ----------------*/
+
+/*---------------- ESTILOS AL FOOTER ----------------*/
+
+/*---------------- GENERAMOS LAS MEDIAS QUERIES ----------------*/
+@media (min-width: 361px){
+ 
+}
+@media (min-width: 769px){
+   
+}
+@media (min-width: 1200px){
+
+}
