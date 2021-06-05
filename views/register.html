@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <p>Este es el HEADER</p> 
+    </header>
+  
+    
+    <main>
+        <h2>Para ser parte del mundo LookinGood, por favor completá tus datos <i class="far fa-hand-point-down"></i></h2>
+        <form action="/" method="POST" class="register-form">
+
+            <h5>Datos personales</h5>
+
+            <fieldset class="register-field">
+                <label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="usuario"></label>
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">                  
+            </fieldset>  
+
+            <fieldset class="register-field">
+                <label for="dni"></label>
+                <input type="text" name="dni" id="dni" placeholder="Dni" required pattern="{1,50}" title="ingresa tu documento sin puntos">                  
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >                  
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="domicilio"></label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required pattern="[A-Za-z0-9]+" title="usar solo minúsculas y números sin espacios">                  
+                <select name="provincia">
+                    <option value="ba">Buenos Aires</option>
+                    <option value="cat">Catamarca</option>
+                    <option value="cha">Chaco</option>
+                    <option value="chu">Chubut</option>
+                    <option value="caba">Ciudad de Buenos Aires</option>
+                    <option value="cba">Córdoba</option>
+                    <option value="cor">Corrientes</option>
+                    <option value="er">Entre Rios</option>
+                    <option value="for">Formosa</option>
+                    <option value="juj">Jujuy</option>
+                    <option value="lp">La Pampa</option>
+                    <option value="lr">La Rioja</option>
+                    <option value="men">Mendoza</option>
+                    <option value="mis">Misiones</option>
+                    <option value="rq">Neuquen</option>
+                    <option value="rn">Rio Negro</option>
+                    <option value="sal">Salta</option>
+                    <option value="sj">San Juan</option>
+                    <option value="sl">San Luis</option>
+                    <option value="sc">Santa Cruz</option>
+                    <option value="sf">Santa Fe</option>
+                    <option value="sgo">Santiago del Estero</option>
+                    <option value="tf">Tierra del Fuego</option>
+                    <option value="tuc">Tucuman</option>
+                </select>
+               
+                <select name="ciudad">
+                    <option value="#">S/D</option>
+                </select>
+              
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="confirmarContraseña"></label>
+                <input type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmá tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
+            </fieldset> 
+
+            <h5>Subí tu avatar</h5>
+            <fieldset class="register-field-pic">
+                <input type="file" name="avatar" accept=".jpg" multiple>                    
+            </fieldset> 
+
+            <h5>Términos y condiciones</h5>
+            <fieldset class="register-field-check">
+                <label for="terminos"><input type="checkbox" name="terminos" id="terminos"> Acepto términos y condiciones</label>                
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form> 
+        <figure>
+            <i class="fas fa-glasses"></i>
+        </figure>    
+    </main>
+
+    <footer>
+        <p>Este es el FOOTER</p> 
+    </footer>
+
+</body>
+</html>

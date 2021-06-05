@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>Este es el HEADER</p> 
+    </header>
+   
+    
+    <main>
+        <h2>Ingresá aquí <i class="far fa-hand-point-down"></i></h2>
+        <form action="/" method="POST" class="register-form">
+
+            <fieldset class="register-field">
+                <label for="google"></label>
+                <input type="text" name="google" id="google" placeholder="Ingresá con GOOGLE">
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="name"></label>
+                <input type="text" name="nombre" id="name" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">
+            </fieldset> 
+
+            <fieldset class="register-field">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="Ingresá tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
+            </fieldset> 
+
+            <h5>¿Olvidaste tu contraseña o no estas registrado?</h5>
+            <fieldset class="register-field-check">
+                <label for="recuperarPass" ><input type="checkbox" name="recuperarPass" id="recuperarPass"> Ingresá aquí y te ayudaremos a recuperarla :)</label>                
+            </fieldset> 
+            
+            <fieldset class="register-field">
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>   
+        <figure>
+            <i class="fas fa-glasses"></i>
+        </figure>      
+    </main>
+
+
+    <footer >
+        <p>Este es el FOOTER</p>   
+    </footer>
+
+</body>
+</html>
