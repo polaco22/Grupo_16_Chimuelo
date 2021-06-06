@@ -2,53 +2,58 @@
 
 *{
     box-sizing: border-box;
+    /*margin: 0px;*/
+    padding: 0px;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
     color: black;
+    max-width: 100%;
 }
 
 header{
     display: flex;
-    background-color: rgb(201, 201, 201);
-    color: black;
-    max-width: 100%;
+    background-color: rgb(201, 201, 201);    
+    justify-content: space-between;
+    
 }
 
-.header-top{
-    display: flex;
-    padding: 20px;
-    background-color: rgb(201, 201, 201);
-}
 .header-top img{
-    width: 10vw;
+    padding: 20px;
+    width: 50%;
     align-content: center;
 }
+.logo {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 250px;
+}
 .nav-bar{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: space-around;
-    font-weight: bold;
-    background-color: rgb(201, 201, 201);
+    display: none;
+    
 }
 .nav-bar ul {
-    display: flex;
+    display: none;
     list-style: none;
-    justify-content: space-around;
-    background-color: rgb(201, 201, 201);
-    
+
 }
 .nav-bar ul li a{
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 8px;
     text-align: right;
     text-decoration: none;
     color: #003ef2;
-    font-size: 24px;
-    background-color: rgb(201, 201, 201);
+    font-size: 14px;
+}
+.menu-ellipsis-v{
+  color: #003ef2;
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  
 }
 /* ==================== slider ======================= */
 
@@ -121,7 +126,7 @@ section {
 
 section article div img {
     display: block;
-	width: 100%;
+	  width: 100%;
     padding: 10px;
 }
 section article div img:hover {
@@ -163,7 +168,7 @@ p {
     list-style: none;
     text-decoration: none;
     padding: 10px;
-}
+  }
 
 .formasdepago{
     display: flex;
@@ -175,7 +180,6 @@ p {
     text-decoration: none;
     padding: 10px;
 }
-
 footer i{
     display: flex;
     align-items: flex-end;
@@ -184,4 +188,40 @@ footer i{
     list-style: none;
     text-decoration: none;
     padding-left: 15px;
+}
+
+/* =========== media tablet ================== */
+
+@media (min-width: 769px) {
+  .menu-ellipsis-v{
+    color: #003ef2;
+    display: none;    
+  }
+  .logo {
+    display: none;
+  }  
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  
+}
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+     
+}
+.nav-bar ul li a{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  text-align: right;
+  text-decoration: none;
+  color: #003ef2;
+  font-size: 24px;
+}
 }
