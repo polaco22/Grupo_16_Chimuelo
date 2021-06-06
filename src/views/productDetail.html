@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/productDetail.css">
     <link rel="stylesheet" href="/css/home.css">
 
-    <title>Nuestros Productos</title>
+    <title>Anteojos Level God Classic</title>
 
 </head>
 
 <body>
     <header>
         <div class="header-top">
-          <img src="/design/Logo.jpg" alt="logo" class="logo">
+          <img src="/design/logofinal.png" alt="logo"/>
+        </div>
+        <div class="logo">
+          <img src="/design/logotipo.png" alt="logotipo"/>
         </div>
         <nav class="nav-bar">
             <ul>
                 <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Productos</a></li>
+                <li><a href="/products">Productos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
             <ul>
              <li><a href="#"><i class="fas fa-glasses"></i></a></li>
-             <li><a href="#"><i class="far fa-user"></i></a></li>
-             <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+             <li><a href="./register"><i class="far fa-user"></i></a></li>
+             <li><a href="./login"><i class="fas fa-shopping-cart"></i></a></li>
          </ul>
         </nav>
-    </header> 
+        <!-- menu ellipsis-->
+        <div class="menu-ellipsis-v">
+         <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>  
     <main>
         <section class="producto">
             <article class="productIMG">
                 <div class="imgsup">
                     <img src="/img/levelGod.jpg" alt="anteojopapu.jpg">
                 </div>
+                <h3>Anteojos Level God</h3>
                 <div class="perspectivas">
                     <div>Img1</div>
                     <div>Img2</div>
                     <div>Img3</div>
-                </div>
+                </div> 
             </article>
             <article class="detalleproducto">
-                <h3>Anteojos Level God</h3>
                 <div class="modelprice">
-                    <p class="monto">$10.000</p>
+                    <p class="monto">Precio: $10.000</p>
                 </div>
-                
-
-                <div class="modelprice"></div>
-
-
-
+                <div class="cart">
+                    Cantidad: &nbsp;
+                    <input type="number" placeholder="1" maxlength="3" >&nbsp; &nbsp; &nbsp;
+                    <button class="btn-add-cart"><span class="fa fa-shopping-cart"></span>&nbsp; </button>
+                </div>
             </article>
         </section>
         <section class="OtrosProd">
