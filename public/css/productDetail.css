@@ -4,8 +4,32 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    }
+}
         
 .disnav {
     display: inline;
-    }
+}
+
+.levelgod {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5px;
+    margin-bottom: 50px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: row;
+}
+
+.productIMG {
+    display: flex;
+    flex-direction: row;
+}
+
+.detalleproducto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
