@@ -15,5 +15,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polaco22/Grupo_16_LookingGood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/polaco22/Grupo_16_LookingGood/issues"
+  },
+  "homepage": "https://github.com/polaco22/Grupo_16_LookingGood#readme"
 }
