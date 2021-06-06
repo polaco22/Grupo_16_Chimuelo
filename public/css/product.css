@@ -8,8 +8,13 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: auto;
     justify-content: space-around;
+    height: auto;
+    width: 100%;
+    margin: 3px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    
 }
 
 .levelgod {
@@ -17,7 +22,7 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .quebracho {
@@ -25,6 +30,7 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 5px;
+    margin-bottom: 10px;
 }
 
 .nogal {
@@ -32,6 +38,7 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 5px;
+    margin-bottom: 10px;
 }
 
 .marmolado {
@@ -39,6 +46,7 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 5px;
+    margin-bottom: 10px;
 }
 
 .scape {
@@ -46,6 +54,7 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 5px;
+    margin-bottom: 10px;
 }
 
 .distress {
@@ -53,17 +62,20 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 5px;
+    margin-bottom: 10px;
 }
 
 .vista {
-    width: 450px;
-    height: 450px;
+    width: 300px;
+    height: 300px;
 }
 
 h6 {
     display: flex;
+    position: absolute;
+    top: -50px;
+    left: -22px;
+    width: 200px;
     font-size: 24px;
-    position: relative;
-    left: 135px;
     margin: 10px;
 }
