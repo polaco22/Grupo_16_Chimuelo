@@ -11,44 +11,64 @@
 </head>
 <body>
     <header>
-        <p>Este es el HEADER</p> 
+        <figure>
+            <a href="/">
+                <img class="logo"src="/design/logofinal.png" alt="logo" />
+            </a>
+        </figure> 
     </header>
    
     
     <main>
-        <h2>Ingresá aquí <i class="far fa-hand-point-down"></i></h2>
+        
         <form action="/" method="POST" class="register-form">
-
+            <h2>Ingresá aquí <i class="far fa-hand-point-down"></i></h2>
             <fieldset class="register-field">
-                <label for="google"></label>
+                <label for="google">INGRESA CON TU CUENTA GMAIL</label>
                 <input type="text" name="google" id="google" placeholder="Ingresá con GOOGLE">
             </fieldset> 
 
             <fieldset class="register-field">
-                <label for="name"></label>
+                <label for="name">CORREO ELECTRONICO O USUARIO</label>
                 <input type="text" name="nombre" id="name" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">
             </fieldset> 
 
             <fieldset class="register-field">
-                <label for="password"></label>
+                <label for="password">CONTRASEÑA</label>
                 <input type="password" name="password" id="password" placeholder="Ingresá tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
             </fieldset> 
 
-            <h5>¿Olvidaste tu contraseña o no estas registrado?</h5>
-            <fieldset class="register-field-check">
-                <label for="recuperarPass" ><input type="checkbox" name="recuperarPass" id="recuperarPass"> Ingresá aquí y te ayudaremos a recuperarla :)</label>                
-            </fieldset> 
-            
+            <h5>¿Olvidaste tu contraseña?
+                <a href="/">Ingresá aqui</a> 
+            </h5>
             <fieldset class="register-field">
                 <button type="submit">Enviar</button>
             </fieldset>
+
+            <h4>¿Todavía no estas registrado?
+                <a href="/register">Creá tu cuenta</a> 
+            </h4>
         </form>   
             
     </main>
 
 
     <footer >
-        <p>Este es el FOOTER</p>   
+        <footer>
+            <div class="contenedorfooter">
+             <h3>Seguinos en nuestras redes</h3>
+             <ul class="redes">
+                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fab fa-instagram"></i></i></a></li>
+                 <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                 </ul>
+                 <h3>Modo de pagos - Envios </h3>
+                 <ul class="formasdepago">
+                     <li><a href="#"><i class="far fa-credit-card"></i></a></li>
+                     <li><a href="#"><i class="fas fa-truck"></i></a></li>
+                 </ul>    
+            </div>
+        </footer>  
     </footer>
 
 </body>

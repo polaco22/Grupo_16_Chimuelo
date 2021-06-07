@@ -11,39 +11,42 @@
 </head>
 <body>
     <header>
-      <p>Este es el HEADER</p> 
+        <figure>
+            <a href="/">
+                <img class="logo"src="/design/logofinal.png" alt="logo" />
+            </a>
+        </figure>
     </header>
   
     
     <main>
-        <h2>Para ser parte del mundo LookinGood, por favor completá tus datos <i class="far fa-hand-point-down"></i></h2>
+       
         <form action="/" method="POST" class="register-form">
-
-            <h5>Datos personales</h5>
-
+            <h2>Para ser parte del mundo LookinGood, por favor completá tus datos <i class="far fa-hand-point-down"></i></h2>
             <fieldset class="register-field">
-                <label for="nombre"></label>
+                <label for="nombre">NOMBRE Y APELLIDO</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">
             </fieldset> 
 
             <fieldset class="register-field">
-                <label for="usuario"></label>
+                <label for="usuario">NOMBRE DE USUARIO</label>
                 <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">                  
             </fieldset>  
 
             <fieldset class="register-field">
-                <label for="dni"></label>
+                <label for="dni">NUMERO DE DOCUMENTO</label>
                 <input type="text" name="dni" id="dni" placeholder="Dni" required pattern="{1,50}" title="ingresa tu documento sin puntos">                  
             </fieldset> 
 
             <fieldset class="register-field">
-                <label for="email"></label>
+                <label for="email">CORREO ELECTRONICO</label>
                 <input type="email" name="email" id="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >                  
             </fieldset> 
 
             <fieldset class="register-field">
-                <label for="domicilio"></label>
+                <label for="domicilio"> DOMICILIO</label>
                 <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required pattern="[A-Za-z0-9]+" title="usar solo minúsculas y números sin espacios">                  
+                <label> PROVINCIA</label>
                 <select name="provincia">
                     <option value="ba">Buenos Aires</option>
                     <option value="cat">Catamarca</option>
@@ -71,6 +74,7 @@
                     <option value="tuc">Tucuman</option>
                 </select>
                
+                <label>CIUDAD</label>
                 <select name="ciudad">
                     <option value="#">S/D</option>
                 </select>
@@ -78,12 +82,12 @@
             </fieldset> 
 
             <fieldset class="register-field">
-                <label for="password"></label>
+                <label for="password">CONTRASEÑA</label>
                 <input type="password" name="password" id="password" placeholder="Elegí tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
             </fieldset> 
 
             <fieldset class="register-field">
-                <label for="confirmarContraseña"></label>
+                <label for="confirmarContraseña">CONFIRME SU CONTRASEÑA</label>
                 <input type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmá tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
             </fieldset> 
 
@@ -101,15 +105,29 @@
                 <button type="submit">Enviar</button>
             </fieldset>
 
-            <h3>¿Ya tenes una cuenta?
+            <h4>¿Ya tenes una cuenta?
                 <a href="/login">Inicia Sesión</a>
-            </h3>
+            </h4>
         </form> 
     
     </main>
 
     <footer>
-        <p>Este es el FOOTER</p> 
+        <footer>
+            <div class="contenedorfooter">
+             <h3>Seguinos en nuestras redes</h3>
+             <ul class="redes">
+                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fab fa-instagram"></i></i></a></li>
+                 <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                 </ul>
+                 <h3>Modo de pagos - Envios </h3>
+                 <ul class="formasdepago">
+                     <li><a href="#"><i class="far fa-credit-card"></i></a></li>
+                     <li><a href="#"><i class="fas fa-truck"></i></a></li>
+                 </ul>    
+            </div>
+        </footer>  
     </footer>
 
 </body>
