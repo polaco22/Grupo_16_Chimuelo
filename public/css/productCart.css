@@ -1,11 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    /*margin: 0px;*/
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    background-color: rgb(201, 201, 201);    
+    justify-content: space-between;
+    
+}
+
+.header-top img {
+    padding: 20px;
+    width: 50%;
+    align-content: center;
+}
+.logo {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 250px;
+}
+.nav-bar {
+    display: none;
+    
+}
+.nav-bar ul {
+    display: none;
+    list-style: none;
+
+}
+.nav-bar ul li a {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    text-align: right;
+    text-decoration: none;
+    color: #003ef2;
+    font-size: 14px;
+}
+.menu-ellipsis-v {
+  color: #003ef2;
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  
+}
+
+/* ==================== footer ======================= */
+.contenedorfooter {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+
+}
+.redes {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+.formasdepago {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 10%;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+footer i {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
 .posnav {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    }
+}
         
 .disnav {
     display: inline;
-    }
+}
+
+.titulocarrito {
+   display: flex;
+   width: 90%;
+   margin: 4px;
+   font-size: 24px;
+   font-weight: bold;
+   color: blue;
+}
+
+.inventario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    padding: 5px;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    text-align: right;
+}
+
+.cart a{
+    padding: 7px;
+}
+
+.item1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+.item3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+.cartimg {
+    width: 100px;
+    height: 100px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.continfo {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100px;
+    justify-content: center;
+}
+
+.contimg {
+    width: 33%;
+}
+
+.conticon {
+    display: flex;
+    align-items: center;
+    color: blue;
+    width: 33%;
+    justify-content: center;
+}
+
+.iconflex {
+    display: flex;
+}
+
+a {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.btn-10:hover::after {
+    background: rgb(0,3,255);
+    background: linear-gradient(0deg, rgba(2,126,251,1) 0%, rgba(0,3,255,1)100%);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.btn-10::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+}
+
+.btn-10:hover {
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+.btn-10 {
+    background: rgb(22,9,240);
+    background: linear-gradient(0deg, rgba(22,9,240,1) 0%, rgba(49,110,244,1) 100%);
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
