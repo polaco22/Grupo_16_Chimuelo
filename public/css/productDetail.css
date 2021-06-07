@@ -1,3 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    /*margin: 0px;*/
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    background-color: rgb(201, 201, 201);    
+    justify-content: space-between;
+    
+}
+
+.header-top img{
+    padding: 20px;
+    width: 50%;
+    align-content: center;
+}
+.logo {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 250px;
+}
+.nav-bar{
+    display: none;
+    
+}
+.nav-bar ul {
+    display: none;
+    list-style: none;
+
+}
+.nav-bar ul li a{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    text-align: right;
+    text-decoration: none;
+    color: #003ef2;
+    font-size: 14px;
+}
+.menu-ellipsis-v{
+  color: #003ef2;
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  
+}
+
+/* ==================== footer ======================= */
+.contenedorfooter{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+.formasdepago{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 10%;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+footer i{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
 .posnav {
     display: flex;
     flex-direction: row;
@@ -21,8 +121,10 @@
 .producto {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 0px;
     width: 100%;
+    height: auto;
 }
 
 .productIMG {
@@ -40,26 +142,42 @@
     height: auto;
 }
 
-#wrapper .texto {
-    position:relative;
-    bottom:0px;
-    left:0px;
-    visibility:visible;
-}
-
-#wrapper:hover .texto {
-    visibility:visible;
-}
-    
-
 .perspectivas {
     display: none;
 }
 
+.datos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+}
+
 h3 {
+    display: flex;
     font-size: 20px;
     text-align: center;
-    margin: 5px;
+    width: 350px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h5 {
+    display: flex;
+    font-weight: normal;
+    width: 350px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.monto {
+    display: flex;
+    font-size: 18px;
+    padding: 2px;
+    width: 350px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .detalleproducto {
@@ -75,12 +193,6 @@ h3 {
     margin: 0px;
     padding: 0px;
     display: none; 
-}
-
-.monto {
-    font-size: 18px;
-    padding: 2px;
-    width: 100%;
 }
 
 main {
@@ -105,6 +217,7 @@ main {
 
 .cart input {
     margin-top: 3px;
+    margin: 0px;
     height: 36px;
     max-width: 18vw;
     font-size: 18px; 
@@ -112,5 +225,91 @@ main {
 
 .cart {
     display: inline-block; 
-    text-align: center;
+    text-align: left;
 }
+
+/* =========== media tablet ================== */
+
+@media (min-width: 769px) {
+    .menu-ellipsis-v{
+    color: #003ef2;
+    display: none;    
+    }
+    .logo {
+    display: none;
+    }  
+    .nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+  
+    }
+    .nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+        
+    }
+    .nav-bar ul li a{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    text-align: right;
+    text-decoration: none;
+    color: #003ef2;
+    font-size: 24px;
+    }
+    .producto {
+    display: flex;
+    flex-direction: row;
+    }
+    .productIMG {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 73%;
+    height: auto;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    }
+    .detalleproducto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 22%;
+    }
+    h3 {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    }
+    h5 {
+    display: flex;
+    font-weight: normal;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    }
+    .monto {
+    display: flex;
+    font-size: 18px;
+    padding: 2px;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    }
+}
+
+/* =========== Hasta aca eh! ================== */
