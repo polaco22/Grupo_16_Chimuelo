@@ -125,31 +125,69 @@ fieldset label {
 
 /*---------------- INCLUIMOS BANNER Y SU ESTILO ----------------*/
 
-/*---------------- ESTILOS AL FOOTER ----------------
+/*---------------- ESTILOS AL FOOTER ----------------*/
 
 .contenedorfooter{
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    flex-wrap: wrap;
     background-color: black;
     color: white;
     font-size: 16px;
     padding: 20px;
+    width: 100%;
+    height: auto;
 }
+
+.modos {
+  display: flex;
+  width: 100%;
+}
+
+.seguinos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.seguinos h3{
+  display: flex;
+  margin: 2px;
+  width: 100%;
+}
+
+ul.redes{
+  margin: 0px;
+}
+
 .redes{
     display: flex;
-    justify-content: space-between;
-    width: 10%;
+    justify-content: space-around;
+    width: 100%;
     color: white;
     list-style: none;
     text-decoration: none;
     padding: 10px;
   }
+
+.modos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.modos h3{
+  margin: 0px;
+  width: 100%;
+}
+
 .formasdepago{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
-    width: 10%;
+    width: 100%;
     color: white;
     list-style: none;
     text-decoration: none;
@@ -163,10 +201,6 @@ footer i{
     list-style: none;
     text-decoration: none;
     padding-left: 15px;
-}
-*/
-footer {
-    background: linear-gradient(90deg,rgba(255,255,255,0) 0,rgba(255,255,255,0.2) 50%,rgba(255,255,255,0) 100%);
 }
 /*---------------- GENERAMOS LAS MEDIAS QUERIES ----------------*/
 @media (min-width: 361px){
