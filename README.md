@@ -146,6 +146,11 @@ A dónde queremos que el cliente llegue Y que queremos que haga ??
 [TableroEnTrello](https://trello.com/b/ooE47Rdu/lookingood)
 
 --------------------------------
+### Link en Heroku: 
+
+[PageEnKeroku](https://grupo16-lookingood.herokuapp.com)
+
+--------------------------------
 ### Consultas:
 
 1. Hasta dónde es el alcance del trabajo ??
