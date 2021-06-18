@@ -8,7 +8,7 @@
 El día Lunes 17 nos reunimos a traves de la plataforma google-meet
 para hacer un balance del Sprint Nro 1 del proyecto Integrador ***`"LookinGood"`***. 
 
-De la reunión participamos los 3 integrantes del gurpo: `Elizabeth, Federico e Ignacio`.
+De la reunión participamos los 3 integrantes del grupo: `Elizabeth, Federico e Ignacio`.
 
 La duración seteada fue `30 minutos`.
 

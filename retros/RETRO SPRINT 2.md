@@ -8,7 +8,7 @@
 El día Lunes 14 de Junio nos reunimos a traves de la plataforma google-meet
 para hacer un balance del Sprint Nro 2 del proyecto Integrador ***`"LookinGood"`***. 
 
-De la reunión participamos los 3 integrantes del gurpo: `Elizabeth, Federico e Ignacio`.
+De la reunión participamos los 3 integrantes del grupo: `Elizabeth, Federico e Ignacio`.
 
 La duración seteada fue `30 minutos`.
 
@@ -24,6 +24,7 @@ El memo de la reunión (repasando el temario) es la siguiente:
 
 * Reflexionamos que el feedback de los profesores fue muy bueno y compartimos lo alli expuesto,
     * Debemos mejorar el armado responsive del sitio `EN PROGRESO`
+    * Debemos mejorar el uso de las class en CSS `EN PROGRESO` 
     * Rescatamos que se pudo ver la mejora implementada respecto del tablero TRELLO
 * Coincidimos en sentirnos satisfechos con la devolución del segundo sprint.
 * Seguimos conformes con la manera que estamos organizados, dividiendo tareas y cooperando entre nosotros para (además de cumplir con el proyecto) aprender las temáticas expuestas.
