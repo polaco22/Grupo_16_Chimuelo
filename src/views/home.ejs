@@ -1,38 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
-    <title>LookinGood</title>
-</head>
+    <!-- Head -->
+    <%- include('./includes/head') %>
+
 <body>
-   <header>
-       <div class="header-top">
-         <img src="/design/logo-solo.png" alt="logo"/>
-       </div>
-       <div class="logo">
-         <img class="logotipo" src="/design/lookingblack.png" alt="logotipo"/>
-       </div>
-       <nav class="nav-bar">
-            <ul>
-               <li><a href="#">Nosotros</a></li>
-               <li><a href="./product">Productos</a></li>
-               <li><a href="#">Contacto</a></li>
-            </ul>
-            <ul >
-            <li><a href="#"><i class="fas fa-glasses"></i></a></li>
-            <li><a href="./login"><i class="far fa-user"></i></a></li>
-            <li><a href="./productCart"><i class="fas fa-shopping-cart"></i></a></li>
-            </ul>
-       </nav>
-       <!-- menu ellipsis-->
-       <div class="menu-ellipsis-v">
-        <i class="fas fa-ellipsis-v"></i>
-       </div>
-   </header> 
+      <!-- Header -->
+      <%- include('./includes/header') %>
+
    <main>
     
     <!-- agregando slider de 3 imagenes-->
@@ -102,23 +76,8 @@
     </article>
   </section>
    </main>
-   <footer>
-       <div class="contenedorfooter">
-          <div class="seguinos">
-            <h3>Seguinos en nuestras redes</h3>
-            <ul class="redes">
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></i></a></li>
-              <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-            </ul>
-        </div>  
-        <div class="modos">
-          <h3>Modo de pagos - Envios </h3>
-          <ul class="formasdepago">
-            <li><a href="#"><i class="far fa-credit-card"></i></a></li>
-            <li><a href="#"><i class="fas fa-truck"></i></a></li>
-          </ul>   
-       </div>
-   </footer>
+
+   <!-- Footer -->
+   <%- include('./includes/footer')%>   
 </body>
 </html>

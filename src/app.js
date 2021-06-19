@@ -6,6 +6,9 @@ app.use(express.static(path.resolve(__dirname,"../public")))
 app.set('port', process.env.PORT || 3000)
 app.listen(app.get('port'), ()=> console.log("Server starts in http://localhost:" + app.get('port')))
 
+app.set("view engine", "ejs");
+app.set("views", (path.resolve(__dirname,"./views")));
+
 const home = require('./routes/mainRoute.js')
 app.use(home)
 
