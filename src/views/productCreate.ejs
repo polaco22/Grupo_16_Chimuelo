@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <figure>
+            <a href="/">
+                <img class="logo" src="/design/logofinal.png" alt="logo" />
+            </a>
+        </figure>
+    </header>
+   
+    <main>
+    <form action="/" method="POST" class="register-form">
+        <h2>Creación de productos aquí <i class="far fa-hand-point-down"></i></h2>
+       
+        <fieldset class= "register-field">
+            <label for="name">Nombre del Producto</label>
+            <input type="text" name="name" id="name">
+        </fieldset>
+
+        <fieldset class= "register-field">
+            <label for="description">Descripción del Producto</label>
+            <input type="text" name="description" id="description">
+        </fieldset>
+
+        <fieldset class= "register-field">
+            <label for="category">Categoría</label>
+            <select name="category" id="category">
+                <option value="adventure">Aventura</option>
+                <option value="casual">Casual</option>
+            </select>
+        </fieldset>
+
+        <fieldset class= "register-field">
+            <label for="precio">Precio del Producto</label>
+            <input type="number" name="precio" id="precio">
+        </fieldset>
+
+        <fieldset class= "register-field">
+            <label for="brand">Matriz ensambladora</label>
+            <select name="Matriz" id="Matriz">
+                <option value="Nogal">Nogal</option>
+                <option value="Quebracho">Quebracho</option>
+                <option value="Mix Carton y Yerba">50% Carton 50% Yerba Mate</option>
+                <option value="Roble">Roble</option>
+            </select>
+        </fieldset>
+        <fieldset class= "register-field">
+            <label for="cristal">Tipo de Cristal</label>
+            <select name="Cristal" id="Cristal">
+                <option value="Tribido">Tríbido</option>
+                <option value="Policarbonato">Policarbonato</option>
+                <option value="Trivex">Trivex</option>
+                <option value="Plastico">Plástico CR-39</option>
+                <option value="Vidrio">Vidrio crown</option>
+            </select>
+        </fieldset>
+        <fieldset class= "register-field">
+            <label for="colors">Para agregarle una capa de pintura a la madera</label>
+            <select name="colores" id="colores">
+                <option value="Azul Electrico">Azul Electrico</option>
+                <option value="Amarillo Vibrante">Amarillo Vibrante</option>
+                <option value="Verde viviente">Verde Viviente</option>
+                <option value="Rojo Naciente">Rojo Naciente</option>
+            </select>
+        </fieldset>
+        <fieldset class="register-field-pic">
+            <label for="name">Imagen del Producto</label>
+            <input type="file" name="avatar" accept=".jpg" multiple>                    
+        </fieldset> 
+        <fieldset class= "register-field">
+            <button type="submit">Enviar Producto</button>
+        </fieldset>
+        </form> 
+    </main>
+    <!-- Footer -->
+<%- include('./includes/footer')%>   
+</body>
+</html>
