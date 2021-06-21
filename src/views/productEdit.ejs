@@ -8,43 +8,47 @@
     <!-- Header -->
     <%- include('./includes/header') %>
     <main>
-    <form action="/product/update/<%= product.id %>?_method=PUT" method="post" id="edit-form" enctype="multipart/form-data">
+    <form action="/" method="POST" class="register-form">
+        <h2>Edición de productos</h2>
         <fieldset>
-            <figure><img src="/uploads/products/<%=product.image%>" alt=""></figure>
-            <label for="image">image</label>
-            <input type="file" name="image" id="image">
+            <img img class="vista" src="/img/levelGod.jpg" alt="anteojopapu.jpg">
+            <label for="image">Hace click en "Examinar" para cambiar la foto a mostrar del producto:</label>
+            <input type="file" name="image" id="image" >
         </fieldset>
         <fieldset>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" value="<%= product.name %>" >
+            <label for="name">Nombre del Producto</label>
+            <input type="text" name="name" id="name">
         </fieldset>
         <fieldset>
-            <label for="brand">Brand</label>
-            <select name="brand" id="brand">
-                <% brands.forEach(brand => { %>
-                    <% if (product.brand.id == brand.id) { %>
-                        <option value="<%= brand.id %>" selected><%= brand.name %></option>
-                    <% } else { %>
-                        <option value="<%= brand.id %>"><%= brand.name %></option>
-                    <% } %>
-                <% }) %>
+            <label for="brand">Matriz ensambladora</label>
+            <select multiple name="Matriz" id="Matriz">
+                <option>Nogal</option>
+                <option>Quebracho</option>
+                <option>50% Carton 50% Yerba Mate</option>
+                <option>Roble</option>
             </select>
         </fieldset>
         <fieldset>
-            <label for="colors">Colors</label>
-            <select name="colors" id="colors" multiple>
-                <% colors.forEach(color => { %>
-                    <% let match = product.colors.filter(productColor => productColor.id == color.id) %>
-                    <% if (match.length > 0) { %>
-                        <option selected value="<%= color.id %>" style="<%= `background-color:${color.value};`%>"><%= color.name %></option>
-                    <% } else { %>
-                        <option value="<%= color.id %>" style="<%= `background-color:${color.value};` %>"><%= color.name %></option>
-                    <% } %>
-                <% }) %>
+            <label for="cristal">Tipo de Cristal</label>
+            <select multiple name="Cristal" id="Cristal">
+                <option>Tríbido</option>
+                <option>Policarbonato</option>
+                <option>Trivex</option>
+                <option>Plástico CR-39</option>
+                <option>Vidrio crown</option>
             </select>
         </fieldset>
         <fieldset>
-            <button type="submit">Send</button>
+            <label for="colors">Para agregarle una capa de pintura a la madera</label>
+            <select multiple name="colores" id="colores">
+                <option>Azul Electrico</option>
+                <option>Amarillo Vibrante</option>
+                <option>Verde Viviente</option>
+                <option>Rojo Naciente</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Enviar Cambios</button><button type="submit">Cancelar</button>
         </fieldset>
         </form> 
     </main>
