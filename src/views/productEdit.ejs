@@ -9,50 +9,55 @@
     <%- include('./includes/header') %>
     <main>
     <form action="/" method="POST" class="register-form">
-        <h2>Edición de productos</h2>
-        <fieldset>
+        <h2>Edición de productos aqui <i class="far fa-hand-point-down"></i></h2>
+        <fieldset class= "register-field">
             <img img class="vista" src="/img/levelGod.jpg" alt="anteojopapu.jpg">
             <label for="image">Hace click en "Examinar" para cambiar la foto a mostrar del producto:</label>
             <input type="file" name="image" id="image" >
         </fieldset>
+<<<<<<< HEAD
         <fieldset>
             <label for="name">Cambiar nombre del producto</label>
             <input type="text" name="name" id="name">
         </fieldset>
         <fieldset>
             <label for="name">Cambiar precio del producto</label>
+=======
+        <fieldset class= "register-field">
+            <label for="name">Nombre del Producto</label>
+>>>>>>> 8e94f71a363557cf02d158097aba2a35e859befa
             <input type="text" name="name" id="name">
         </fieldset>
-        <fieldset>
+        <fieldset class= "register-field">
             <label for="brand">Matriz ensambladora</label>
             <select multiple name="Matriz" id="Matriz">
-                <option>Nogal</option>
-                <option>Quebracho</option>
-                <option>50% Carton 50% Yerba Mate</option>
-                <option>Roble</option>
+                <option value="Nogal">Nogal</option>
+                <option value="Quebracho">Quebracho</option>
+                <option value="Mix Carton y Yerba">50% Carton 50% Yerba Mate</option>
+                <option value="Roble">Roble</option>
             </select>
         </fieldset>
-        <fieldset>
+        <fieldset class= "register-field">
             <label for="cristal">Tipo de Cristal</label>
             <select multiple name="Cristal" id="Cristal">
-                <option>Tríbido</option>
-                <option>Policarbonato</option>
-                <option>Trivex</option>
-                <option>Plástico CR-39</option>
-                <option>Vidrio crown</option>
+                <option value="Tribido">Tríbido</option>
+                <option value="Policarbonato">Policarbonato</option>
+                <option value="Trivex">Trivex</option>
+                <option value="Plastico">Plástico CR-39</option>
+                <option value="Vidrio">Vidrio crown</option>
             </select>
         </fieldset>
-        <fieldset>
+        <fieldset class= "register-field">
             <label for="colors">Para agregarle una capa de pintura a la madera</label>
             <select multiple name="colores" id="colores">
-                <option>Azul Electrico</option>
-                <option>Amarillo Vibrante</option>
-                <option>Verde Viviente</option>
-                <option>Rojo Naciente</option>
+                <option value="Azul Electrico">Azul Electrico</option>
+                <option value="Amarillo Vibrante">Amarillo Vibrante</option>
+                <option value="Verde viviente">Verde Viviente</option>
+                <option value="Rojo Naciente">Rojo Naciente</option>
             </select>
         </fieldset>
-        <fieldset>
-            <button type="submit">Enviar Cambios</button><button type="submit">Cancelar</button>
+        <fieldset class = "register-field">
+            <button type="submit">Editar Producto</button>
         </fieldset>
         </form> 
     </main>
