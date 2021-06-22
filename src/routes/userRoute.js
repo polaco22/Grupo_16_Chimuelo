@@ -3,10 +3,11 @@ const express = require('express');
 const router = express.Router();
 
 // Require Controller
-const mainController = require('../controllers/mainController');
+const userController = require('../controllers/userController');
 
 // Seteando la ruta de vista
-router.get('/', mainController.home);
+router.get('/register', userController.register);
+router.get('/login', userController.login);
 
 // Exports Router
 module.exports = router;
