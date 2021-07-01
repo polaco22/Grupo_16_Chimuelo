@@ -1,7 +1,9 @@
 const path = require('path');
+const fs = require('fs');
+const product = require('../models/mainModel');
 
 const mainController = {
-    home: (req,res) => { res.render('home')},
+    index: (req,res) => { res.render("home",{list: product.all()} )},
 }
 
 module.exports = mainController;

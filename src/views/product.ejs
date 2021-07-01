@@ -11,24 +11,16 @@
     <main>
         <section class="varitems">
             <h6>Productos</h6>
+
+            <% list.forEach(products =>  { %>
+                
             <article class="levelgod">
-            <a href="/product/detail"><img class="vista" src="/img/levelGod.jpg" alt="anteojopapu.jpg"></a>
+                <a href="/product/detail<%= products.id %>"> <img class="vista" src="<%=products.image%>" alt="anteojopapu.jpg"></a>
+                <h3><%=products.name%></h3>
+                <h2>PRECIO $<%=products.price%></h2>
+                <h2>STOCK<%=products.stock%></h2>
             </article>
-            <article class="quebracho">
-                <img class="vista" src="/img/quebracho.jpg" alt="anteojopapu.jpg">
-            </article>
-            <article class="nogal">
-                <img class="vista" src="/img/nogal.jpg" alt="anteojopapu.jpg">
-            </article>
-            <article class="marmolado">
-                <img class="vista" src="/img/marmolado.jpg" alt="anteojopapu.jpg">
-            </article>
-            <article class="scape">
-                <img class="vista" src="/img/scape.jpg" alt="anteojopapu.jpg">
-            </article>
-            <article class="distress">
-                <img class="vista" src="/img/distress.jpg" alt="anteojopapu.jpg">
-            </article>
+			<% } ) %>
 
         </section>
     </main>

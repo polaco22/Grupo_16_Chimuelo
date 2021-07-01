@@ -1,0 +1,10 @@
+[   {
+    "id":1,
+    "firstName":"----",
+    "lastName":"eu ",
+    "email": "@",
+    "category":"Games",
+    "avatar":"product_1.jpg",
+    "admin": true
+    }
+]

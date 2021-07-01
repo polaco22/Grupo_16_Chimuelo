@@ -1,1 +1,33 @@
-[{}]
+[   
+    {
+    "id":1,
+    "name":"Anteojo",
+    "description":"bla bla",
+    "category":"Aventura",
+    "colors":[" "," "," "," "],
+    "image":"/img/levelGod.jpg",
+    "price": 100.0,
+    "stock": 300.0
+    },
+    {
+    "id":2,
+    "name":"Anteojo",
+    "description":"bla bla",
+    "category":"Aventura",
+    "colors":[" "," "," "," "],
+    "image":"/img/levelGod.jpg",
+    "price": 100.0,
+    "stock": 5.0
+    },
+    {
+    "id":3,
+    "name":"Anteojo",
+    "description":"bla bla",
+    "category":"Aventura",
+    "colors":[" "," "," "," "],
+    "image":"/img/levelGod.jpg",
+    "price": 100.0,
+    "stock": 100.0
+    }
+
+]
