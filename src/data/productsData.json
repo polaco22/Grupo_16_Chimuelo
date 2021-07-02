@@ -8,6 +8,15 @@
     "image": "/img/levelGod.jpg",
     "price": 100,
     "stock": 300
+  },
+  {
+    "id": 2,
+    "name": "lentes",
+    "description": "lentes de sol",
+    "category": "adventure",
+    "colors": "Verde viviente",
+    "image": "image-1625249021461.jpg",
+    "price": "150",
+    "stock": "24"
   }
-
 ]

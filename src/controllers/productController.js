@@ -18,10 +18,13 @@ const productController = {
         return result == true ? res.redirect ('/'):res.send('No editaste nada'); 
     },
 
+    productDetail: (req,res) => { 
+        res.render('productDetail', { listToShow: product.one(req.params.id) });
+    },
 
 
     productCart: (req,res) => { res.render('productCart')},
-    productDetail: (req,res) => { res.render('productDetail')},
+    
     
     
     productDelete: (req, res) => {res.send ("Producto eliminado")},
