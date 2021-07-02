@@ -2,6 +2,7 @@
 const path = require('path');
 const express = require ('express');
 const app = express();
+const method = require('method-override');
 
 
 // Configuración y seteo de Server
@@ -16,7 +17,9 @@ app.set("view engine", "ejs");
 app.set("views", (path.resolve(__dirname,"./views")));
 
 app.use(express.urlencoded({ extended : false}));
+app.use(method("_method"));
 app.use(express.json());
+
 
 
 

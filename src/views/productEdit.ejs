@@ -1,30 +1,44 @@
-<!--Para Ingresar a la pagina el camino seria Home>Productos>Elegir el primero y nuevamente clickear en la img del producto en detalle-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Head -->
-    <%- include('./includes/head') %>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+        <link href="../css/register.css" rel="stylesheet">
+        <link href="../css/normalize.css" rel="stylesheet">
+    </head>
 <body>
-    <!-- Header -->
-    <%- include('./includes/header') %>
+    <header>
+        <figure>
+            <a href="/">
+                <img class="logo" src="/design/logofinal.png" alt="logo" />
+            </a>
+        </figure>
+    </header>
+
     <main>
-    <form action="/" method="POST" class="register-form">
+        <form action="/product/update/<%=listToEdit.id%>?_method=PUT" method="post" class="register-form" enctype="multipart/form-data">
         <h2>Edición de productos aqui <i class="far fa-hand-point-down"></i></h2>
-        <fieldset class= "register-field">
+        <!--<fieldset class= "register-field">
             <img img class="vista" src="/img/levelGod.jpg" alt="anteojopapu.jpg">
             <label for="image">Hace click en "Examinar" para cambiar la foto a mostrar del producto:</label>
             <input type="file" name="image" id="image" >
-        </fieldset>
+        </fieldset>-->
         <fieldset class= "register-field">
             <label for="name">Cambiar nombre del producto</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" value="<%= listToEdit.name %>">
         </fieldset>
         <fieldset class= "register-field">
-            <label for="name">Cambiar precio del producto</label>
-            <input type="number" name="name" id="name">
+            <label for="category">Categoría</label>
+            <select name="category" id="category">
+                <option value="Tipo" invalid>Seleccione tipo</option>
+                <option value="adventure">Aventura</option>
+                <option value="casual">Casual</option>
+            </select>
         </fieldset>
-        <fieldset class= "register-field">
+       <!-- <fieldset class= "register-field">
             <label for="brand">Matriz ensambladora</label>
             <select name="brand" id="brand">
                 <option value="Tipo" invalid>Seleccione tipo</option>
@@ -32,7 +46,7 @@
                 <option value="Quebracho">Quebracho</option>
                 <option value="Mix Carton y Yerba">50% Carton 50% Yerba Mate</option>
                 <option value="Roble">Roble</option>
-            </select>
+            </select> 
         </fieldset>
         <fieldset class= "register-field">
             <label for="cristal">Tipo de Cristal</label>
@@ -44,7 +58,7 @@
                 <option value="Plastico">Plástico CR-39</option>
                 <option value="Vidrio">Vidrio crown</option>
             </select>
-        </fieldset>
+        </fieldset>-->
         <fieldset class= "register-field">
             <label for="colors">Para agregarle una capa de pintura a la madera</label>
             <select name="colors" id="colors">
@@ -54,6 +68,18 @@
                 <option value="Verde viviente">Verde Viviente</option>
                 <option value="Rojo Naciente">Rojo Naciente</option>
             </select>
+        </fieldset>
+       <fieldset class="register-field-pic">
+            <label for="image">Imagen del Producto</label>
+            <input type="file" name="image" id="image" accept="jpg">                    
+        </fieldset>
+        <fieldset class= "register-field">
+            <label for="price">Precio del Producto</label>
+            <input type="number" name="price" id="price" value="<%= listToEdit.price %>">
+        </fieldset>
+        <fieldset class= "register-field">
+            <label for="stock">Stock del Producto</label>
+            <input type="number" name="stock" id="stock" value="<%= listToEdit.stock %>">
         </fieldset>
         <fieldset class = "register-field">
             <button type="submit">Enviar Cambios</button>

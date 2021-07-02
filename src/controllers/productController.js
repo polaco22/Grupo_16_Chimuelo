@@ -12,10 +12,18 @@ const productController = {
         return result == true ? res.redirect ('/'):res.send('No cargaste nada');
     },
 
+    productEdit: (req, res) => {res.render('productEdit', {listToEdit: product.one(req.params.id)} )},
+    update: (req, res) => {
+        let result = product.edit(req.body,req.file,req.params.id);
+        return result == true ? res.redirect ('/'):res.send('No editaste nada'); 
+    },
+
+
+
     productCart: (req,res) => { res.render('productCart')},
     productDetail: (req,res) => { res.render('productDetail')},
     
-    productEdit: (req, res) => {res.render('productEdit')},
+    
     productDelete: (req, res) => {res.send ("Producto eliminado")},
 }
 
