@@ -50,7 +50,7 @@
       <% list.forEach(products =>  { %>          
         <article class="levelgod">
           <h2><%=products.name%></h2>
-            <a href="/product/detail/<%= products.id %> "> <img class="vista" src="<%=products.image%>" alt="anteojopapu.jpg"></a>
+            <a href="/product/detail/<%= products.id %> "> <img class="vista" src="../uploads/products/<%=products.image%>" alt="anteojopapu.jpg"></a>
         </article>
       <% } ) %>
       
