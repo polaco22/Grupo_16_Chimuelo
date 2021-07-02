@@ -1,33 +1,57 @@
-[   
-    {
-    "id":1,
-    "name":"Anteojo",
-    "description":"bla bla",
-    "category":"Aventura",
-    "colors":[" "," "," "," "],
-    "image":"/img/levelGod.jpg",
-    "price": 100.0,
-    "stock": 300.0
-    },
-    {
-    "id":2,
-    "name":"Anteojo",
-    "description":"bla bla",
-    "category":"Aventura",
-    "colors":[" "," "," "," "],
-    "image":"/img/levelGod.jpg",
-    "price": 100.0,
-    "stock": 5.0
-    },
-    {
-    "id":3,
-    "name":"Anteojo",
-    "description":"bla bla",
-    "category":"Aventura",
-    "colors":[" "," "," "," "],
-    "image":"/img/levelGod.jpg",
-    "price": 100.0,
-    "stock": 100.0
-    }
-
+[
+  {
+    "id": 1,
+    "name": "Anteojo",
+    "description": "bla bla",
+    "category": "Aventura",
+    "colors": [
+      "Azul Electrico",
+      "Amarillo Vibrante",
+      "Verde Viviente",
+      "Rojo Naciente"
+    ],
+    "image": "/img/levelGod.jpg",
+    "price": 100,
+    "stock": 300
+  },
+  {
+    "id": 2,
+    "name": "Anteojo",
+    "description": "bla bla",
+    "category": "Aventura",
+    "colors": [
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "image": "/img/levelGod.jpg",
+    "price": 100,
+    "stock": 5
+  },
+  {
+    "id": 3,
+    "name": "Anteojo",
+    "description": "bla bla",
+    "category": "Aventura",
+    "colors": [
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "image": "/img/levelGod.jpg",
+    "price": 100,
+    "stock": 100
+  },
+  {
+    "id": 4,
+    "name": "hola",
+    "description": "fsdffs",
+    "category": "adventure",
+    "colors": "Azul Electrico",
+    "image": "image-1625183255038.jpg",
+    "price": "100",
+    "stock": "1"
+  }
 ]

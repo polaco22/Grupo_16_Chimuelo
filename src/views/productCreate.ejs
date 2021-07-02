@@ -19,7 +19,7 @@
     </header>
    
     <main>
-    <form action="/" method="POST" class="register-form">
+    <form action="/product" method="POST" class="register-form" enctype="multipart/form-data">
         <h2>Creación de productos aquí <i class="far fa-hand-point-down"></i></h2>
        
         <fieldset class= "register-field">
@@ -40,13 +40,7 @@
                 <option value="casual">Casual</option>
             </select>
         </fieldset>
-
-        <fieldset class= "register-field">
-            <label for="precio">Precio del Producto</label>
-            <input type="number" name="precio" id="precio">
-        </fieldset>
-
-        <fieldset class= "register-field">
+       <!-- <fieldset class= "register-field">
             <label for="brand">Matriz ensambladora</label>
             <select name="brand" id="brand">
                 <option value="Tipo" invalid>Seleccione tipo</option>
@@ -54,7 +48,7 @@
                 <option value="Quebracho">Quebracho</option>
                 <option value="Mix Carton y Yerba">50% Carton 50% Yerba Mate</option>
                 <option value="Roble">Roble</option>
-            </select>
+            </select> 
         </fieldset>
         <fieldset class= "register-field">
             <label for="cristal">Tipo de Cristal</label>
@@ -66,7 +60,7 @@
                 <option value="Plastico">Plástico CR-39</option>
                 <option value="Vidrio">Vidrio crown</option>
             </select>
-        </fieldset>
+        </fieldset>-->
         <fieldset class= "register-field">
             <label for="colors">Para agregarle una capa de pintura a la madera</label>
             <select name="colors" id="colors">
@@ -77,10 +71,18 @@
                 <option value="Rojo Naciente">Rojo Naciente</option>
             </select>
         </fieldset>
-        <fieldset class="register-field-pic">
-            <label for="name">Imagen del Producto</label>
-            <input type="file" name="avatar" accept=".jpg" multiple>                    
-        </fieldset> 
+       <fieldset class="register-field-pic">
+            <label for="image">Imagen del Producto</label>
+            <input type="file" name="image" id="image" accept="jpg">                    
+        </fieldset>
+        <fieldset class= "register-field">
+            <label for="price">Precio del Producto</label>
+            <input type="number" name="price" id="price">
+        </fieldset>
+        <fieldset class= "register-field">
+            <label for="stock">Stock del Producto</label>
+            <input type="number" name="stock" id="stock">
+        </fieldset>
         <fieldset class= "register-field">
             <button type="submit">Enviar Producto</button>
         </fieldset>
