@@ -9,7 +9,7 @@
     <main>
         <section class="producto">
             <article class="productIMG">
-                <a href="/product/edit/<%= listToShow.id %> "><img class="imgsup" src="/img/levelGod.jpg" alt="anteojopapu.jpg"></a>
+                <a href="/product/edit/<%= listToShow.id %> "><img class="imgsup" src="../../uploads/products/<%=listToShow.image%>" alt="anteojopapu.jpg"></a>
                 <div class="perspectivas">
                     <div>Img1</div>
                     <div>Img2</div>
@@ -19,13 +19,17 @@
             <article class="detalleproducto">
                 <div class="datos">
                     <h3></h3>
-                    <p class="monto">Precio: $</p>
-                    <h5>Materiales:</h5>
+                    <p class="monto">Precio: $<%= listToShow.price %></p>
+                    <h5>Descripcion:  <%= listToShow.description %></h5>
                 </div>
                 <div class="cart">
                     Cantidad: &nbsp;
                     <input type="number" placeholder="1" maxlength="3">
                     <button class="btn-add-cart"><span class="fa fa-shopping-cart"></span>&nbsp; </button>
+                    <button class="btn-add-cart"><a href="/product/edit/<%= listToShow.id %>"><span class="fas fa-trash"></span>&nbsp;</a> </button>
+                    <form class="btn-add-cart" action="/product/delete/<%= listToShow.id %>?_method=DELETE" method="post">
+                        <button type="submit">Eliminar</button>
+                    </form> 
                 </div>
             </article>
         </section>
@@ -38,7 +42,7 @@
         
     </main>
     <!-- Footer -->
-   <%- include('./includes/footer')%>   
+<%- include('./includes/footer')%>   
 </body>
 
 </html>

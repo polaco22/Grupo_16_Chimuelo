@@ -27,7 +27,10 @@ const productController = {
     
     
     
-    productDelete: (req, res) => {res.send ("Producto eliminado")},
+    productDelete: (req, res) => {
+        let result = product.delete(req.params.id);
+        return result == true ? res.redirect ('/product'):res.send('No eliminaste nada'); 
+    },
 }
 
 module.exports = productController;

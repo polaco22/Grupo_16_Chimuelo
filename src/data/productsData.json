@@ -1,13 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Anteojo",
-    "description": "bla bla",
-    "category": "Aventura",
+    "name": "hola",
+    "description": "mundo",
+    "category": "adventure",
     "colors": "Azul Electrico",
-    "image": "quebracho.jpg",
-    "price": 100,
-    "stock": 300
+    "image": "image-1625322426644.jpg",
+    "price": "7",
+    "stock": "45"
   }
-
 ]

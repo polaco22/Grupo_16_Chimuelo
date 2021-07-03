@@ -29,7 +29,7 @@ router.get('/product/create', productController.productCreate); // formulario cr
 router.post('/product', upload.single('image'), productController.store); // acción de creación (a donde se envía el formulario)
 router.get('/product/edit/:id', productController.productEdit); // formulario de edición de productos ??
 router.put('/product/update/:id', upload.single('image'), productController.update); // a dónde se envía el formulario ??
-router.delete('/product/:id', productController.productDelete); // acción de borrado
+router.delete('/product/delete/:id', productController.productDelete); // acción de borrado
 
 
 // Exports Router
