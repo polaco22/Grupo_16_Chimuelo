@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "name": "hola",
-    "description": "mundo",
-    "category": "adventure",
-    "colors": "Azul Electrico",
-    "image": "image-1625322426644.jpg",
-    "price": "7",
-    "stock": "45"
+    "name": "Kate Nogal",
+    "description": "MARCO DE  MADERA O COLOR CARAMEL MATE. PATILLAS COMPLETAS DE MADERA DE NOGAL. LENTES DE COLOR GRIS OSCURO O MARRÓN. FORMATO REDONDO.    ",
+    "category": "casual",
+    "colors": "Amarillo Vibrante",
+    "image": "image-1625434467135.jpg",
+    "price": "1000",
+    "stock": "20"
   }
 ]

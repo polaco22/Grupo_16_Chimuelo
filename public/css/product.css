@@ -11,7 +11,7 @@ body{
     color: black;
     max-width: 100%;
 }
-
+/*
 header{
     display: flex;
     flex-direction: row;
@@ -76,9 +76,28 @@ header{
   font-size: 27px;
   
 }
-
+*/
 /* Hasta aca llega el header */
+.crearProducto {
+  display: block;
+  padding: 30px;
+  align-items: center;
+  color: white;
 
+}
+
+.boton {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color:#003ef2;
+  border: blue 1px solid;
+  border-radius: 8px;
+}
+.boton a {
+  color: white;
+  text-decoration: none;
+}
 .varitems {
     display: flex;
     flex-direction: row;
@@ -86,12 +105,9 @@ header{
     justify-content: space-around;
     height: auto;
     width: 100%;
-    margin: 3px;
     margin-top: 40px;
-    box-sizing: border-box;
     
 }
-
 .levelgod {
     display: flex;
     flex-direction: row;
@@ -158,7 +174,7 @@ h6 {
 /* =========== media tablet ================== */
 
 @media (min-width: 769px) {
-    .menu-ellipsis-v{
+  /*  .menu-ellipsis-v{
       color: #003ef2;
       display: none;    
     }
@@ -190,5 +206,5 @@ h6 {
     text-decoration: none;
     color: #003ef2;
     font-size: 24px;
-  }
+  }*/
   }

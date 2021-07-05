@@ -12,61 +12,6 @@ body{
     max-width: 100%;
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: rgb(201, 201, 201);    
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.header-top img{
-    padding: 20px;
-    padding-left: 10px;
-    width: 100%;
-    align-content: center;
-}
-
-.header-top {
-  display: flex;
-  width: 24%;
-}
-
-.logo {
-  display: flex;
-  width: 140px;
-  height: 182px;
-  padding: 20px;  
-}
-.nav-bar{
-    display: none;
-    
-}
-.nav-bar ul {
-    display: none;
-    list-style: none;
-
-}
-.nav-bar ul li a{
-    display: flex;
-    justify-content: space-around;
-    padding: 8px;
-    text-align: right;
-    text-decoration: none;
-    color: #003ef2;
-    font-size: 14px;
-}
-
-.menu-ellipsis-v{
-  color: #003ef2;
-  width: 14%;
-  height: auto;
-  text-align: center;
-  font-size: 27px;
-  
-}
 /* ==================== slider ======================= */
 
 .b-slider{     
@@ -133,34 +78,27 @@ section {
     display: flex;
     flex-direction: row;
     margin: auto;
-    width: 90%;
+    width: 95%;
+    background-color: white;
 }
 
 section article div img {
     display: block;
 	  width: 100%;
-    padding: 10px;
+    padding: 5px;
 }
 section article div img:hover {
 	transform: translateY(-0.5rem) scale(1.0125);
 	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
 }
      
-h2 {
-    font-family: 'Open Sans';
-    color: #003ef2;
-    font-weight: bold;
-}
-p {
-    color: #222;
-    font-size: 14px;
-}
-.descripcionAnteojos {
-    display: flex;
-    flex-direction: column;
+.textoProducto {
+  font-size: 20px;
 }
 
+
 /* ---------- FIN SECCION DE PRODUCTOS ---------- */
+
 /* ==================== footer ======================= */
 .contenedorfooter{
     display: flex;
@@ -191,7 +129,6 @@ p {
 .formasdepago ul li {
   list-style: none;
   text-decoration: none;
-
 }
 
 .formasdepago i {
@@ -199,52 +136,19 @@ p {
   text-align: center;
   font-size: 1em;
   color: white;
-
 }
+
 /* =========== media tablet ================== */
 
 @media (min-width: 769px) {
-  .menu-ellipsis-v{
-    color: #003ef2;
-    display: none;    
-  }
-  .logo {
-    display: none;
-  }
-    
-.nav-bar{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-weight: bold;
-  width: 60%;
-  
-}
-.nav-bar ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 20px;
-  width: 30%;
-     
-}
-.nav-bar ul li a{
-  display: flex;
-  justify-content: space-between;
-  padding: 8px;
-  text-align: right;
-  text-decoration: none;
-  color: #003ef2;
-  font-size: 24px;
-}
-
+.nav-bar ul li:hover {
+  color: #40E0D0;
+} 
 .producto {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-          
+  justify-content: space-between;          
 }
 .producto article {
   justify-content: center;
@@ -254,10 +158,13 @@ p {
 .imgproducto {
   vertical-align: middle;
 }
-
+.textoProducto {
+  color: #003ef2;
+  font-weight: bold;
+  font-family: 'Open Sans';
+}
 .contenedorfooter {
   display: inline-flex;
-  flex: 20%;
   margin: 0px;
 }
 .redes i{
@@ -265,7 +172,6 @@ p {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  flex: 50%;
   list-style: none;
   text-decoration: none;
 }
@@ -277,13 +183,13 @@ p {
   text-align: center;
   list-style: none;
   text-decoration: none;
-  flex: 50%;
 }
 }
 
 /* ========== Desktop ========================== */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+ 
   .producto section article {
     box-sizing: border-box;
     position: relative;
@@ -292,5 +198,10 @@ p {
   }
   .imgproducto {
     width: 90%;
+  }
+  footer {
+    background-color: black;
+    text-align: center;
+    display: block;
   }
 }

@@ -9,14 +9,15 @@
 
  
     <main>
-        <section class="varitems">
+        <section class="crearProducto">
+            <button class="boton"><a href="/product/create/<%= list.id %>">Crear Producto</a></button>
+        </section>
+        <section class="varitems">  <!---->
             <h6>Productos</h6>
-            <button class="btn-add-cart"><a href="/product/create/<%= list.id %>"><span class="fas fa-trash"></span>&nbsp;</a> </button>
-
             <% list.forEach(products =>  { %>
                 
-            <article class="levelgod">
-                <a href="/product/detail/<%= products.id %>"> <img class="vista" src="<%=products.image%>" alt="fotoDeAnteojo.jpg"></a>
+            <article> <!--class="levelgod"-->
+                <a href="/product/detail/<%= products.id %>"> <img src="<%=products.image%>" alt="fotoDeAnteojo.jpg"></a>
                 <h3><%=products.name%></h3>
                 <h2>PRECIO $<%=products.price%></h2>
                 <h2>STOCK<%=products.stock%></h2>

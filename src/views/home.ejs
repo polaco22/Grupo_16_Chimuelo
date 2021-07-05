@@ -24,7 +24,7 @@
       <!-- imagenes del slider -->
       <div class="b-slider__items">
         <div class="b-slider__item-1">
-          <img src="../img/slider1.jpg" alt="imagen slider"/>
+          <img src="../img/slider3.jpg" alt="imagen slider"/>
         </div>
         <div class="b-slider__item-2">
           <img src="../img/slider2.jpg"alt="imagen slider"/>
@@ -45,15 +45,39 @@
   <!-- termina el slider -->
   <!-- vista de tres productos --> 
   
-    <section class="producto">
-
-      <% list.forEach(products =>  { %>          
-        <article class="levelgod">
-          <h2><%=products.name%></h2>
-            <a href="/product/detail/<%= products.id %> "> <img class="vista" src="../uploads/products/<%=products.image%>" alt="anteojopapu.jpg"></a>
-        </article>
-      <% } ) %>
+    <section class="producto" >
+     <!-- <% list.forEach(products =>  { %>          
+        <article>
+         <h2><%=products.name%></h2>
+          <div>
+            <a href="/product/detail/<%= products.id %> "> 
+            <img class="imgproducto" src="../uploads/products/<%=products.image%>" alt="anteojo.jpg">
+            </a>
+          </div> 
+          </article>
+      <% } ) %>-->
       
+      <article>
+          <div>
+            <h2 class="textoProducto">Producto más visitado</h2> 
+            <a href="#"><img class="imgproducto" src="../img/p1.png" alt="anteojo.jpg"></a>
+         </div>
+        </article>
+         <article>
+          <div>
+            <h2 class="textoProducto">Producto novedoso</h2> 
+            <a href="#"><img class="imgproducto" src="../img/p2.png" alt="anteojo.jpg"></a>
+           </div>
+        </article>
+        <article>
+          <div>
+            <h2 class="textoProducto">Producto en oferta</h2> 
+            <a href="#"><img class="imgproducto" src="../img/p3.png" alt="anteojo.jpg"></a>
+          </div> 
+         </article>
+
+
+
     </section>
   </main>
 

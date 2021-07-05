@@ -11,7 +11,7 @@ body{
     color: black;
     max-width: 100%;
 }
-
+/*
 header{
     display: flex;
     flex-direction: row;
@@ -73,7 +73,7 @@ header{
   text-align: center;
   font-size: 27px;
   
-}
+}*/
 
 
 /* ==================== footer ======================= */
@@ -247,7 +247,7 @@ main {
 /* =========== media tablet ================== */
 
 @media (min-width: 769px) {
-    .menu-ellipsis-v{
+   /* .menu-ellipsis-v{
     color: #003ef2;
     display: none;    
     }
@@ -277,7 +277,7 @@ main {
     text-decoration: none;
     color: #003ef2;
     font-size: 24px;
-    }
+    }*/
     .producto {
     display: flex;
     flex-direction: row;
