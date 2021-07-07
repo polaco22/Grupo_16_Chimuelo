@@ -8,5 +8,15 @@
     "image": "image-1625434467135.jpg",
     "price": "1000",
     "stock": "20"
+  },
+  {
+    "id": 2,
+    "name": "Lentes LG",
+    "description": "Hechos con materiales reciclados",
+    "category": "adventure",
+    "colors": "Amarillo Vibrante",
+    "image": "default.jpg",
+    "price": "150",
+    "stock": "20"
   }
 ]
