@@ -23,13 +23,11 @@
                     <h5>Descripcion:  <%= listToShow.description %></h5>
                 </div>
                 <div class="cart">
-                    Cantidad: &nbsp;
+                    Cantidad:
                     <input type="number" placeholder="1" maxlength="3">
                     <button class="btn-add-cart"><span class="fa fa-shopping-cart"></span>&nbsp; </button>
-                    <button class="btn-add-cart"><a href="/product/edit/<%= listToShow.id %>"><span class="fas fa-trash"></span>&nbsp;</a> </button>
-                    <form class="btn-add-cart" action="/product/delete/<%= listToShow.id %>?_method=DELETE" method="post">
-                        <button type="submit">Eliminar</button>
-                    </form> 
+                    <button class="btn-add-cart"><a href="/product/edit/<%= listToShow.id %>"><span class="fas fa-edit"></span></a> </button>
+                    <button class="btn-add-cart" action="/product/delete/<%= listToShow.id %>?_method=DELETE" method="post"><span class="fas fa-trash"></span>&nbsp; </button>
                 </div>
             </article>
         </section>

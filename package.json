@@ -4,7 +4,7 @@
   "description": "--------------------------------\r ## E-Shop",
   "main": "app.js",
   "scripts": {
-    "test": "clear && nodemon src/app.js -e .html,.css,.js,.mjs,.json",
+    "test": "clear && nodemon src/app.js -e .html,.css,.js,.mjs,.json,.ejs",
     "start": "node src/app.js"
   },
   "keywords": [],
