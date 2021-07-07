@@ -22,7 +22,7 @@ const model = {
             description: data.description,
             category: data.category,
             colors: data.colors,//.map(color => parseInt(color))
-            image: file.filename,
+            image: typeof file === 'undefined' ? "default.jpg" : file.filename,
             price: data.price,
             stock: data.stock
         }    
@@ -39,7 +39,7 @@ const model = {
                 producto.description = data.description,
                 producto.category = data.category,
                 producto.colors = data.colors,
-                producto.image = file.filename,
+                producto.image = typeof file === 'undefined' ? "default.jpg" : file.filename,
                 producto.price = data.price,
                 producto.stock = data.stock
                 return producto

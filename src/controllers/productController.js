@@ -22,15 +22,11 @@ const productController = {
         res.render('productDetail', { listToShow: product.one(req.params.id) });
     },
 
-
-    productCart: (req,res) => { res.render('productCart')},
-    
-    
-    
     productDelete: (req, res) => {
         let result = product.delete(req.params.id);
         return result == true ? res.redirect ('/product'):res.send('No eliminaste nada'); 
     },
+    productCart: (req,res) => { res.render('productCart')},
 }
 
 module.exports = productController;
