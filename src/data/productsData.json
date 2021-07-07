@@ -1,21 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Kate Nogal",
-    "category": "Tipo",
-    "colors": "Tipo",
-    "image": "default.jpg",
-    "price": "1000",
-    "stock": "20"
-  },
-  {
-    "id": 2,
-    "name": "Lentes LG",
-    "description": "Hechos con materiales reciclados",
+    "name": "asd",
+    "description": "asddd",
     "category": "adventure",
-    "colors": "Amarillo Vibrante",
-    "image": "default.jpg",
-    "price": "150",
-    "stock": "20"
+    "colors": "Azul Electrico",
+    "image": "image-1625699938056.jpg",
+    "price": "10000",
+    "stock": "2"
   }
 ]
