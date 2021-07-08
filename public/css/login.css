@@ -35,10 +35,14 @@ h3 {
 h4 {
     text-align: center;
     font-size: 14px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: normal;
 }
 h5 {
     text-align: center;
     padding: 10px 10px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: normal;
 }
 a {
     color: #003ef2;
@@ -55,6 +59,9 @@ fieldset label {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+}
+::placeholder{
+ padding-left: 10px;
 }
 
 /*---------------- ARMANDO CLASES CON ESTILOS PARA FORMULARIOS ----------------*/
@@ -116,86 +123,6 @@ fieldset label {
 
 /*---------------- INCLUIMOS BANNER Y SU ESTILO ----------------*/
 
-/*---------------- ESTILOS AL FOOTER ----------------*/
-
-.contenedorfooter{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    padding: 20px;
-    width: 100%;
-    height: auto;
-}
-
-.modos {
-  display: flex;
-  width: 100%;
-}
-
-.seguinos{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.seguinos h3{
-  display: flex;
-  margin: 2px;
-  width: 100%;
-}
-
-ul.redes{
-  margin: 0px;
-}
-
-.redes{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    padding: 10px;
-  }
-
-.modos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-.modos h3{
-  margin: 0px;
-  width: 100%;
-}
-
-.formasdepago{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 100%;
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    padding: 10px;
-}
-footer i{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    padding-left: 15px;
-}
-footer {
-    background: linear-gradient(90deg,rgba(255,255,255,0) 0,rgba(255,255,255,0.2) 50%,rgba(255,255,255,0) 100%);
-}
 
 /*---------------- GENERAMOS LAS MEDIAS QUERIES ----------------*/
 @media (min-width: 361px){
