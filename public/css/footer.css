@@ -11,7 +11,8 @@ footer{
     justify-content: center;   
     color:white;
     background-color: black;
-    margin: 0 -5px;  
+    margin: 0 -5px;
+    height: auto;  
 }
 footer:after {
     content: "";
@@ -44,7 +45,6 @@ a:hover {
     padding: 16px;
     text-align: center;
   }
-  
 
 /* =========== media tablet ================== */
 

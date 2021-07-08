@@ -344,6 +344,8 @@ main {
     width: 100%;
     margin-top: 0px;
     margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
     }
     .cart input {
         margin-top: 3px;
