@@ -11,12 +11,12 @@
   },
   {
     "id": 3,
-    "name": "Survivor",
-    "description": "blabla",
+    "name": "Anteojo de Sol",
+    "description": "Es la combinación justa entre estilo y protección",
     "category": "adventure",
-    "colors": "Amarillo Vibrante",
-    "image": "image-1625769864560.png",
-    "price": "1500",
-    "stock": "40"
+    "colors": "Verde viviente",
+    "image": "image-1625778901638.png",
+    "price": "1750",
+    "stock": "8"
   }
 ]

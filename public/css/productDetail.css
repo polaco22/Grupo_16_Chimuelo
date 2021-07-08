@@ -238,6 +238,20 @@ main {
     text-align: center;
 }
 
+.btn-trash {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #003ef2;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-align: center;
+}
+
 .cart {
     display: flex;
     flex-direction: row;
