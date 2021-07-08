@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 *{
     box-sizing: border-box;
@@ -14,6 +14,7 @@ header{
     align-items: center;
     background-color: #111;
     color: white;
+    
 }
 
 .header-top {

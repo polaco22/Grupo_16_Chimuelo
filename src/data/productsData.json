@@ -1,12 +1,22 @@
 [
   {
     "id": 1,
-    "name": "asd",
-    "description": "asddd",
+    "name": "Mono Nogal",
+    "description": "MARCO DE  MADERA O COLOR WENGUE MATE. PATILLAS COMPLETAS DE MADERA DE NOGAL. LENTES DE COLOR GRIS OSCURO O MARRÓN. FORMATO REDONDO.    ",
     "category": "adventure",
-    "colors": "Azul Electrico",
-    "image": "image-1625699938056.jpg",
+    "colors": "Verde viviente",
+    "image": "image-1625710435964.jpg",
     "price": "10000",
     "stock": "2"
+  },
+  {
+    "id": 2,
+    "name": "Kate Nogal",
+    "description": "MARCO DE  MADERA O COLOR WENGUE MATE. PATILLAS COMPLETAS DE MADERA DE NOGAL. LENTES DE COLOR GRIS OSCURO O MARRÓN. FORMATO REDONDO.    ",
+    "category": "casual",
+    "colors": "Amarillo Vibrante",
+    "image": "image-1625710809460.jpg",
+    "price": "5000",
+    "stock": "34"
   }
 ]

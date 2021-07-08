@@ -77,6 +77,7 @@ header{
 
 
 /* ==================== footer ======================= */
+/*
 .contenedorfooter{
     display: flex;
     flex-direction: row;
@@ -135,7 +136,7 @@ footer i{
     flex-wrap: nowrap;
     margin: 5px;
     margin-bottom: 50px;
-}
+}*/
 
 .producto {
     display: flex;

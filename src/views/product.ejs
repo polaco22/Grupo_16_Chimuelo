@@ -12,18 +12,21 @@
         <section class="crearProducto">
             <button class="boton"><a href="/product/create/<%= list.id %>">Crear Producto</a></button>
         </section>
-        <section class="varitems">  <!---->
+        <section >  
             <h6>Productos</h6>
-            <% list.forEach(products =>  { %>
+            <div class="varitems">
+                <% list.forEach(products =>  { %>
+                <article> 
+                    <a href="/product/detail/<%= products.id %>"> 
+                    <img src="../uploads/products/<%=products.image%>" class="imgProducto" alt="fotoDeAnteojo.jpg"></a>
+                    <h3 class="name"><%=products.name%></h3>
+                    <p class="price">Precio: $<%=products.price%></p>
+                    <p class="stock">Stock: <%=products.stock%></p>
+                    <p><button class="verProducto">Ver Producto</button></p>
+                </article>
                 
-            <article> <!--class="levelgod"-->
-                <a href="/product/detail/<%= products.id %>"> <img src="../uploads/products/<%=products.image%>" alt="fotoDeAnteojo.jpg"></a>
-                <h3><%=products.name%></h3>
-                <h2>PRECIO: $<%=products.price%></h2>
-                <h2>STOCK: <%=products.stock%></h2>
-            </article>
-			<% } ) %>
-
+                <% } ) %>
+            </div>
         </section>
     </main>
    <!-- Footer -->

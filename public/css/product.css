@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 *{
     box-sizing: border-box;
@@ -11,156 +11,86 @@ body{
     color: black;
     max-width: 100%;
 }
-/*
-header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 20%;
-    background-color: rgb(201, 201, 201);    
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.header-top img{
-    padding: 20px;
-    padding-left: 10px;
-    width: 100%;
-    align-content: center;
-}
-
-.header-top {
-  display: flex;
-  width: 24%;
-  height: auto;
-}
-
-
-.logo {
-  display: flex;
-  width: 50%;
-  height: auto;
-  align-items: center;
-  
-}
-
-.logotipo{
-  width: 100%;
-  height: auto;
-}
-
-.nav-bar{
-    display: none;
-    
-}
-.nav-bar ul {
-    display: none;
-    list-style: none;
-
-}
-.nav-bar ul li a{
-    display: flex;
-    justify-content: space-around;
-    padding: 8px;
-    text-align: right;
-    text-decoration: none;
-    color: #003ef2;
-    font-size: 14px;
-}
-.menu-ellipsis-v{
-  color: #003ef2;
-  width: 14%;
-  height: auto;
-  text-align: center;
-  font-size: 27px;
-  
-}
-*/
-/* Hasta aca llega el header */
 .crearProducto {
   display: block;
   padding: 30px;
   align-items: center;
   color: white;
-
 }
 
 .boton {
-  width: 100px;
+  width: 200px;
   height: 50px;
   color: white;
   background-color:#003ef2;
   border: blue 1px solid;
   border-radius: 8px;
+  float: right;
 }
 .boton a {
   color: white;
   text-decoration: none;
 }
 .varitems {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: auto;
-    width: 100%;
-    margin-top: 40px;
-    
-}
-.levelgod {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 5px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 600px;
+  padding: 5px 25px;
 }
 
-.quebracho {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 5px;
-    margin-bottom: 10px;
+.imgProducto{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  padding: 5px 25px;
 }
 
-.nogal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 5px;
-    margin-bottom: 10px;
+article {
+  max-width: 800px;
+  padding: 2px 16px;
 }
-
-.marmolado {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 5px;
-    margin-bottom: 10px;
+.name{
+  color: #003ef2;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 15px;
 }
-
-.scape {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 5px;
-    margin-bottom: 10px;
+.price {
+  color: #003ef2;
+  font-weight: normal;
+  font-size: 18px;
+  padding-left: 15px;
 }
+.stock {  
+  color: rgb(41, 40, 40);
+  font-size: 18px;
+  padding-left: 15px;
 
-.distress {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 5px;
-    margin-bottom: 10px;
 }
-
-.vista {
-    width: 300px;
-    height: 300px;
+.verProducto{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  align-content: center;
+  width: 95%;
+  opacity: 0.6;
+  transition: 0.3s;
 }
-
+.verProducto:hover {
+  opacity: 1;
+}
 h6 {
     display: flex;
     position: absolute;
@@ -174,37 +104,5 @@ h6 {
 /* =========== media tablet ================== */
 
 @media (min-width: 769px) {
-  /*  .menu-ellipsis-v{
-      color: #003ef2;
-      display: none;    
-    }
-    .logo {
-      display: none;
-    }  
-  .nav-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-weight: bold;
-    width: 64%;
-    
-  }
-  .nav-bar ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 20px;
-    width: 40%;
-       
-  }
-  .nav-bar ul li a{
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    text-align: right;
-    text-decoration: none;
-    color: #003ef2;
-    font-size: 24px;
-  }*/
+  
   }
