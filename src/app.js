@@ -3,14 +3,18 @@ const path = require('path');
 const express = require ('express');
 const app = express();
 const method = require('method-override');
+const session = require('express-session');
+const cookies = require('cookie-parser');
 
 
 // Configuración y seteo de Server
-app.use(express.static(path.resolve(__dirname,"../public")))
+app.use(express.static(path.resolve(__dirname,"../public")));
+app.use(session({secret: 'lookingood', resave: false, saveUninitialized: true}));
+app.use(cookies());
 
 
-app.set('port', process.env.PORT || 3000)
-app.listen(app.get('port'), ()=> console.log("Server starts in http://localhost:" + app.get('port')))
+app.set('port', process.env.PORT || 3000);
+app.listen(app.get('port'), ()=> console.log("Server starts in http://localhost:" + app.get('port')));
 
 // Template engine
 app.set("view engine", "ejs");
