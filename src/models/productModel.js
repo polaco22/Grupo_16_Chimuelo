@@ -13,7 +13,7 @@ const model = {
         let resultado = productos.find(producto => producto.id == id)
         return resultado;
 	},
-    new: function (data,file) {
+    new: function (data,files) {
         const directory = path.resolve(__dirname,"../data","productsData.json")
         let productos = this.all();
         let nuevo = {
@@ -22,7 +22,7 @@ const model = {
             description: data.description,
             category: data.category,
             colors: data.colors,//.map(color => parseInt(color))
-            image: typeof file === 'undefined' ? "default.jpg" : file.filename,
+            image: typeof files === 'undefined' ? "default.jpg" : files.map(image => image.filename),
             price: data.price,
             stock: data.stock
         }    
@@ -30,7 +30,7 @@ const model = {
         fs.writeFileSync(directory,JSON.stringify(productos,null,2));
         return true; 
     },
-    edit: function (data,file,id) {
+    edit: function (data,files,id) {
         const directory = path.resolve(__dirname,"../data","productsData.json")
         let productos = this.all();
         productos.map(producto => {
@@ -39,7 +39,7 @@ const model = {
                 producto.description = data.description,
                 producto.category = data.category,
                 producto.colors = data.colors,
-                producto.image = typeof file === 'undefined' ? "default.jpg" : file.filename,
+                producto.image = typeof files === 'undefined' ? "default.jpg" : files.map(image => image.filename),
                 producto.price = data.price,
                 producto.stock = data.stock
                 return producto

@@ -1,16 +1,6 @@
 [
   {
-    "id": 2,
-    "name": "Kate Nogal",
-    "description": "MARCO DE  MADERA O COLOR WENGUE MATE. PATILLAS COMPLETAS DE MADERA DE NOGAL. LENTES DE COLOR GRIS OSCURO O MARRÓN. FORMATO REDONDO.    ",
-    "category": "casual",
-    "colors": "Amarillo Vibrante",
-    "image": "image-1625710809460.jpg",
-    "price": "5000",
-    "stock": "34"
-  },
-  {
-    "id": 3,
+    "id": 1,
     "name": "Anteojo de Sol",
     "description": "Es la combinación justa entre estilo y protección",
     "category": "adventure",

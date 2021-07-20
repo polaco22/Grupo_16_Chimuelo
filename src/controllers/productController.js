@@ -8,13 +8,13 @@ const productController = {
     show: (req,res) => { res.render("product",{list: product.all()} )},
     productCreate: (req, res) => {res.render('productCreate')},
     store: (req,res) => {
-        let result = product.new(req.body,req.file);
+        let result = product.new(req.body,req.files);
         return result == true ? res.redirect ('/'):res.send('No cargaste nada');
     },
 
     productEdit: (req, res) => {res.render('productEdit', {listToEdit: product.one(req.params.id)} )},
     update: (req, res) => {
-        let result = product.edit(req.body,req.file,req.params.id);
+        let result = product.edit(req.body,req.files,req.params.id);
         return result == true ? res.redirect ('/'):res.send('No editaste nada'); 
     },
 
