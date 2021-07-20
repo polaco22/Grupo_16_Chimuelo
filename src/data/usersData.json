@@ -112,5 +112,34 @@
     "avatar": "5g4pwp.jpg",
     "terminos": "on",
     "admin": false
+  },
+  {
+    "id": 9,
+    "nombre": "nachi",
+    "usuario": "olazabal",
+    "dni": "32800276",
+    "email": "ignacioolazabal@lookingoos.com",
+    "domicilio": "lasheras1180",
+    "provincia": "ba",
+    "ciudad": "#",
+    "password": "$2a$10$Z9DMzYw.pTETk7uxEyN18..ZZcf7lbDoRZTseEnNEOC22o0k0GfdO",
+    "confirmarContraseña": "$2a$10$B37ohtKzTE9JjYeC/y0hnuH1RcmCrlFUMGmRULzMRQTFxz6d02dEO",
+    "avatar": "315x236_497400.jpg",
+    "terminos": "on",
+    "admin": false
+  },
+  {
+    "id": 10,
+    "nombre": "nacho",
+    "usuario": "olazabal",
+    "dni": "32800276",
+    "email": "ignacioolazabal@lookingood.com",
+    "domicilio": "lasheras1180",
+    "provincia": "ba",
+    "ciudad": "#",
+    "password": "$2a$10$DrOOM4yb6CkanJTWr2QFauta7Vqkmh5t1DHCjzhb6zGPHFvWMwPdq",
+    "confirmarContraseña": "$2a$10$F85dbLu/gVGAejU1805EL..H3uNneFAolfHmOrLp98LO5vM10v4cO",
+    "terminos": "on",
+    "admin": true
   }
 ]
