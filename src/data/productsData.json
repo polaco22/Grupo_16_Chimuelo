@@ -8,15 +8,5 @@
     "image": "image-1625710809460.jpg",
     "price": "5000",
     "stock": "34"
-  },
-  {
-    "id": 3,
-    "name": "Anteojo de Sol",
-    "description": "Es la combinación justa entre estilo y protección",
-    "category": "adventure",
-    "colors": "Verde viviente",
-    "image": "image-1625778901638.png",
-    "price": "1750",
-    "stock": "8"
   }
 ]
