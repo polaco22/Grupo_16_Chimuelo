@@ -17,12 +17,12 @@
             <div class="varitems">
                 <% list.forEach(products =>  { %>
                 <article> 
-                    <a href="/product/detail/<%= products.id %>"> 
+                    
                     <img src="../uploads/products/<%=products.image%>" class="imgProducto" alt="fotoDeAnteojo.jpg"></a>
                     <h3 class="name"><%=products.name%></h3>
                     <p class="price">Precio: $<%=products.price%></p>
                     <p class="stock">Stock: <%=products.stock%></p>
-                    <p><button class="verProducto">Ver Producto</button></p>
+                    <p><button class="verProducto"><a href="/product/detail/<%= products.id %>">Ver Producto</a></button></p>
                 </article>
                 
                 <% } ) %>
