@@ -38,9 +38,15 @@
         <fieldset class= "register-field">
             <label for="category">Categoría</label>
             <select name="category" id="category">
-                <option value="Tipo" invalid>Seleccione tipo</option>
-                <option value="adventure">Aventura</option>
-                <option value="casual">Casual</option>
+                <%  
+                let categories = ['Seleccione Tipo', 'Adventure', 'Casual'];
+                %>
+                <% for (const oneCategory of categories) { %>
+                <option 
+                    value="<%= oneCategory %>" selected="selected" > 
+                    <%= oneCategory %> 
+                </option>
+                <% } %>
             </select>
         </fieldset>
        <!-- <fieldset class= "register-field">
@@ -67,11 +73,15 @@
         <fieldset class= "register-field">
             <label for="colors">Para agregarle una capa de pintura a la madera</label>
             <select name="colors" id="colors">
-                <option value="Tipo" invalid>Seleccione tipo</option>
-                <option value="Azul Electrico">Azul Electrico</option>
-                <option value="Amarillo Vibrante">Amarillo Vibrante</option>
-                <option value="Verde viviente">Verde Viviente</option>
-                <option value="Rojo Naciente">Rojo Naciente</option>
+                <%  
+                let colors = ['Seleccionar Tipo', 'Azul Electrico', 'Amarillo Vibrant', 'Verde viviente', 'Rojo Naciente'];
+            %>
+            <% for (const oneColor of colors) { %>
+                <option 
+                    value="<%= oneColor %>" selected="selected"> 
+                    <%= oneColor %> 
+                </option>
+            <% } %>
             </select>
         </fieldset>
        <fieldset class="register-field-pic">

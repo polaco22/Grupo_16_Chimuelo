@@ -49,20 +49,19 @@
                 <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required pattern="[A-Za-z0-9]+" title="usar solo minúsculas y números sin espacios">                  
                 <label> PROVINCIA</label>
                 
-                <select name="provincia">
-           
-                <option value="">Elegí una provincia</option>
-                <%  
-                    let provinces = ['Buenos Aires', 'Catamarca', 'Chaco', 'Chubut', 'Ciudad de Buenos Aires', 'Córdoba', 'Corrientes', 'Entre Rios', 'Formosa', 'Jujuy',
-                    'La Pampa', 'La Rioja', 'Mendoza', 'Misiones', 'Neuquen', 'Rio Negro', 'Salta', 'San Juan', 'San Luis', 'Santa Cruz', 'Santiago del Estero', 'Tierra del Fuego', 'Tucuman'  ];
-                %>
-                <% for (const oneProvince of provinces) { %>
-                    <option 
-                        value="<%= oneProvince %>"> 
-                        <%= oneProvince %> 
-                    </option>
-                <% } %>
-            </select>
+                <select name="provincia">           
+                    <option value="">Elegí una provincia</option>
+                    <%  
+                        let provinces = ['Buenos Aires', 'Catamarca', 'Chaco', 'Chubut', 'Ciudad de Buenos Aires', 'Córdoba', 'Corrientes', 'Entre Rios', 'Formosa', 'Jujuy',
+                        'La Pampa', 'La Rioja', 'Mendoza', 'Misiones', 'Neuquen', 'Rio Negro', 'Salta', 'San Juan', 'San Luis', 'Santa Cruz', 'Santiago del Estero', 'Tierra del Fuego', 'Tucuman'  ];
+                    %>
+                    <% for (const oneProvince of provinces) { %>
+                        <option 
+                            value="<%= oneProvince %>"> 
+                            <%= oneProvince %> 
+                        </option>
+                    <% } %>
+                </select>
                
                 <label>CIUDAD</label>
                 <select name="ciudad">

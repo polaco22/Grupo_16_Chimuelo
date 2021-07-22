@@ -61,6 +61,9 @@ const userModel = {
     delete: function (id) {
         const directory = path.resolve(__dirname,"../data","usersData.json")
         let allUsers = this.all();
+        let deleted = this.one(id);
+        // eliminamos la imagen de la carpeta upload
+        fs.unlinkSync(path.resolve(__dirname,"../../public/uploads/avatars",deleted.image))
         let finalUsers = allUsers.filter(oneUser => oneUser.id != id);
         fs.writeFileSync(directory,JSON.stringify(finalUsers,null,2));
         return true;
