@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- Head -->
+ <%- include('./includes/head') %> 
+
+<body>
+    <!-- Header -->
+    <%- include('./includes/header') %> 
+
+ 
+    <main>
+        <section class="crearProducto">
+            <button class="boton"><a href="/register">Registrar Usuario</a></button>
+        </section>
+        <section >  
+            <h6>Usuarios</h6>
+            <div class="varitems">
+                <% list.forEach(users =>  { %>
+                <article> 
+                    
+                    <img src="../uploads/avatars/<%=users.avatar%>" class="imgProducto" ></a>
+                    <h3 class="name"><%=users.firstName%> <%=users.lastName%></h3>
+                    <p class="price">Email: <%=users.email%></p>
+                    <p class="stock">Provincia: <%=users.provincia%></p>
+                    <p><button class="verProducto"><a href="/users/userProfile/<%= users.id %>">Ver Profile</a></button></p>
+                </article>
+                
+                <% } ) %>
+            </div>
+        </section>
+    </main>
+   <!-- Footer -->
+   <%- include('./includes/footer')%> 
+</body>
+
+</html>

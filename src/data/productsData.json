@@ -8,5 +8,18 @@
     "image": "image-1625434467135.jpg",
     "price": "1750",
     "stock": "8"
+  },
+  {
+    "id": 2,
+    "name": "Lentes LG",
+    "description": "La mejor potección para tus días de aventura",
+    "category": "1",
+    "colors": "2",
+    "image": [
+      "image-1627066331176.png",
+      "image-1627066331187.png"
+    ],
+    "price": "1250",
+    "stock": "300"
   }
 ]

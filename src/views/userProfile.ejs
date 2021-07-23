@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head -->
+    <%- include('./includes/head') %>
+
+<body>
+    <!-- Header -->
+    <%- include('./includes/header') %>   
+    <main>
+        <section class="producto">
+            <article class="productIMG">
+                <img class="imgsup" src="../../uploads/avatars/<%=listToShow.avatar%>" alt="avatar.jpg">
+                <div class="perspectivas">
+                    <div>Img1</div>
+                    <div>Img2</div>
+                    <div>Img3</div>
+                </div> 
+            </article>
+            <article class="detalleproducto">
+                <div class="datos">
+                    <h3>Nombre y Apellidos: <%= listToShow.fullName%></h3>
+                    <h3>Nombre de Usuario: <%= listToShow.userName%></h3>
+                    <h3>Status Admin: </h3><%= listToShow.admin %>
+                </div>
+                <div class="cart">
+                <!--Cantidad:
+                    <input type="number" placeholder="1" maxlength="3">
+                    <button class="btn-add-cart"><a href="/product/cart/<%= listToShow.id %>"><span class="fa fa-shopping-cart"></span></a></button>
+                -->    
+                    <button class="btn-add-cart"><a href="/users/edit/<%= listToShow.id %>"><span class="fas fa-edit"></span></a> </button>
+                    <form  class="btn-add-cart" type="submit" action="/users/userDelete/<%= listToShow.id %>?_method=DELETE" method="post">
+                        <button class="btn-trash" ><span class="fas fa-trash"></span></button>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <section class="OtrosProd">
+
+        </section>
+
+
+
+        
+    </main>
+    <!-- Footer -->
+<%- include('./includes/footer')%>   
+</body>
+
+</html>

@@ -20,8 +20,13 @@ const upload = multer({storage:dest});
 
 // Seteando la ruta de vista
 router.get('/register', userController.register);
+router.get('/users', userController.show); // listado de usuarios
+router.get('/users/userProfile/:id', userController.userProfile); // Perfil del ususario
 router.get('/login', userController.login);
 router.post('/', upload.single('avatar'), userController.save);
+router.get('/users/edit/:id', userController.userEdit); // formulario de edición de usuario
+router.put('/users/update/:id', upload.single('avatar'), userController.update); 
+router.delete('/users/userDelete/:id', userController.userDelete); // acción de borrar usuario
 
 // Exports Router
 module.exports = router;

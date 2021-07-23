@@ -22,31 +22,31 @@
     
     <main>
        
-        <form action="/" method="POST" class="register-form" enctype="multipart/form-data">
-            <h2>Para ser parte del mundo LookinGood, por favor completá tus datos <i class="far fa-hand-point-down"></i></h2>
+        <form action="/users/update/<%=listToEdit.id%>?_method=PUT" method="post" class="register-form" enctype="multipart/form-data">
+            <h2>Edición de usuarios, por favor completar los datos <i class="far fa-hand-point-down"></i></h2>
             <fieldset class="register-field">
                 <label for="fullName">NOMBRE Y APELLIDO</label>
-                <input type="text" name="fullName" id="fullName" placeholder="Nombre y apellido" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios" >
+                <input type="text" name="fullName" id="fullName" placeholder="Nombre y apellido" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios" value="<%= listToEdit.fullName %>">
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="userName">NOMBRE DE USUARIO</label>
-                <input type="text" name="userName" id="userName" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios" >                  
+                <input type="text" name="userName" id="userName" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios" value="<%= listToEdit.userName %>">                  
             </fieldset>  
 
             <fieldset class="register-field">
                 <label for="dni">NUMERO DE DOCUMENTO</label>
-                <input type="text" name="dni" id="dni" placeholder="Dni" required pattern="{1,50}" title="ingresa tu documento sin puntos" >                  
+                <input type="text" name="dni" id="dni" placeholder="Dni" required pattern="{1,50}" title="ingresa tu documento sin puntos" value="<%= listToEdit.dni %>">                  
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="email">CORREO ELECTRONICO</label>
-                <input type="email" name="email" id="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >                  
+                <input type="email" name="email" id="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value="<%= listToEdit.email %>">                  
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="domicilio"> DOMICILIO</label>
-                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required pattern="[A-Za-z0-9]+" title="usar solo minúsculas y números sin espacios" >                  
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required pattern="[A-Za-z0-9]+" title="usar solo minúsculas y números sin espacios" value="<%= listToEdit.domicilio %>">                  
                 <label> PROVINCIA</label>
                 
                 <select name="provincia">           
@@ -57,7 +57,7 @@
                     %>
                     <% for (const oneProvince of provinces) { %>
                         <option 
-                            value="<%= oneProvince %>"> 
+                            value="<%= oneProvince %>" selected="selected"> 
                             <%= oneProvince %> 
                         </option>
                     <% } %>

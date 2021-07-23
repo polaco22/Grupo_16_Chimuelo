@@ -29,6 +29,7 @@ const userModel = {
         let newUser =  {
             id: this.generateId(),
             ...userData,
+            avatar: typeof file === 'undefined' ? "default.jpg" : file.filename,
             password: bcryptjs.hashSync(userData.password,10),
             confirmarContraseña: bcryptjs.hashSync(userData.password,10),
             admin: String(userData.email).includes("@lookingood") ? true : false,
@@ -37,25 +38,24 @@ const userModel = {
         fs.writeFileSync(directory,JSON.stringify(allUsers,null,2));
         return true;
     },
-    update: function (userData,file, id) {
+    edit: function (userData,file, id) {
         const directory = path.resolve(__dirname,"../data","usersData.json")
         let allUsers = this.all();
         allUsers.map(oneUser => {
             if (oneUser.id == id) {
-                oneUser.firstName = userData.firstName,
-                oneUser.lastName = userData.lastName,
+                oneUser.fullName = userData.fullName,
+                oneUser.userName = userData.userName,
                 oneUser.email = userData.email,
-                oneUser.password = bcrypt.hashSync(userData.password,10),
+                oneUser.password = bcryptjs.hashSync(userData.password,10),
                 oneUser.dni = userData.dni,
                 oneUser.provincia = userData.provincia,
-                oneUser.category = userData.category,
                 oneUser.avatar = typeof file === 'undefined' ? "default.jpg" : file.filename,
                 oneUser.admin = String(userData.email).includes("@lookingood") ? true : false;
                 return oneUser
             }
             return oneUser
         })
-        fs.writeFileSync(directory,JSON.stringify(oneUser,null,2))
+        fs.writeFileSync(directory,JSON.stringify(allUsers,null,2))
         return true;
     },
     delete: function (id) {
@@ -63,7 +63,7 @@ const userModel = {
         let allUsers = this.all();
         let deleted = this.one(id);
         // eliminamos la imagen de la carpeta upload
-        fs.unlinkSync(path.resolve(__dirname,"../../public/uploads/avatars",deleted.image))
+        fs.unlinkSync(path.resolve(__dirname,"../../public/uploads/avatars", deleted.avatar))
         let finalUsers = allUsers.filter(oneUser => oneUser.id != id);
         fs.writeFileSync(directory,JSON.stringify(finalUsers,null,2));
         return true;

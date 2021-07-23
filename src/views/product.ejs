@@ -18,7 +18,11 @@
                 <% list.forEach(products =>  { %>
                 <article> 
                     
-                    <img src="../uploads/products/<%=products.image%>" class="imgProducto" alt="fotoDeAnteojo.jpg"></a>
+                    <% if (typeof products.image === 'object') { %>
+                    <img src="../uploads/products/<%=products.image[0]%>" class="imgProducto" alt="fotoDeAnteojo.jpg"></a>
+                    <% } else { %>
+                    <img src="../uploads/products/<%=products.image%>" class="imgProducto" alt="fotoDeAnteojo.jpg"></a>    
+                    <% } %> 
                     <h3 class="name"><%=products.name%></h3>
                     <p class="price">Precio: $<%=products.price%></p>
                     <p class="stock">Stock: <%=products.stock%></p>
