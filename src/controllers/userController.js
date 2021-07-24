@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const user = require('../models/userModel');
-
+const {validationResult} = require('express-validator');
 
 
 const userController = {
@@ -18,8 +18,25 @@ const userController = {
         res.render('login')
     },
     save: (req,res) => {
-        let result = user.create(req.body, req.file);
-        return result == true ? res.redirect ('/users') : res.send('No cargaste nada');
+        let errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            res.render('register', { errors: errors.mapped(), old: req.body})
+        }
+        user.create(req.body, req.file);
+        return res.redirect ('/login');
+    },
+    acess: (req, res) =>  {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+        return res.render("login",{ errors: errors.mapped(), old:req.body });
+        }else{
+        let userModel = user.findByEmail(req.body.email);
+        if(req.body.remember){
+            res.cookie("email",req.body.email,{maxAge:300000})
+        }
+        req.session.user = userModel;
+        return res.redirect("/")
+        }
     },
     userEdit: (req, res) => {
         res.render('userEdit', {listToEdit: user.one(req.params.id)})

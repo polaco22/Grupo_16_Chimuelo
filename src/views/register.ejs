@@ -18,35 +18,43 @@
             </a>
         </figure>
     </header>
-  
+
     
     <main>
-       
-        <form action="/" method="POST" class="register-form" enctype="multipart/form-data">
+        <form action="/save" method="POST" class="register-form" enctype="multipart/form-data">
             <h2>Para ser parte del mundo LookinGood, por favor completá tus datos <i class="far fa-hand-point-down"></i></h2>
+            <% if(locals.errors && errors.email) { %>
+                <h4 style = color:red> <%= errors.email.msg %> </h4>
+            <%  } %>   
+            <% if(locals.errors && errors.fullName) { %>
+                <h4 style = color:red> <%= errors.fullName.msg %> </h4>
+            <%  } %> 
+            <% if(locals.errors && errors.userName) { %>
+                <h4 style = color:red> <%= errors.userName.msg %> </h4>
+            <%  } %>
             <fieldset class="register-field">
                 <label for="fullName">NOMBRE Y APELLIDO</label>
-                <input type="text" name="fullName" id="fullName" placeholder="Nombre y apellido" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios" >
+                <input type="text" name="fullName" id="fullName" placeholder="Nombre y apellido" value='<%= locals.old && old.fullName ? old.fullName : '' %>'>
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="userName">NOMBRE DE USUARIO</label>
-                <input type="text" name="userName" id="userName" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios" >                  
+                <input type="text" name="userName" id="userName" placeholder="Nombre de Usuario" value='<%= locals.old && old.userName ? old.userName : '' %>'>                  
             </fieldset>  
 
             <fieldset class="register-field">
                 <label for="dni">NUMERO DE DOCUMENTO</label>
-                <input type="text" name="dni" id="dni" placeholder="Dni" required pattern="{1,50}" title="ingresa tu documento sin puntos" >                  
+                <input type="text" name="dni" id="dni" placeholder="Dni" value='<%= locals.old && old.dni ? old.dni : '' %>'>                  
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="email">CORREO ELECTRONICO</label>
-                <input type="email" name="email" id="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >                  
-            </fieldset> 
+                <input type="email" name="email" id="email" placeholder="E-mail" value='<%= locals.old && old.email ? old.email : '' %>'>              
+            </fieldset>     
 
             <fieldset class="register-field">
                 <label for="domicilio"> DOMICILIO</label>
-                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required pattern="[A-Za-z0-9]+" title="usar solo minúsculas y números sin espacios" >                  
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" value='<%= locals.old && old.domicilio ? old.domicilio : '' %>'>                  
                 <label> PROVINCIA</label>
                 
                 <select name="provincia">           
@@ -57,27 +65,27 @@
                     %>
                     <% for (const oneProvince of provinces) { %>
                         <option 
-                            value="<%= oneProvince %>"> 
+                            value="<%= oneProvince %>"selected="selected"> 
                             <%= oneProvince %> 
                         </option>
                     <% } %>
                 </select>
-               
+            
                 <label>CIUDAD</label>
                 <select name="ciudad">
                     <option value="#">S/D</option>
                 </select>
-              
+            
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="password">CONTRASEÑA</label>
-                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
+                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña">                  
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="confirmarContraseña">CONFIRME SU CONTRASEÑA</label>
-                <input type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmá tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
+                <input type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmá tu contraseña">                  
             </fieldset> 
 
             <h5>Subí tu avatar</h5>

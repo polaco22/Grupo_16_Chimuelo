@@ -19,25 +19,31 @@
             </a>
         </figure> 
     </header>
-   
+
     
     <main>
         
         <form action="/" method="POST" class="register-form">
             <h2>Ingresá aquí <i class="far fa-hand-point-down"></i></h2>
+            <% if(locals.errors && errors.email) { %>
+                <h4 style = color:red> <%= errors.email.msg %> </h4>
+            <%  } %>
+            <% if(locals.errors && errors.password) { %>
+                <h4 style = color:red> <%= errors.password.msg %> </h4>
+            <%  } %>
             <fieldset class="register-field">
                 <label for="google">INGRESA CON TU CUENTA GMAIL</label>
                 <input type="text" name="google" id="google" placeholder="Ingresá con GOOGLE">
             </fieldset> 
 
             <fieldset class="register-field">
-                <label for="name">CORREO ELECTRONICO O USUARIO</label>
-                <input type="text" name="nombre" id="name" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">
+                <label for="email">CORREO ELECTRONICO O USUARIO</label>
+                <input type="email" name="email" id="email" placeholder="Nombre de Usuario">
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="password">CONTRASEÑA</label>
-                <input type="password" name="password" id="password" placeholder="Ingresá tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
+                <input type="password" name="password" id="password" placeholder="Ingresá tu contraseña">                  
             </fieldset>
 
             

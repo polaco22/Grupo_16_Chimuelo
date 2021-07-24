@@ -35,8 +35,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 600px;
-  padding: 5px 25px;
+  width: 100%;
 }
 
 .imgProducto{

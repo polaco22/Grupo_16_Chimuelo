@@ -31,9 +31,10 @@ header{
 }
 
 nav {
-  background-color: #111
+  background-color: #111;
   color: white;    
 }
+
 .nav-bar{
     display: none;  
 }

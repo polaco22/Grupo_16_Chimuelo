@@ -21,5 +21,29 @@
     ],
     "price": "1250",
     "stock": "300"
+  },
+  {
+    "id": 3,
+    "name": "Tokyo",
+    "description": "Japone",
+    "category": "1",
+    "colors": "1",
+    "image": [
+      "image-1627133859172.jpg"
+    ],
+    "price": "1",
+    "stock": "1"
+  },
+  {
+    "id": 4,
+    "name": "nuevo",
+    "description": "nuevo",
+    "category": "1",
+    "colors": "3",
+    "image": [
+      "image-1627135308303.jpg"
+    ],
+    "price": "-45",
+    "stock": "-15"
   }
 ]
