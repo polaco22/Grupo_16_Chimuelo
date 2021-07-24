@@ -37,7 +37,7 @@ body{
 }
 
 .perspectivas {
-    display: none;
+    display: flex;
 }
 
 .datos {
