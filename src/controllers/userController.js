@@ -21,20 +21,21 @@ const userController = {
         let errors = validationResult(req);
         if (!errors.isEmpty()) {
             res.render('register', { errors: errors.mapped(), old: req.body})
-        }
+        } else {
         user.create(req.body, req.file);
         return res.redirect ('/login');
+        }
     },
     acess: (req, res) =>  {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
-        return res.render("login",{ errors: errors.mapped(), old:req.body });
+            return res.render("login",{ errors: errors.mapped(), old:req.body });
         }else{
-        let userModel = user.findByEmail(req.body.email);
-        if(req.body.remember){
-            res.cookie("email",req.body.email,{maxAge:300000})
+            let userToSession = user.findByEmail(req.body.email);
+            if(req.body.remember){
+                res.cookie("email",req.body.email,{maxAge:300000})
         }
-        req.session.user = userModel;
+        req.session.user = userToSession;
         return res.redirect("/")
         }
     },

@@ -5,12 +5,15 @@ const app = express();
 const method = require('method-override');
 const session = require('express-session');
 const cookies = require('cookie-parser');
+const userMiddleware = require('./middlewares/userMiddleware');
 
 
 // Configuración y seteo de Server
 app.use(express.static(path.resolve(__dirname,"../public")));
 app.use(session({secret: 'lookingood', resave: false, saveUninitialized: true}));
 app.use(cookies());
+
+app.use(userMiddleware);
 
 
 app.set('port', process.env.PORT || 3000);

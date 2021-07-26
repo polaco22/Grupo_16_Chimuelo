@@ -1,17 +1,31 @@
 [
   {
-    "id": 1,
-    "fullName": "Prueba1",
-    "userName": "Probador1",
-    "dni": "11111111",
-    "email": "prueba1@probando.com",
-    "domicilio": "prueba123",
-    "provincia": "San Juan",
+    "id": 2,
+    "fullName": "nacho olazabal",
+    "userName": "nacho",
+    "dni": "32800276",
+    "email": "ignacioolazabal@lookingood.com",
+    "domicilio": "lasheras1180",
+    "provincia": "Ciudad de Buenos Aires",
     "ciudad": "#",
-    "password": "$2a$10$odGcOQjaSn108yfVyOmmbud5IMClaPMFVzEoH1xETXx0pZofFKYT2",
-    "confirmarContraseña": "$2a$10$d5EQ0eFbrjr2k/aOc5.XreJcEdFkQXFcEnLyW3N/jJnDHxnJnxe0u",
+    "password": "$2a$10$z2HkHBZt0FrCXTMq68Wp..GUlZxdD7JjHrOfBww/sIYrwdQkMzdFS",
+    "confirmarContraseña": "$2a$10$zIFQMsX76x7zoE4YezD90.8gJvVwW9luaerPm7hS0vMwDCYMKbySy",
     "terminos": "on",
-    "avatar": "avatar-1627159004218.jpg",
+    "avatar": "avatar-1627261543949.jpg",
+    "admin": true
+  },
+  {
+    "id": 3,
+    "fullName": "prueba1",
+    "userName": "prueba1",
+    "dni": "11111111",
+    "email": "prueba@gmail.net",
+    "domicilio": "lasheras1180",
+    "provincia": "Catamarca",
+    "ciudad": "#",
+    "password": "$2a$10$d2QntJBlORbs1/IEc2.mb.cmo9e/zg0mmTfu7KdT9C1JSBe4ctoOq",
+    "confirmarContraseña": "$2a$10$jw2.LxgqwYGMwrEDxH7gFuDgZWqi3cQxcIKO1cVTOeq9L8bI48KzS",
+    "avatar": "default.jpg",
     "admin": false
   }
 ]
