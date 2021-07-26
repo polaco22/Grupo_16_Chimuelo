@@ -17,11 +17,11 @@
         </ul>
         <ul>
             <% if (user && user.admin) { %> 
-                <li><a href="/users"><p>Hola!<% locals.user.fullname%> Tu eres admin</p></a></li>
+                <li><a href="/users"><p>Hola! <%= locals.user.userName%> Tu eres admin</p></a></li>
                 <li><a href="/register"><i class="far fa-user"></i></a></li>
                 <li><a href="/product/cart/:id"><i class="fas fa-shopping-cart"></i></a></li> 
             <% } else if (user) { %>  
-                <li><p>Bienvenido!<% locals.user.userName%></p></li>
+                <li><p>Bienvenido! <%= locals.user.userName%></p></li>
                 <li><a href="/register"><i class="far fa-user"></i></a></li>
                 <li><a href="/product/cart/:id"><i class="fas fa-shopping-cart"></i></a></li>  
             <% } else { %>  
