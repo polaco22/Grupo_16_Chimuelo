@@ -49,7 +49,12 @@ const userController = {
     userDelete: (req, res) => {
         let result = user.delete(req.params.id);
         return result == true ? res.redirect ('/users') : res.send('No eliminaste nada'); 
-    }    
+    },
+    logout: (req, res) => {
+		res.clearCookie('email');
+		req.session.destroy();
+		return res.redirect('/');
+	} 
 }
 
 module.exports = userController;

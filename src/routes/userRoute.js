@@ -36,6 +36,7 @@ router.post('/save', [upload.single('avatar'), validateRegister], userController
 router.post('/', validateLogIn, userController.acess);
 router.put('/users/update/:id', upload.single('avatar'), userController.update); 
 router.delete('/users/userDelete/:id', userController.userDelete); // acción de borrar usuario
+router.get('/logout', userController.logout);
 
 // Exports Router
 module.exports = router;
