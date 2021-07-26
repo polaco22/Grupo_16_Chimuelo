@@ -72,6 +72,7 @@ nav {
     padding: 0 5px;
     overflow: hidden;
     justify-content: space-around;
+    align-items: center;
   }
   
   .nav-bar ul li a{
