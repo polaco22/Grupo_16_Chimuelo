@@ -27,5 +27,20 @@
     "confirmarContraseña": "$2a$10$jw2.LxgqwYGMwrEDxH7gFuDgZWqi3cQxcIKO1cVTOeq9L8bI48KzS",
     "avatar": "default.jpg",
     "admin": false
+  },
+  {
+    "id": 4,
+    "fullName": "fede",
+    "userName": "usuariofede",
+    "dni": "34532856",
+    "email": "federico.wagner@hotmail.com",
+    "domicilio": "asd39",
+    "provincia": "Buenos Aires",
+    "ciudad": "#",
+    "password": "$2a$10$q3osZ/1aN.X8ofD37MGgAeNsaj5e8XVGyN05NL.LftY7eu5jvcIFC",
+    "confirmarContraseña": "$2a$10$3KZz/nDmjl9dMwlsN1YcUOyVxQsW1HDUeh/L01tL2MHlj/en56CwC",
+    "terminos": "on",
+    "avatar": "avatar-1627336103925.jpg",
+    "admin": true
   }
 ]

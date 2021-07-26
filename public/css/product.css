@@ -34,6 +34,7 @@ body{
 .varitems {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
@@ -43,13 +44,13 @@ body{
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  max-width: 400px;
+  width: 330px;
   padding: 5px 25px;
 }
 
 article {
-  max-width: 800px;
-  padding: 2px 16px;
+  width: 100%;
+  padding: 2px;
 }
 .name{
   color: #003ef2;
@@ -83,7 +84,7 @@ article {
   font-size: 16px;
   margin: 4px 2px;
   align-content: center;
-  width: 95%;
+  width: 100%;
   opacity: 0.6;
   transition: 0.3s;
 }
@@ -103,5 +104,33 @@ h6 {
 /* =========== media tablet ================== */
 
 @media (min-width: 769px) {
-  
+  .verProducto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    background-color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 40px;
+    align-content: center;
+    width: 70%;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  article {
+    width: 30%;
+    padding: 2px;
+  }
+  .imgProducto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    width: 240px;
+    padding: 5px 25px;
+  }
   }
