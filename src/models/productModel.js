@@ -21,8 +21,8 @@ const model = {
             name: data.name,
             description: data.description,
             category: data.category,
-            colors: data.colors,//.map(color => parseInt(color))
-            image: typeof files === 'undefined' ? "default.jpg" : files.map(image => image.filename),
+            colors: data.colors,
+            image: typeof files === "object" && files.length > 0 ? files.map(image => image.filename) : ["default.jpg"],
             price: data.price,
             stock: data.stock
         }    
@@ -39,7 +39,7 @@ const model = {
                 producto.description = data.description,
                 producto.category = data.category,
                 producto.colors = data.colors,
-                producto.image = typeof files === 'undefined' ? "default.jpg" : files.map(image => image.filename),
+                producto.image = typeof files === "object" && files.length > 0 ? files.map(image => image.filename) : ["default.jpg"],
                 producto.price = data.price,
                 producto.stock = data.stock
                 return producto
@@ -53,7 +53,7 @@ const model = {
         const directory = path.resolve(__dirname,"../data","productsData.json")
         let productos = this.all();
         let deleted = this.one(id);
-        fs.unlinkSync(path.resolve(__dirname,"../../public/uploads/products",deleted.image))
+        fs.unlinkSync(path.resolve(__dirname,"../../public/uploads/products", deleted.image))
         productos = productos.filter(producto => producto.id != deleted.id)
         fs.writeFileSync(directory,JSON.stringify(productos,null,2));
         return true;

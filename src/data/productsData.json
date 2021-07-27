@@ -1,49 +1,26 @@
 [
   {
     "id": 1,
-    "name": "Anteojo de Sol",
-    "description": "Es la combinación justa entre estilo y protección",
-    "category": "adventure",
-    "colors": "Verde viviente",
-    "image": "image-1625434467135.jpg",
-    "price": "1750",
-    "stock": "8"
-  },
-  {
-    "id": 2,
-    "name": "Lentes LG",
-    "description": "La mejor potección para tus días de aventura",
+    "name": "Producto1",
+    "description": "Detalle1",
     "category": "1",
-    "colors": "2",
+    "colors": "1",
     "image": [
-      "image-1627066331176.png",
-      "image-1627066331187.png"
+      "image-1627399594055.png"
     ],
-    "price": "1250",
-    "stock": "300"
-  },
-  {
-    "id": 3,
-    "name": "Tokyo",
-    "description": "Japone",
-    "category": "2",
-    "colors": "4",
-    "image": [
-      "image-1627337799625.png"
-    ],
-    "price": "1",
-    "stock": "1"
+    "price": "1500",
+    "stock": "250"
   },
   {
     "id": 4,
-    "name": "nuevo",
-    "description": "nuevo",
+    "name": "producto 5",
+    "description": "name 5",
     "category": "2",
-    "colors": "4",
+    "colors": "2",
     "image": [
-      "image-1627337843738.png"
+      "default.jpg"
     ],
-    "price": "-45",
-    "stock": "-15"
+    "price": "20",
+    "stock": "29"
   }
 ]
