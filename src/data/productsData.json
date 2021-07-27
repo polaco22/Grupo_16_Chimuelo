@@ -10,17 +10,5 @@
     ],
     "price": "1500",
     "stock": "250"
-  },
-  {
-    "id": 4,
-    "name": "producto 5",
-    "description": "name 5",
-    "category": "2",
-    "colors": "2",
-    "image": [
-      "default.jpg"
-    ],
-    "price": "20",
-    "stock": "29"
   }
 ]

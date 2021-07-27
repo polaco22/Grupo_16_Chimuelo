@@ -53,8 +53,11 @@ const model = {
         const directory = path.resolve(__dirname,"../data","productsData.json")
         let productos = this.all();
         let deleted = this.one(id);
-        fs.unlinkSync(path.resolve(__dirname,"../../public/uploads/products", deleted.image))
+        for (let i = 0; i < deleted.image.length; i++) {
+        fs.unlinkSync(path.resolve(__dirname,"../../public/uploads/products", deleted.image[i]))
+        }
         productos = productos.filter(producto => producto.id != deleted.id)
+
         fs.writeFileSync(directory,JSON.stringify(productos,null,2));
         return true;
     }
