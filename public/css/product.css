@@ -44,12 +44,13 @@ body{
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  width: 330px;
+  width: 319px;
   padding: 5px 25px;
+  align-items: center;
 }
 
 article {
-  width: 100%;
+  width: 319px;
   padding: 2px;
 }
 .name{
@@ -115,9 +116,9 @@ h6 {
     padding: 16px 32px;
     text-align: center;
     font-size: 16px;
-    margin: 4px 20px;
+    margin: 4px;
     align-content: center;
-    width: 70%;
+    width: 240px;
     opacity: 0.6;
     transition: 0.3s;
   }
