@@ -22,7 +22,8 @@
     
     <main>
         <form action="/save" method="POST" class="register-form" enctype="multipart/form-data">
-            <h2>Para ser parte del mundo LookinGood, por favor completá tus datos <i class="far fa-hand-point-down"></i></h2>
+            <h2>Para ser parte del mundo LookinGood, <br>
+                por favor completá tus datos <i class="far fa-hand-point-down"></i></h2>
             <% if(locals.errors && errors.email) { %>
                 <h4 style = color:red> <%= errors.email.msg %> </h4>
             <%  } %>   
@@ -55,8 +56,9 @@
             <fieldset class="register-field">
                 <label for="domicilio"> DOMICILIO</label>
                 <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" value='<%= locals.old && old.domicilio ? old.domicilio : '' %>'>                  
+            </fieldset> 
+            <fieldset class="register-field-select">  
                 <label> PROVINCIA</label>
-                
                 <select name="provincia">           
                     <option value="" selected disabled>Seleccione una Provincia</option>
                     <%  
@@ -70,13 +72,14 @@
                         </option>
                     <% } %>
                 </select>
-            
+            </fieldset>
+            <fieldset class="register-field-select">  
                 <label>CIUDAD</label>
                 <select name="ciudad">
                     <option value="#">S/D</option>
                 </select>
-            
-            </fieldset> 
+            </fieldset>
+           
 
             <fieldset class="register-field">
                 <label for="password">CONTRASEÑA</label>
@@ -90,12 +93,12 @@
 
             <h5>Subí tu avatar</h5>
             <fieldset class="register-field-pic">
-                <input type="file" name="avatar" accept=".jpg">                    
+                <input type="file" name="avatar" accept=".jpg">                  
             </fieldset> 
 
             <h5>Términos y condiciones</h5>
             <fieldset class="register-field-check">
-                <label for="terminos"><input type="checkbox" name="terminos" id="terminos"> Acepto términos y condiciones</label>                
+                <input type="checkbox" name="terminos" id="terminos"><span>Acepto términos y condiciones</span>                
             </fieldset> 
 
             <fieldset class="register-field">
