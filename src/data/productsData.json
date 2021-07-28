@@ -10,5 +10,42 @@
     ],
     "price": "1500",
     "stock": "250"
+  },
+  {
+    "id": 2,
+    "name": "producto2",
+    "description": "detail2",
+    "category": "1",
+    "colors": "3",
+    "image": [
+      "default.jpg"
+    ],
+    "price": "1500",
+    "stock": "2000"
+  },
+  {
+    "id": 3,
+    "name": "producto 3",
+    "description": "detail3",
+    "category": "2",
+    "colors": "2",
+    "image": [
+      "image-1627430389474.jpg",
+      "image-1627430389480.jpg"
+    ],
+    "price": "2000",
+    "stock": "20"
+  },
+  {
+    "id": 4,
+    "name": "product 5",
+    "description": "detail4",
+    "category": "2",
+    "colors": "3",
+    "image": [
+      "image-1627430708725.jpg"
+    ],
+    "price": "500",
+    "stock": "2"
   }
 ]

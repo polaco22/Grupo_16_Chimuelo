@@ -17,33 +17,27 @@
         </ul>
         <ul>
             <% if (user && user.admin) { %> 
-                <!--<li><a href="/users"><p>Hola! <%= locals.user.userName%> Tu eres admin</p></a></li>
-                -->
                 <div class="dropdown">
-                <button class="dropbtn"><p>Hola! <%= locals.user.userName%> Tu eres admin</p></button>
-                <div class="dropdown-content">
-                <li><a href="/users">Usuarios</a></li>
-                <li><a href="/logout">Cerrar Sesión</a></li>
+                    <button class="dropbtn"><p>Hola! <%= locals.user.userName%> Tu eres admin</p></button>
+                    <div class="dropdown-content">
+                    <li><a href="/users">Usuarios</a></li>
+                    <li><a href="/logout">Cerrar Sesión</a></li>
+                    </div>
                 </div>
-              </div>
-
-                <li><a href="/register"><i class="far fa-user"></i></a></li>
-                <li><a href="/product/cart/:id"><i class="fas fa-shopping-cart"></i></a></li> 
-            <% } else if (user) { %>                
-                
+                    <li><a href="/product/cart/:id"><i class="fas fa-shopping-cart"></i></a></li> 
+            <% } else if (user) { %>                   
                 <div class="dropdown">
                     <button class="dropbtn"><p>Bienvenido! <%= locals.user.userName%></p></button>
                     <div class="dropdown-content">
                     <li><a href="/users/userProfile/<%= locals.user.id%> ">Ver Perfil</a></li>
                     <li><a href="/logout">Cerrar Sesión</a></li>
                     </div>
-                  </div>
-                <li><a href="/register"><i class="far fa-user"></i></a></li>
-                <li><a href="/product/cart/:id"><i class="fas fa-shopping-cart"></i></a></li>  
+                </div>
+                    <li><a href="/product/cart/:id"><i class="fas fa-shopping-cart"></i></a></li>  
             <% } else { %>  
-                <li><a href="/login"><i class="fas fa-glasses"></i></a></li>
-                <li><a href="/register"><i class="far fa-user"></i></a></li>
-                <li><a href="/product/cart/:id"><i class="fas fa-shopping-cart"></i></a></li>       
+                    <li><a href="/login"><i class="fas fa-glasses"></i></a></li>
+                    <li><a href="/register"><i class="far fa-user"></i></a></li>
+                    <li><a href="/product/cart/:id"><i class="fas fa-shopping-cart"></i></a></li>       
             <% } %>
      </ul>
     </nav>
