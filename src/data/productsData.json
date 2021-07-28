@@ -12,18 +12,6 @@
     "stock": "250"
   },
   {
-    "id": 2,
-    "name": "producto2",
-    "description": "detail2",
-    "category": "1",
-    "colors": "3",
-    "image": [
-      "default.jpg"
-    ],
-    "price": "1500",
-    "stock": "2000"
-  },
-  {
     "id": 3,
     "name": "producto 3",
     "description": "detail3",
