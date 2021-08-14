@@ -2,8 +2,8 @@ module.exports =
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "lookingoodDB",
+    "password": "",
+    "database": "lookingood",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
