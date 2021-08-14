@@ -3,6 +3,6 @@ const db = require('../database/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 
-const Color = db.Color;
+const User = db.User;
 
-console.log(Color.findAll());
+User.findAll().then(data => console.log(data));
