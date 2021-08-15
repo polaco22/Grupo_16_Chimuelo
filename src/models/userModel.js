@@ -23,6 +23,9 @@ const userModel = {
     findByEmail: function (email) {
         return this.all().find(user => user.email == email);
     },
+    findByUserName: function (userName) {
+        return this.all().find(user => user.userName == userName);
+    },
     create: function (userData, file) {
         const directory = path.resolve(__dirname,"../data","usersData.json")
         let allUsers = this.all();

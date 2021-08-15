@@ -92,6 +92,7 @@ CREATE TABLE `categories_data` (
 
 LOCK TABLES `categories_data` WRITE;
 /*!40000 ALTER TABLE `categories_data` DISABLE KEYS */;
+INSERT INTO `categories_data` VALUES (1,'Aventura'),(2,'Casual');
 /*!40000 ALTER TABLE `categories_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -115,7 +116,7 @@ CREATE TABLE `colors_data` (
 
 LOCK TABLES `colors_data` WRITE;
 /*!40000 ALTER TABLE `colors_data` DISABLE KEYS */;
-INSERT INTO `colors_data` VALUES (1,'Khaki'),(2,'Maroon'),(3,'Yellow'),(4,'Violet'),(5,'Maroon');
+INSERT INTO `colors_data` VALUES (1,'Azul Electrico'),(2,'Amarillo Vibrante'),(3,'Verde viviente'),(4,'Rojo Naciente');
 /*!40000 ALTER TABLE `colors_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -151,6 +152,7 @@ CREATE TABLE `products_data` (
 
 LOCK TABLES `products_data` WRITE;
 /*!40000 ALTER TABLE `products_data` DISABLE KEYS */;
+INSERT INTO `products_data` VALUES (1,'anteojo GL','detail 1',1,2,'image-1627399594055.png',1250.32,250),(2,'anteojo GL','detail 2',2,3,'image-1627430389474.jpg',2050.32,100);
 /*!40000 ALTER TABLE `products_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -172,7 +174,7 @@ CREATE TABLE `users_data` (
   `ciudad` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `avatar` varchar(50) DEFAULT NULL,
-  `admin` varchar(50) NOT NULL,
+  `admin` boolean NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -183,7 +185,7 @@ CREATE TABLE `users_data` (
 
 LOCK TABLES `users_data` WRITE;
 /*!40000 ALTER TABLE `users_data` DISABLE KEYS */;
-INSERT INTO `users_data` VALUES (1,'Krystyna Dafydd','kdafydd0',8,'kdafydd0@npr.org','7 Farragut Hill','Budapest','Budapest','k0EZGD2aF','Sociis.jpeg','1'),(2,'Latrina Frosdick','lfrosdick1',8,'lfrosdick1@nhs.uk','16701 Waxwing Crossing','Budapest','Budapest','pkBX4kIa','VolutpatIn.xls','0'),(3,'Brigid Akeherst','bakeherst2',8,'bakeherst2@vimeo.com','661 Stoughton Circle','├ûsterg├Âtland','Finsp├Ñng','3PYDwQRj','MattisPulvinarNulla.jpeg','0'),(4,'Dora Larvin','dlarvin3',8,'dlarvin3@ifeng.com','43777 Hudson Crossing','├ûsterg├Âtland','Link├Âping','AAGaIEmFJ','Duis.avi','1'),(5,'Maddi Tipping','mtipping4',8,'mtipping4@xrea.com','73335 Fisk Center','├ûsterg├Âtland','Mj├Âlby','bN4SszM7EAJS','ANibh.avi','1'),(6,'Mason Shoard','mshoard5',8,'mshoard5@home.pl','5 2nd Road','├ûsterg├Âtland','Mj├Âlby','ysEGmf7d','Lobortis.mpeg','0'),(7,'Rosalynd Bowton','rbowton6',8,'rbowton6@cisco.com','55 Warner Road','├ûsterg├Âtland','Link├Âping','osEqRO','VulputateVitaeNisl.mp3','1'),(8,'Stormie Done','sdone7',8,'sdone7@facebook.com','38956 Golden Leaf Terrace','Budapest','Budapest','nlGRzyB','SitAmet.xls','1'),(9,'Dalia Ramlot','dramlot8',8,'dramlot8@unblog.fr','7 North Circle','Distrito Federal','El Mirador','QvHnMPyG','NatoquePenatibus.mp3','0'),(10,'Gorden Wudeland','gwudeland9',8,'gwudeland9@surveymonkey.com','80 Daystar Park','├ûsterg├Âtland','Norrk├Âping','KuEnvd','VolutpatConvallis.ppt','1');
+INSERT INTO `users_data` VALUES (1,'nacho olazabal','nacho',32800276,'ignacioolazabal@lookingood.com','Las Heras 1180','Buenos Aires','Tandil','$2a$10$z2HkHBZt0FrCXTMq68Wp..GUlZxdD7JjHrOfBww/sIYrwdQkMzdFS','avatar-1627261543949.jpg', true),(2,'Maria Carrizo','maru2000',33800841,'maru2000@gmail.com','Colon 3269','Tucuman','Yerba Buena','$2a$10$.mFdgS1oqndSNXWLZFxW0eFVIaPaqpUkewLmi8AZ3TIjnWwyawDlO','default.jpg',false);
 /*!40000 ALTER TABLE `users_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -201,3 +203,4 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-08-14 17:07:14
+

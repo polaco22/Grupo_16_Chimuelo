@@ -33,6 +33,9 @@
             <% if(locals.errors && errors.userName) { %>
                 <h4 style = color:red> <%= errors.userName.msg %> </h4>
             <%  } %>
+            <% if(locals.errors && errors.confirmarContraseña) { %>
+                <h4 style = color:red> <%= errors.confirmarContraseña.msg %> </h4>
+            <%  } %>
             <fieldset class="register-field">
                 <label for="fullName">NOMBRE Y APELLIDO</label>
                 <input type="text" name="fullName" id="fullName" placeholder="Nombre y apellido" value='<%= locals.old && old.fullName ? old.fullName : '' %>'>

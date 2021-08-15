@@ -13,5 +13,13 @@ module.exports = [
             return Promise.reject('El Email ya existe');
             }
             return true
+        }),
+    check('confirmarContraseña')
+        .custom( (value, { req }) => {
+
+            if(req.body.password !== req.body.confirmarContraseña){
+                return Promise.reject('Hubo un error al confirmar su password')
+            }
+            return true;
         })
 ]

@@ -10,6 +10,7 @@ const validateRegister = require('../middlewares/validateRegisterMiddleware');
 const validateLogIn = require('../middlewares/validateLogInMiddleware');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const adminMiddleware = require('../middlewares/adminMiddleware');
+const passMiddleware = require('../middlewares/passMiddleware');
 
 //Multer
 const multer = require('multer');
@@ -25,7 +26,7 @@ let dest = multer.diskStorage({
 const upload = multer({storage:dest});
 
 // Seteando las ruta de vistas
-router.get('/register', userController.register);
+router.get('/register', guestMiddleware, userController.register);
 router.get('/users', adminMiddleware, userController.show); // listado de usuarios solo para quien tenga credencial de adminMiddleware
 router.get('/users/userProfile/:id', userController.userProfile); // perfil de los usuarios
 router.get('/login', guestMiddleware, userController.login); 

@@ -6,7 +6,7 @@
 
 ### Minuta de la reunión
 
-El día Lunes 05 de Junio nos reunimos a traves de la plataforma google-meet
+El día Lunes 05 de Julio nos reunimos a traves de la plataforma google-meet
 para hacer el repaso semanal del equipo en el marcos del proyecto Integrador ***`"LookinGood"`***. 
 
 De la reunión participamos los 3 integrantes del grupo: `Elizabeth, Federico e Ignacio`.
