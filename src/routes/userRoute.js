@@ -10,7 +10,6 @@ const validateRegister = require('../middlewares/validateRegisterMiddleware');
 const validateLogIn = require('../middlewares/validateLogInMiddleware');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const adminMiddleware = require('../middlewares/adminMiddleware');
-const passMiddleware = require('../middlewares/passMiddleware');
 
 //Multer
 const multer = require('multer');
