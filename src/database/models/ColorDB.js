@@ -21,8 +21,7 @@ module.exports = (sequelize, dataTypes) => {
         Color.hasMany(models.Product, {
             as: "products",
             foreignKey:"colors_id",
-        });
-        
-    };
+        });        
+    };    
     return Color;
 }
