@@ -15,14 +15,14 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING,
             allowNull: false,
         },
-        category_id: {
-            type: dataTypes.INTEGER,
-            allowNull: false,
-        },
-        color_id: {
-            type: dataTypes.INTEGER,
-            allowNull: false,
-        },
+        // category_id: {
+        //     type: dataTypes.INTEGER,
+        //     allowNull: false,
+        // },
+        // color_id: {
+        //     type: dataTypes.INTEGER,
+        //     allowNull: false,
+        // },
         image: {
             type: dataTypes.STRING,
         },
@@ -40,5 +40,13 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false,
     };
     const Product = sequelize.define(alias, cols, config);
+
+    // Product.associate = function (models) {
+      
+    //     Product.belongsTo(models.Color, {
+    //         as: "colors",
+    //         foreignKey:"color_id",
+    //     });
+    // };
     return Product;
 }
