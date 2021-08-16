@@ -17,12 +17,12 @@ module.exports = (sequelize, dataTypes) => {
     };
     const Color = sequelize.define(alias, cols, config);
 
-    // Color.associate = function (models) {
-    //     Color.hasMany(models.Product, {
-    //         as: "products",
-    //         foreignKey:"color_id",
-    //     });
+    Color.associate = function (models) {
+        Color.hasMany(models.Product, {
+            as: "products",
+            foreignKey:"colors_id",
+        });
         
-    // };
+    };
     return Color;
 }
