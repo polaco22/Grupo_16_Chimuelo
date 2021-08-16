@@ -21,5 +21,13 @@ module.exports = [
                 return Promise.reject('Hubo un error al confirmar su password')
             }
             return true;
+        }),
+    check('terminos')
+        .custom( (value, { req }) => {
+
+            if(req.body.terminos !== "on"){
+                return Promise.reject('Debe aceptar los términos y condiciones')
+            }
+            return true;
         })
 ]
