@@ -143,8 +143,6 @@ CREATE TABLE `products_data` (
   PRIMARY KEY (`id`),
   KEY `products_data_FK` (`colors_id`),
   KEY `products_data_FK_1` (`category_id`),
-  CONSTRAINT `products_categories(FK)` FOREIGN KEY (`category_id`) REFERENCES `categories_data` (`id`),
-  CONSTRAINT `products_colors(FK)` FOREIGN KEY (`colors_id`) REFERENCES `colors_data` (`id`),
   CONSTRAINT `products_data_FK` FOREIGN KEY (`colors_id`) REFERENCES `colors_data` (`id`),
   CONSTRAINT `products_data_FK_1` FOREIGN KEY (`category_id`) REFERENCES `categories_data` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

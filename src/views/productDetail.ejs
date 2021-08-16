@@ -10,12 +10,12 @@
         <section class="producto">
             <article class="productIMG">
 
-                <% if (listToShow.image.length == 1) { %>
-                    <img class="imgsup" src="../../uploads/products/<%=listToShow.image[0]%>" alt="anteojopapu.jpg">
+                <% if (listToShow.image) { %>
+                    <img class="imgsup" src="../../uploads/products/<%=listToShow.image%>" alt="anteojopapu.jpg">
                 <% } else { %>   
-                    <img class="imgsup" src="../../uploads/products/<%=listToShow.image[0]%>" alt="anteojopapu.jpg">
+                    <img class="imgsup" src="../../uploads/products/<%=listToShow.image%>" alt="anteojopapu.jpg">
                     <div class="perspectivas">
-                        <div><img class="imgsup" src="../../uploads/products/<%=listToShow.image[1]%>" alt="anteojopapu.jpg"></div>
+                        <div><img class="imgsup" src="../../uploads/products/<%=listToShow.image%>" alt="anteojopapu.jpg"></div>
                     </div> 
                 <% } %> 
             </article>

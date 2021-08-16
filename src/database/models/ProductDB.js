@@ -17,11 +17,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         category_id: {
             type: dataTypes.INTEGER,
-            allowNull: false,
         },
         colors_id: {
             type: dataTypes.INTEGER,
-            allowNull: false,
         },
         image: {
             type: dataTypes.STRING,
