@@ -1,3 +1,7 @@
+DROP DATABASE IF EXISTS `lookingood`;
+CREATE DATABASE `lookingood`;
+USE `lookingood`;
+
 -- MySQL dump 10.13  Distrib 5.5.62, for Win64 (AMD64)
 --
 -- Host: localhost    Database: lookingood
