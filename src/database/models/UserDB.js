@@ -43,7 +43,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING,
         },
         admin: {
-            type: dataTypes.BOOLEAN,
+            type: dataTypes.TINYINT,
             allowNull: false,
         }
     };

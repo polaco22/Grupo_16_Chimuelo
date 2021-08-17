@@ -75,16 +75,47 @@ const userController = {
         return res.redirect("/")
         }
     },
-    userEdit: (req, res) => {
-        res.render('userEdit', {listToEdit: user.one(req.params.id)})
+    // userEdit: (req, res) => {
+    //     res.render('userEdit', {listToEdit: user.one(req.params.id)})
+    // },
+    userEdit: async (req, res) => {
+        let user = await db.User.findByPk(req.params.id);
+        res.render('userEdit', {listToEdit: user })
     },
-    update: (req, res) => {
-        let result = user.edit(req.body,req.file,req.params.id);
-        return result == true ? res.redirect ('/users'):res.send('No editaste nada'); 
+    // update: (req, res) => {
+    //     let result = user.edit(req.body,req.file,req.params.id);
+    //     return result == true ? res.redirect ('/users'):res.send('No editaste nada'); 
+    // },
+    update: async function (req, res) {
+        let userId = req.params.id;
+        await db.User.update({
+            fullName: req.body.fullName,
+            userName: req.body.userName,
+            dni: req.body.dni,
+            email: req.body.email,
+            domicilio: req.body.domicilio,
+            provincia: req.body.provincia,
+            ciudad: req.body.ciudad,
+            password: bcryptjs.hashSync(req.body.password,10),
+            avatar: req.file.filename,
+            admin: String(req.body.email).includes("@lookingood") ? true : false,
+        },
+        {where: {
+            id: userId,
+        }});
+        return res.redirect('/users')
     },
-    userDelete: (req, res) => {
-        let result = user.delete(req.params.id);
-        return result == true ? res.redirect ('/users') : res.send('No eliminaste nada'); 
+    // userDelete: (req, res) => {
+    //     let result = user.delete(req.params.id);
+    //     return result == true ? res.redirect ('/users') : res.send('No eliminaste nada'); 
+    // },
+     userDelete: async function (req,res) {
+        let userId = req.params.id;
+        await db.User.destroy(
+        {where: {
+            id: userId,
+        }});
+        return res.redirect('/users')
     },
     logout: (req, res) => {
 		res.clearCookie('email');
