@@ -67,7 +67,7 @@ const userController = {
         if (!errors.isEmpty()) {
             return res.render("login",{ errors: errors.mapped(), old:req.body });
         }else{
-            let userToSession = await db.User.findByPk(req.body.email);
+            let userToSession = await db.User.findOne({where: {email: req.body.email}});
             if(req.body.remember){
                 res.cookie("email",req.body.email,{maxAge:300000})
         }

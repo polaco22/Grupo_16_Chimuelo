@@ -143,6 +143,8 @@ CREATE TABLE `products_data` (
   PRIMARY KEY (`id`),
   KEY `products_data_FK` (`colors_id`),
   KEY `products_data_FK_1` (`category_id`),
+  CONSTRAINT `products_categories(FK)` FOREIGN KEY (`category_id`) REFERENCES `categories_data` (`id`),
+  CONSTRAINT `products_colors(FK)` FOREIGN KEY (`colors_id`) REFERENCES `colors_data` (`id`),
   CONSTRAINT `products_data_FK` FOREIGN KEY (`colors_id`) REFERENCES `colors_data` (`id`),
   CONSTRAINT `products_data_FK_1` FOREIGN KEY (`category_id`) REFERENCES `categories_data` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -174,7 +176,7 @@ CREATE TABLE `users_data` (
   `domicilio` varchar(50) NOT NULL,
   `provincia` varchar(50) NOT NULL,
   `ciudad` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` text NOT NULL,
   `avatar` varchar(50) DEFAULT NULL,
   `admin` boolean NOT NULL,
   PRIMARY KEY (`id`)
@@ -205,4 +207,8 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-08-14 17:07:14
+
+
+
+
 

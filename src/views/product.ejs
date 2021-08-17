@@ -9,7 +9,7 @@
 
     <main>
         <section class="crearProducto">
-            <% if (user && user.admin) { %>
+            <% if (user && user.admin == 1) { %>
             <button class="boton"><a href="/product/create/<%= list.id %>">Crear Producto</a></button>
             <% } %> 
         </section>

@@ -16,7 +16,7 @@
             <li><a href="#">Contacto</a></li>
         </ul>
         <ul>
-            <% if (user && user.admin) { %> 
+            <% if (user && user.admin == 1) { %> 
                 <div class="dropdown">
                     <button class="dropbtn"><p>Hola! <%= locals.user.userName%> Tu eres admin</p></button>
                     <div class="dropdown-content">

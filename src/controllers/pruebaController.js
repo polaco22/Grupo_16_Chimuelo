@@ -5,4 +5,4 @@ const { Op } = require("sequelize");
 
 const Product = db.Product;
 
-Product.findByPk(2).then(data => console.log(data.colors_id));
+Product.findAll().then(data => console.log(data));
