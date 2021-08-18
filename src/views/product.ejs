@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
- <!-- Head -->
- <%- include('./includes/head') %> 
+<!-- Head -->
+<%- include('./includes/head') %> 
 
 <body>
     <!-- Header -->
@@ -20,7 +20,7 @@
                 <article> 
                     
                     <% if (typeof products.image === 'object') { %>
-                    <img src="../uploads/products/<%=products.image[0]%>" class="imgProducto" alt="fotoDeAnteojo.jpg"></a>
+                    <img src="../uploads/products/<%=products.image%>" class="imgProducto" alt="fotoDeAnteojo.jpg"></a>
                     <% } else { %>
                     <img src="../uploads/products/<%=products.image%>" class="imgProducto" alt="fotoDeAnteojo.jpg"></a>    
                     <% } %> 

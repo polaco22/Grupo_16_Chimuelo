@@ -2,55 +2,53 @@
 <html lang="en">
     <!-- Head -->
     <%- include('./includes/head') %>
-
+    <link href="/css/productCart.css" rel="stylesheet">
 <body>
     <!-- Header -->
     <%- include('./includes/header') %> 
 
     <main>
         <div class="titulocarrito">Carrito de compras</div>
-            <section class="inventario">
-                <div class="item1">
+            <div class="inventario">
+                <div class="items">
                     <div class="contimg">
                         <img class="cartimg" src="/img/levelGod.jpg">
                     </div>
                     <div class="continfo">
-                        <a><strong>Anteojos "Level God"</strong></a>
-                        <a><strong>$1500</strong></a>
+                        <h5>Anteojos "Level God"</h5>
+                        <h5>$1500</h5>
                     </div>
                     <div class="conticon">
                         <i class="fas fa-times"></i>
                     </div>
                 </div>
-                <div class="item2">
+                <div class="items">
                     <div class="contimg">
                         <img class="cartimg" src="/img/scape.jpg">
                     </div>
                     <div class="continfo">
-                        <a><strong>Anteojos "Scape"</strong></a>
-                        <a><strong>$1600</strong></a>
+                        <h5>Anteojos "Product 2"</h5>
+                        <h5>$1200</h5>
                     </div>
                     <div class="conticon">
                         <i class="fas fa-times"></i>
                     </div>
                 </div>
-                <div class="item3">
+                <div class="items">
                     <div class="contimg">
                         <img class="cartimg" src="/img/marmolado.jpg">
                     </div>
                     <div class="continfo">
-                        <a><strong>Anteojos "Marmolado"</strong></a>
-                        <a><strong>$1200</strong></a>
+                        <h5>Anteojos "Product 3"</h5>
+                        <h5>$1200</h5>
                     </div>
                     <div class="conticon">
                         <i class="fas fa-times"></i>
                     </div>
                 </div>
-            </section>
+            </div>
             <section class="cart">
-                <a><strong>Subtotal:</strong> $4.300</a>
-                <a><strong>Costo de Envio:</strong> $600</a>
-                <a><strong>TOTAL:</strong> $4.900 </a>
+                <h5 class="textoProducto">TOTAL: $4.900 </h5>
             </section>
             <section class="checkout">
                 <button class="custom-btn btn-10">Elegir mas productos</button>

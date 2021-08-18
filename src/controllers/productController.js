@@ -100,7 +100,7 @@ const productController = {
         }});
         return res.redirect('/product')
     },
-    productCart: (req,res) => { res.send('Carrito en ensamble')
+    productCart: (req,res) => { res.render('productCart')
     },
 }
 
