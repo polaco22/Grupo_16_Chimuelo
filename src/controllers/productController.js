@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+// constantes JSON
 //const product = require('../models/productModel');
 //const colorModel = require('../models/colorModel.js');
 //const categoryModel = require('../models/categoryModel.js');
@@ -8,6 +9,7 @@ const db = require('../database/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 
+// constantes DB
 // const products = db.Product;
 // const colors =  db.Color;
 // const categories = db.Category;
@@ -48,7 +50,7 @@ const productController = {
             res.redirect('/')}
         catch(error) {console.log(error)}
     },
-    // productEdit: (req, res) => {
+    // productEdit: (req, res) => {        
     //     res.render('productEdit', {listToEdit: product.one(req.params.id), colors:colorModel.all(),categories:categoryModel.all()} )
     productEdit: async function (req, res) {
         let product = await db.Product.findByPk(req.params.id);

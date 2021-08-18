@@ -1,3 +1,4 @@
+
 DROP DATABASE IF EXISTS `lookingood`;
 CREATE DATABASE `lookingood`;
 USE `lookingood`;
@@ -96,7 +97,6 @@ CREATE TABLE `categories_data` (
 
 LOCK TABLES `categories_data` WRITE;
 /*!40000 ALTER TABLE `categories_data` DISABLE KEYS */;
-INSERT INTO `categories_data` VALUES (1,'Aventura'),(2,'Casual');
 /*!40000 ALTER TABLE `categories_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -120,7 +120,6 @@ CREATE TABLE `colors_data` (
 
 LOCK TABLES `colors_data` WRITE;
 /*!40000 ALTER TABLE `colors_data` DISABLE KEYS */;
-INSERT INTO `colors_data` VALUES (1,'Azul Electrico'),(2,'Amarillo Vibrante'),(3,'Verde viviente'),(4,'Rojo Naciente');
 /*!40000 ALTER TABLE `colors_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -156,7 +155,6 @@ CREATE TABLE `products_data` (
 
 LOCK TABLES `products_data` WRITE;
 /*!40000 ALTER TABLE `products_data` DISABLE KEYS */;
-INSERT INTO `products_data` VALUES (1,'anteojo GL','detail 1',1,2,'image-1627399594055.png',1250.32,250),(2,'anteojo GL','detail 2',2,3,'image-1627430389474.jpg',2050.32,100);
 /*!40000 ALTER TABLE `products_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -180,7 +178,7 @@ CREATE TABLE `users_data` (
   `avatar` varchar(50) DEFAULT NULL,
   `admin` boolean NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -189,7 +187,6 @@ CREATE TABLE `users_data` (
 
 LOCK TABLES `users_data` WRITE;
 /*!40000 ALTER TABLE `users_data` DISABLE KEYS */;
-INSERT INTO `users_data` VALUES (1,'nacho olazabal','nacho',32800276,'ignacioolazabal@lookingood.com','Las Heras 1180','Buenos Aires','Tandil','$2a$10$z2HkHBZt0FrCXTMq68Wp..GUlZxdD7JjHrOfBww/sIYrwdQkMzdFS','avatar-1627261543949.jpg', true),(2,'Maria Carrizo','maru2000',33800841,'maru2000@gmail.com','Colon 3269','Tucuman','Yerba Buena','$2a$10$.mFdgS1oqndSNXWLZFxW0eFVIaPaqpUkewLmi8AZ3TIjnWwyawDlO','default.jpg',false);
 /*!40000 ALTER TABLE `users_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -207,8 +204,3 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-08-14 17:07:14
-
-
-
-
-
