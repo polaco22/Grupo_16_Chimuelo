@@ -142,8 +142,6 @@ CREATE TABLE `products_data` (
   PRIMARY KEY (`id`),
   KEY `products_data_FK` (`colors_id`),
   KEY `products_data_FK_1` (`category_id`),
-  CONSTRAINT `products_categories(FK)` FOREIGN KEY (`category_id`) REFERENCES `categories_data` (`id`),
-  CONSTRAINT `products_colors(FK)` FOREIGN KEY (`colors_id`) REFERENCES `colors_data` (`id`),
   CONSTRAINT `products_data_FK` FOREIGN KEY (`colors_id`) REFERENCES `colors_data` (`id`),
   CONSTRAINT `products_data_FK_1` FOREIGN KEY (`category_id`) REFERENCES `categories_data` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -188,6 +186,57 @@ CREATE TABLE `users_data` (
 LOCK TABLES `users_data` WRITE;
 /*!40000 ALTER TABLE `users_data` DISABLE KEYS */;
 /*!40000 ALTER TABLE `users_data` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `img_data`
+--
+
+DROP TABLE IF EXISTS `img_data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `img_data` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `file` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `img_data`
+--
+
+LOCK TABLES `img_data` WRITE;
+/*!40000 ALTER TABLE `img_data` DISABLE KEYS */;
+/*!40000 ALTER TABLE `img_data` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `imgproduct_data`
+--
+
+DROP TABLE IF EXISTS `imgproduct_data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `imgproduct_data` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `imgId` int(11) NOT NULL,
+  `productId` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `imgProduct_data_FK` (`imgId`),
+  KEY `imgProduct_data_FK_1` (`productId`),
+  CONSTRAINT `imgProduct_data_FK` FOREIGN KEY (`imgId`) REFERENCES `img_data` (`id`),
+  CONSTRAINT `imgProduct_data_FK_1` FOREIGN KEY (`productId`) REFERENCES `products_data` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `imgproduct_data`
+--
+
+LOCK TABLES `imgproduct_data` WRITE;
+/*!40000 ALTER TABLE `imgproduct_data` DISABLE KEYS */;
+/*!40000 ALTER TABLE `imgproduct_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --

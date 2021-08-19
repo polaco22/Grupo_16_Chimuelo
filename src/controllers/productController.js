@@ -50,6 +50,12 @@ const productController = {
             res.redirect('/')}
         catch(error) {console.log(error)}
     },
+    // storeImage: async function (req, res) {
+    //     let result = await db.Imagen.create({
+    //         image: req.files,
+    //     })
+    //     res.send(result)
+    // },
     // productEdit: (req, res) => {        
     //     res.render('productEdit', {listToEdit: product.one(req.params.id), colors:colorModel.all(),categories:categoryModel.all()} )
     productEdit: async function (req, res) {

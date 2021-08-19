@@ -1,3 +1,4 @@
+use `lookingood`;
 
 LOCK TABLES `categories_data` WRITE;
 /*!40000 ALTER TABLE `categories_data` DISABLE KEYS */;
