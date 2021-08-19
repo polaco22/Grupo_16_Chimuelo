@@ -32,7 +32,7 @@ CREATE TABLE `cart_data` (
   `productId` int(11) NOT NULL,
   `userId` int(11) NOT NULL,
   `date` date NOT NULL,
-  `price` decimal(10,0) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
   `quantity` int(11) NOT NULL,
   `active` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),

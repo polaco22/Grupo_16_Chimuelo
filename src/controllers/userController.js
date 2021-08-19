@@ -56,7 +56,7 @@ const userController = {
             provincia: req.body.provincia,
             ciudad: req.body.ciudad,
             password: bcryptjs.hashSync(req.body.password,10),
-            avatar: typeof file === 'undefined' ? "default.jpg" : file.filename,
+            avatar: req.file === undefined ? "default.jpg" : req.file.filename,
             admin: String(req.body.email).includes("@lookingood") ? true : false,
         })
         return res.redirect ('/login');
@@ -97,7 +97,7 @@ const userController = {
             provincia: req.body.provincia,
             ciudad: req.body.ciudad,
             password: bcryptjs.hashSync(req.body.password,10),
-            avatar: typeof file === 'undefined' ? "default.jpg" : file.filename,
+            avatar: req.file === undefined ? "default.jpg" : req.file.filename,
             admin: String(req.body.email).includes("@lookingood") ? true : false,
         },
         {where: {
