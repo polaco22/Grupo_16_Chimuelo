@@ -21,9 +21,9 @@ module.exports = (sequelize, dataTypes) => {
         colors_id: {
             type: dataTypes.INTEGER,
         },
-        image: {
-            type: dataTypes.STRING,
-        },
+        // image: {
+        //     type: dataTypes.STRING,
+        // },
         price: {
             type: dataTypes.DECIMAL,
             allowNull: false,
@@ -49,10 +49,12 @@ module.exports = (sequelize, dataTypes) => {
             as: "categories",
             foreignKey:"category_id",
         });
-        Product.hasMany(models.ImagenProducto, {
-            as: "imagenproducto",
-            foreignKey:"productId",
+        Product.hasMany(models.Imagen, {
+            as: "imagenes",
+            foreignKey:"product_id",
         });
+
+
     };    
     return Product;
 }

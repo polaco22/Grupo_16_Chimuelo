@@ -9,6 +9,10 @@ module.exports = (sequelize, dataTypes) => {
         file: {
             type: dataTypes.STRING,
             allowNull: false,
+        },
+        product_id: {
+            type: dataTypes.INTEGER,
+            allowNull: false,
         }
     };
     let config = {
@@ -18,10 +22,11 @@ module.exports = (sequelize, dataTypes) => {
     const Imagen = sequelize.define(alias, cols, config);
 
     Imagen.associate = function (models) {
-        Imagen.hasMany(models.ImagenProducto, {
-            as: "imagen",
-            foreignKey:"imgId",
-        });        
-    };    
+
+    Imagen.belongsTo(models.Product, {
+        as: "imagenes",
+        foreignKey:"product_id",
+    });
+}
     return Imagen;
 }

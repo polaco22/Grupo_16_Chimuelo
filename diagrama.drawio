@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="EvAmm1Pr7eUSJJGLMQvF" name="Diagrama General">
-        <mxGraphModel dx="184" dy="249" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="545" dy="343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -196,40 +196,32 @@
                 <mxCell id="89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.692;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="WWabw4jxBIygo0n_5Nug-93" target="81" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="98" value="img" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=#ffffff;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="340" y="900" width="140" height="82" as="geometry"/>
+                <mxCell id="98" value="img" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=#ffffff;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="530" width="150" height="106" as="geometry"/>
                 </mxCell>
-                <mxCell id="100" value="id(PK) Int  Auto_Increment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="98">
-                    <mxGeometry y="30" width="140" height="26" as="geometry"/>
+                <mxCell id="100" value="id(PK) Int  Auto_Increment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="98" vertex="1">
+                    <mxGeometry y="30" width="150" height="30" as="geometry"/>
                 </mxCell>
-                <object label="file varchar" file="varchar(500)" id="101">
+                <object label="file varchar" file="varchar(500)" id="110">
                     <mxCell style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="98">
-                        <mxGeometry y="56" width="140" height="26" as="geometry"/>
+                        <mxGeometry y="60" width="150" height="20" as="geometry"/>
                     </mxCell>
                 </object>
-                <mxCell id="105" value="imgProduct" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#000000;strokeColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=#ffffff;" vertex="1" parent="1">
-                    <mxGeometry x="600" y="820" width="140" height="104" as="geometry"/>
-                </mxCell>
-                <mxCell id="106" value="id(PK) Int Auto_Increment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="105">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="107" value="idProduct(FK) Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="105">
-                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="108" value="imgID(FK) Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="105">
-                    <mxGeometry y="78" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="108" target="100">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontColor=#000000;entryX=-0.009;entryY=0.487;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="107" target="37">
+                <object label="product_id int" file="varchar(500)" id="101">
+                    <mxCell style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="98" vertex="1">
+                        <mxGeometry y="80" width="150" height="26" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1" target="37">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="280" y="50" as="targetPoint"/>
+                        <mxPoint x="550" y="636" as="sourcePoint"/>
+                        <mxPoint x="490" y="70" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="510" y="885"/>
-                            <mxPoint x="510" y="440"/>
-                            <mxPoint x="270" y="440"/>
-                            <mxPoint x="270" y="53"/>
+                            <mxPoint x="550" y="616"/>
+                            <mxPoint x="480" y="616"/>
+                            <mxPoint x="480" y="241"/>
+                            <mxPoint x="510" y="241"/>
+                            <mxPoint x="510" y="53"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>

@@ -198,7 +198,10 @@ DROP TABLE IF EXISTS `img_data`;
 CREATE TABLE `img_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `file` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
+  `product_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `img_data_FK` (`product_id`),
+  CONSTRAINT `img_data_FK` FOREIGN KEY (`product_id`) REFERENCES `products_data` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -211,33 +214,6 @@ LOCK TABLES `img_data` WRITE;
 /*!40000 ALTER TABLE `img_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- Table structure for table `imgproduct_data`
---
-
-DROP TABLE IF EXISTS `imgproduct_data`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `imgproduct_data` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `imgId` int(11) NOT NULL,
-  `productId` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `imgProduct_data_FK` (`imgId`),
-  KEY `imgProduct_data_FK_1` (`productId`),
-  CONSTRAINT `imgProduct_data_FK` FOREIGN KEY (`imgId`) REFERENCES `img_data` (`id`),
-  CONSTRAINT `imgProduct_data_FK_1` FOREIGN KEY (`productId`) REFERENCES `products_data` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `imgproduct_data`
---
-
-LOCK TABLES `imgproduct_data` WRITE;
-/*!40000 ALTER TABLE `imgproduct_data` DISABLE KEYS */;
-/*!40000 ALTER TABLE `imgproduct_data` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Dumping routines for database 'lookingood'
