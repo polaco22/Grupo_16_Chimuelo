@@ -23,7 +23,7 @@ const productController = {
         
         //let imagenes = await db.Imagen.findAll();
         let products = await db.Product.findAll( {include: [ "imagenes"]});
-        //res.send(products[1].imagenes[1].file)
+        //res.send(products)
         res.render("product", { list: products})
             
     },
@@ -52,12 +52,20 @@ const productController = {
             });
             
             let images = req.files;
-            await images.forEach(img => {
-                db.Imagen.create({
-                    file: img.filename,
-                    product_id: product.id
-                })
-            });
+            if(images.length > 0){ 
+                await images.forEach(img => {
+                    db.Imagen.create({
+                        file: img.filename,
+                        product_id: product.id
+                    })
+                }
+            )} else { 
+                await db.Imagen.create({
+                        file: "default.jpg",
+                        product_id: product.id
+                    })
+            }
+            //console.log("aaaa",images);
             res.redirect ('/')
         }
         catch (error) { console.log(error) }
@@ -65,9 +73,10 @@ const productController = {
     // productEdit: (req, res) => {        
     //     res.render('productEdit', {listToEdit: product.one(req.params.id), colors:colorModel.all(),categories:categoryModel.all()} )
     productEdit: async function (req, res) {
-        let product = await db.Product.findByPk(req.params.id);
+        let product = await db.Product.findByPk(req.params.id, {include: [ "imagenes"]});
         let color = await db.Color.findAll();
         let category = await db.Category.findAll();
+        //res.send(product)
         res.render('productEdit', { listToEdit: product, colors: color, categories: category })
     },
     // update: (req, res) => {
@@ -76,20 +85,31 @@ const productController = {
     // },
     update: async function (req, res) {
         let productId = req.params.id;
-        await db.Product.update({
+        let productEdited = await db.Product.update({
             name: req.body.name,
             description: req.body.description,
             category_id: req.body.category,
             colors_id: req.body.colors,
-            //image: req.file === undefined ? "default.jpg" : req.file.filename,
             price: req.body.price,
-            stock: req.body.stock
+            stock: req.body.stock,
         },
             {
                 where: {
-                    id: productId,
+                    id: productId,   
                 }
             });
+        let imgEdited = req.files;
+        await imgEdited.forEach(img => {
+            db.Imagen.update({
+                file: img.filename,
+            },
+            {
+                where: {
+                    product_id: productId,
+                }
+            })});     
+           
+        res.send(imgEdited)
         return res.redirect('/')
     },
 
@@ -122,5 +142,6 @@ const productController = {
         res.render('productCart')
     },
 }
+
 
 module.exports = productController;

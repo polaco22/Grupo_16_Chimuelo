@@ -10,12 +10,14 @@
         <section class="producto">
             <article class="productIMG">
 
-               
+                <% if (listToShow.imagenes.length = 1) { %>
+                    <img class="imgsup" src="../../uploads/products/<%=listToShow.imagenes[0].file%>" alt="anteojopapu.jpg">
+                <% } else { %> 
                     <img class="imgsup" src="../../uploads/products/<%=listToShow.imagenes[0].file%>" alt="anteojopapu.jpg">
                     <div class="perspectivas">
                         <div><img class="imgsup" src="../../uploads/products/<%=listToShow.imagenes[1].file%>" alt="anteojopapu.jpg"></div>
                     </div> 
-                
+                <% } %>
             </article>
             <article class="detalleproducto">
                 <div class="datos">
