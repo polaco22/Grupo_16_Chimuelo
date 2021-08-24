@@ -91,26 +91,36 @@ const productController = {
             category_id: req.body.category,
             colors_id: req.body.colors,
             price: req.body.price,
-            stock: req.body.stock,
+            stock: req.body.stock
         },
             {
                 where: {
                     id: productId,   
                 }
             });
-        let imgEdited = req.files;
-        await imgEdited.forEach(img => {
-            db.Imagen.update({
-                file: img.filename,
-            },
-            {
-                where: {
-                    product_id: productId,
-                }
-            })});     
-           
-        res.send(imgEdited)
+  
+        let newImg = req.files;
+        let product = await db.Product.findByPk(req.params.id);
+        let oldImg = await product.getImagenes();        
+        let imgEdited = await oldImg.forEach(img => { db.Imagen.destroy({where: {id: img.id}})});
+        let newImages =  await newImg.forEach(img => { db.Imagen.create({file: img.filename, product_id: product.id})});
         return res.redirect('/')
+
+
+
+        // await newImg.forEach((img, index) => {
+        //     db.Imagen.update({
+        //         file: img.filename,
+        //     },
+        //     {
+        //         where: {
+        //             id: imgIdToEdit[index],
+        //             product_id: productId
+        //         }
+        //     })});     
+           
+        //res.send({product, oldImg, newImg, imgIdToEdit})
+        
     },
 
     // productDetail: (req,res) => { 
