@@ -7,8 +7,8 @@ module.exports = [
     check('email')
         .isEmail().withMessage('Por favor ingrese un correo electrónico válido !!').bail()
         .isLength({min:5}).withMessage('El correo debe tener al menos 5 caracteres')
-        .custom(value => {
-            let registered = userModel.findByEmail(value);
+        .custom(async value => {
+            let registered = await db.User.findOne({where: {email: value}});
             if (registered && !registered.admin) {
             return Promise.reject('El Email ya existe');
             }
