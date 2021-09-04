@@ -1,5 +1,9 @@
 const { check } = require('express-validator');
 const userModel = require("../models/userModel");
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const { Op } = require("sequelize");
+const User = db.User
 
 module.exports = [
     check('fullName').notEmpty().withMessage('Por favor ingrese su nombre completo !!'),
