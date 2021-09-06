@@ -22,8 +22,7 @@ module.exports = [
             if (registered && !registered.admin) {
             return Promise.reject('El Email ya existe');
             }
-            return true
-        }),
+            return true}),
     check('password')
         .notEmpty().withMessage('Por favor ingrese una contraseña !!')
         .isStrongPassword({minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1}).withMessage('Su contraseña deberá tener al menos 8 caracteres e incluir letras mayúsculas, minúsculas, número y carácter especial.'),
@@ -32,8 +31,7 @@ module.exports = [
             if(req.body.password !== req.body.confirmarContraseña){
                 return Promise.reject('Hubo un error al confirmar su password')
             }
-            return true;
-        }),
+            return true}),
     check('avatar')
         .custom( (value, { req }) => {
             let file = req.file;
@@ -42,13 +40,11 @@ module.exports = [
                  if (!acceptedExtensions.includes(fileExtension)) {
                     throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
                 };
-            return true;
-            }),
+            return true}),
     check('terminos')
         .custom( (value, { req }) => {
             if(req.body.terminos !== "on"){
                 return Promise.reject('Debe aceptar los términos y condiciones')
             }
-            return true;
-        })
+            return true})
 ]
