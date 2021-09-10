@@ -21,14 +21,23 @@
     <main>
     <form action="/product" method="POST" class="register-form" enctype="multipart/form-data">
         <h2>Creación de productos aquí <i class="far fa-hand-point-down"></i></h2>
+        <% if(locals.errors && errors.name) { %>
+            <h4 style = color:red> <%= errors.name.msg %> </h4>
+        <%  } %>   
+        <% if(locals.errors && errors.description) { %>
+            <h4 style = color:red> <%= errors.description.msg %> </h4>
+        <%  } %> 
+        <% if(locals.errors && errors.image) { %>
+            <h4 style = color:red> <%= errors.image.msg %> </h4>
+        <%  } %>
         <fieldset class= "register-field">
             <label for="name">Nombre del Producto</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" value='<%= locals.old && old.name ? old.name : '' %>'>
         </fieldset>
 
         <fieldset class= "register-field">
             <label for="description">Descripción del Producto</label>
-            <input type="text" name="description" id="description">
+            <input type="text" name="description" id="description"  value='<%= locals.old && old.description ? old.description : '' %>'>
         </fieldset>
 
         <fieldset class= "register-field">

@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const { validationResult } = require('express-validator');
 // constantes JSON
 //const product = require('../models/productModel');
 //const colorModel = require('../models/colorModel.js');
@@ -41,6 +42,12 @@ const productController = {
     // },
     store: async function (req, res) {
         try {
+            let errors = validationResult(req);
+            let color = await db.Color.findAll();
+            let category = await db.Category.findAll();
+            if (!errors.isEmpty()) {
+                res.render('productCreate', { errors: errors.mapped(), old: req.body, colors: color, categories: category})
+            } 
             let product = await db.Product.create({
                 name: req.body.name,
                 description: req.body.description,
@@ -49,8 +56,7 @@ const productController = {
                 //image: req.file === undefined ? "default.jpg" : req.file.filename,
                 price: req.body.price,
                 stock: req.body.stock,
-            });
-            
+            })            
             let images = req.files;
             if(images.length > 0){ 
                 await images.forEach(img => {
