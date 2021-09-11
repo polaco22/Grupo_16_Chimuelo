@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = [
     check('name')
         .notEmpty().withMessage('Por favor ingrese nombre del producto !!')
-        .isLength({min:2}).withMessage('El nombre del producto debe tener al menos 2 caracteres'),
+        .isLength({min:5}).withMessage('El nombre del producto debe tener al menos 5 caracteres'),
     check('description')
         .notEmpty().withMessage('Por favor agregue una descripción al producto!!')
         .isLength({min:20}).withMessage('La descripción del producto debe tener al menos 20 caracteres'),
