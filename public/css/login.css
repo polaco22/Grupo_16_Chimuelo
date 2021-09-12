@@ -1,137 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-/*---------------- REGLA GENERAL ----------------*/
 * {
-    box-sizing: border-box;
-    font-family: 'Open sans';
+	box-sizing: border-box;
 }
-
-/*---------------- ESTILOS PARA LAS ETIQUETAS ----------------*/
 header {
     text-align: center;
     background: linear-gradient(90deg,rgba(255,255,255,0) 0,rgba(255,255,255,0.2) 50%,rgba(255,255,255,0) 100%); 
     max-width: 100%;
     padding-bottom: 10px;
 }
-main, body {
-    background-color: rgb(201, 201, 201); 
-    background-image: linear-gradient(to bottom,rgb(201, 201, 201),rgb(201, 201, 201));
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+.logo {
+    width: 10%;
 }
-h2 {
+body {
+	font-family: 'Open sans', sans-serif;
     text-align: center;
-    padding: 10px 10px;
-    display: none;
-    color: #003ef2;
-    font-size: 16px;
+	background: #E5E5E5;
 }
-h3 {
-    font-size: 16px;
-}
-h4 {
-    text-align: center;
-    font-size: 14px;
-    font-family: 'Open sans', sans-serif;
+main {
+	width: 90%;
+	margin: auto;
     
-}
-h5 {
-    text-align: center;
-    padding: 10px 10px;
-    font-family: 'Open sans', sans-serif;
-    font-weight: normal;
-}
-a {
-    color: #003ef2;
-}
-select {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
-}
-fieldset label {
-    font-size: 13px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-}
-::placeholder{
- padding-left: 10px;
+    padding-bottom: 15px;
 }
 
-/*---------------- ARMANDO CLASES CON ESTILOS PARA FORMULARIOS ----------------*/
-.register-form {
-    padding: 20px 15px;
-    margin-bottom: 30px; 
-    margin: auto;
-    max-width: 100%;
-    text-align: center;
-    border: none;
+.formulario {
+	display: flex;
+    flex-direction: column;
+    width: 700px;
+    border: 2px #003ef2 solid;
+    padding: 40px;
+    position: relative;
 }
-.register-field {
-    border: none;
-    padding: 20px 15px;
-    display:block;
-    margin: auto;
-    max-width: 80%;
-    text-align: center;
+
+.formulario__label {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+	padding: 20px;
+	cursor: pointer;
 }
-.register-field input {
-    font-size: 12px;
-    border: none;
-    border-radius: 4px;
-    border: 1px solid #003ef2;
-    width: 100%;
-    height: 40px;
+
+.formulario__grupo-input {
+	position: relative;
 }
-.register-field input:valid {
-    border: 2px solid lightgreen;
- }
- .register-field input:invalid {
-    border: 2px solid lightcoral;
-} 
-.register-field-check {
-    border: none;
-    padding: 10px 10px;
-    display: inline-flex;
-    flex-direction: row;  
-    margin-bottom: 10px;
-    justify-content: center;    
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
 }
-span {
-    font-size: 15px;
-    padding-left: 10px;
-    text-align: center;
-    font-family: 'Open sans', sans-serif;
-    font-weight: normal;
+
+.formulario__input:focus {
+	border: 3px solid #003ef2;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
-.register-field button {
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	display: block;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
     background-color: #003ef2;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 4px;
-    width: 120px;
-    height: 40px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.1s ease all;
 }
-.register-field input:hover {
-    border: #003ef2 solid 1px; 
+
+.formulario__btn:hover {
+	box-shadow: 1px 0px 15px rgba(163,163,163, 1);
 }
-.register-field button:hover {
-    background-color: #003cf28c;
-    color: white;
-    border: #003ef2 solid 1px; 
-    cursor: pointer;
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
 }
-/*---------------- DAMOS ESTILOS Al HEADER ----------------*/
-.logo {
-    width: 140px;
-    height: 182px;
-    padding: 10px;
+
+.formulario__mensaje-exito-activo {
+	display: block;
 }
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
 
 /*---------------- DAMOS ESTILO AL FORMULARIO DE BUSQUEDA----------------*/
 
@@ -164,16 +192,25 @@ span {
         width: 250px;
         height: 325px;
     }
-    .register-form {
+    .formulario {
         padding: 20px 15px;
         margin-bottom: 30px; 
-        max-width: 50%;
+        max-width: 80%;
         text-align: center;
         border: 4px solid #003ef2;
         border-radius: 4px;
-    }
-    
+	}
+    .formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		max-width: 75%;
+	}
+
+	.formulario__btn {
+		width: 80%;
+	}
 }
 @media (min-width: 1200px){
 
 }
+
