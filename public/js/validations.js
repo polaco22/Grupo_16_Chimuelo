@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
     const formulario = document.getElementById('formulario');
     const inputs = document.querySelectorAll('#formulario input');
 
-    const expresiones = {
+    const validaciones = {
         correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
         password: /^.{8,12}$/ // 8 a 12 digitos.	
     }
@@ -17,15 +17,15 @@ window.addEventListener('load', function () {
     const validarFormulario = (e) => {
         switch (e.target.name) {
             case "correo":
-                validarCampo(expresiones.correo, e.target, 'correo');
+                validarCampo(validaciones.correo, e.target, 'correo');
             break;
             case "password":
-                validarCampo(expresiones.password, e.target, 'password');
+                validarCampo(validaciones.password, e.target, 'password');
             break;            
         }
     }
-    const validarCampo = (expresion, input, campo) => {
-        if(expresion.test(input.value)){
+    const validarCampo = (validacion, input, campo) => {
+        if(validacion.test(input.value)){
             document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
             document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
             document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
@@ -50,8 +50,8 @@ window.addEventListener('load', function () {
     formulario.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const terminos = document.getElementById('terminos');
-        if(campos.correo && campos.password && terminos.checked ){
+        const recordarme = document.getElementById('terminos');
+        if(campos.correo && campos.password && recordarme.checked ){
             formulario.reset();
 
             document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');

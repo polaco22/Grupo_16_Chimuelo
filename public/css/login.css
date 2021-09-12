@@ -70,7 +70,7 @@ h2 {
 	font-size: 12px;
 	margin-bottom: 0;
 	display: none;
-    color: #003ef2;
+    color: #E5E5E5;
 }
 
 .formulario__input-error-activo {
@@ -117,7 +117,6 @@ span {
 
 .formulario__mensaje p {
 	margin: 0;
-    color: #003ef2;
 }
 
 .formulario__grupo-btn-enviar {
@@ -211,7 +210,9 @@ span {
     .formulario__grupo-terminos, 
 	.formulario__mensaje,
 	.formulario__grupo-btn-enviar {
-		max-width: 75%;
+		max-width: 80%;
+        text-align: center;
+        color: #E5E5E5;
 	}
 
 	.formulario__btn {
