@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 
     const expresiones = {
         correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-        password: /^.{4,12}$/ // 4 a 12 digitos.	
+        password: /^.{8,12}$/ // 8 a 12 digitos.	
     }
 
     const campos = {
@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
         e.preventDefault();
 
         const terminos = document.getElementById('terminos');
-        if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked ){
+        if(campos.correo && campos.password && terminos.checked ){
             formulario.reset();
 
             document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');

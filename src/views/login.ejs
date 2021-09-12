@@ -42,14 +42,14 @@
 					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">Ingresar un correo Electrónico.</p>
+				<p class="formulario__input-error">Ingresar un correo electrónico válido.</p>
 			</div>
 
 			<!-- Grupo: Contraseña -->
 			<div class="formulario__grupo" id="grupo__password">
 				<label for="password" class="formulario__label">Contraseña</label>
 				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password" id="password">
+					<input type="password" class="formulario__input" name="password" id="password" placeholder="La contraseña tiene que minimo 8 caracteres, con 1 Mayúscula, 1 Minúscula y 1 caracter especial">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">La contraseña tiene que ser de minimo de 8 dígitos, con al menos 1 Mayúscula, 1 Minúscula y 1 caracter especial.</p>
@@ -58,8 +58,10 @@
 			<!-- Grupo: Terminos y Condiciones -->
 			<div class="formulario__grupo" id="grupo__terminos">
 				<label class="formulario__label">
-					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-					Recordar Email y Contraseña
+				<div class="formulario__grupo" id="grupo__terminos">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					<span>Recordar Email y Contraseña</span>
+                </div>
 				</label>
 			</div>
 
@@ -71,6 +73,11 @@
 				<button type="submit" class="formulario__btn">Enviar</button>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
+            <div class="formulario__grupo">
+                <h4>¿Todavía no estas registrado?
+                    <a href="/register">Creá tu cuenta</a> 
+                </h4>
+            </div>
         
 		</form>
 
