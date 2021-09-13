@@ -30,6 +30,9 @@
         <% if(locals.errors && errors.image) { %>
             <h4 style = color:red> <%= errors.image.msg %> </h4>
         <%  } %>
+        <div class="showErrors">
+            <ul style = color:red></ul>
+        </div>
         <fieldset class= "register-field">
             <label for="name">Nombre del Producto</label>
             <input type="text" name="name" id="name" value='<%= locals.old && old.name ? old.name : '' %>'>
@@ -102,6 +105,7 @@
         </form> 
     </main>
     <!-- Footer -->
-    <%- include('./includes/footer') %>   
+    <%- include('./includes/footer') %> 
+    <script src="/js/validationsProductCreate.js"></script> 
 </body>
 </html>
