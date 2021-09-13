@@ -22,6 +22,18 @@
     <main>
         <form action="/product/update/<%=listToEdit.id%>?_method=PUT" method="post" class="register-form" enctype="multipart/form-data">
         <h2>Edición de productos aqui <i class="far fa-hand-point-down"></i></h2>
+        <% if(locals.errors && errors.name) { %>
+            <h4 style = color:red> <%= errors.name.msg %> </h4>
+        <%  } %>   
+        <% if(locals.errors && errors.description) { %>
+            <h4 style = color:red> <%= errors.description.msg %> </h4>
+        <%  } %> 
+        <% if(locals.errors && errors.image) { %>
+            <h4 style = color:red> <%= errors.image.msg %> </h4>
+        <%  } %>
+        <div class="showErrors">
+            <ul style = color:red></ul>
+        </div>
         <!--<fieldset class= "register-field">
             <img img class="vista" src="/img/levelGod.jpg" alt="anteojopapu.jpg">
             <label for="image">Hace click en "Examinar" para cambiar la foto a mostrar del producto:</label>
@@ -97,5 +109,6 @@
     </main>
     <!-- Footer -->
 <%- include('./includes/footer')%>   
+<script src="/js/validationsProductCreate&Edit.js"></script> 
 </body>
 </html>

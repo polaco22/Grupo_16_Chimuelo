@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 //Middleware
-const validateProductCreate = require('../middlewares/validateProductCreate');
+const validateProductCreateEdit = require('../middlewares/validateProductCreate&Edit');
 
 //multer
 const multer = require('multer');
@@ -26,9 +26,9 @@ router.get('/product', productController.show); // listado de productos
 router.get('/product/cart/:id', productController.productCart); // 8 - CARRITO
 router.get('/product/detail/:id', productController.productDetail); // detalle de un producto particular ??
 router.get('/product/create', productController.productCreate); // formulario creación
-router.post('/product', [upload.any(), validateProductCreate], productController.store); // acción de creación (a donde se envía el formulario)
+router.post('/product', [upload.any(), validateProductCreateEdit], productController.store); // acción de creación (a donde se envía el formulario)
 router.get('/product/edit/:id', productController.productEdit); // formulario de edición de productos ??
-router.put('/product/update/:id', [upload.any()], productController.update); // a dónde se envía el formulario ??
+router.put('/product/update/:id', [upload.any(), validateProductCreateEdit], productController.update); // a dónde se envía el formulario ??
 router.delete('/product/delete/:id', productController.productDelete); // acción de borrado
 
 
