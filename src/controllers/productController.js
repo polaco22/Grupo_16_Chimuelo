@@ -90,6 +90,12 @@ const productController = {
     //     return result == true ? res.redirect ('/'):res.send('No editaste nada'); 
     // },
     update: async function (req, res) {
+        let errors = validationResult(req);
+        let color = await db.Color.findAll();
+        let category = await db.Category.findAll();
+        if (!errors.isEmpty()) {
+            res.render('productCreate', { errors: errors.mapped(), old: req.body, colors: color, categories: category})
+        } 
         let productId = req.params.id;
         let productEdited = await db.Product.update({
             name: req.body.name,
