@@ -18,12 +18,14 @@
             </a>
         </figure>
     </header>
-
-    
+        
     <main>
-        <form action="/save" method="POST" class="register-form" enctype="multipart/form-data" id="register-form">
+        <div>
             <h2>Para ser parte del mundo LookinGood, <br>
                 por favor completá tus datos <i class="far fa-hand-point-down"></i></h2>
+        </div>
+        <form action="/save" method="POST" class="formulario" id="formulario" enctype="multipart/form-data">
+            
             <% if(locals.errors && errors.email) { %>
                 <h4 style = color:red> <%= errors.email.msg %> </h4>
             <%  } %>   
@@ -45,77 +47,123 @@
             <% if(locals.errors && errors.terminos) { %>
                 <h4 style = color:red> <%= errors.terminos.msg %> </h4>
             <%  } %>
+
             
-            <fieldset class="register-field">
-                <label for="fullName">NOMBRE Y APELLIDO</label>
-                <input type="text" name="fullName" id="fullName" placeholder="Nombre y apellido" value='<%= locals.old && old.fullName ? old.fullName : '' %>'>
+            <fieldset class="formulario__grupo" id="grupo__fullName">
+                <label for="fullName" class="formulario__label">NOMBRE Y APELLIDO</label>
+                <div class="formulario__grupo-input">
+                    <input class="formulario__input" type="text" name="fullName" id="fullName" placeholder="Nombre y apellido" value='<%= locals.old && old.fullName ? old.fullName : '' %>'>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre y apellido tiene que ser de 4 a 40 dígitos y solo pueden ser letras.</p>    
             </fieldset> 
 
-            <fieldset class="register-field">
-                <label for="userName">NOMBRE DE USUARIO</label>
-                <input type="text" name="userName" id="userName" placeholder="Nombre de Usuario" value='<%= locals.old && old.userName ? old.userName : '' %>'>                  
+            <fieldset class="formulario__grupo" id="grupo__userName">
+                <label for="userName" class="formulario__label">NOMBRE DE USUARIO</label>
+                <div class="formulario__grupo-input">
+                    <input class="formulario__input" type="text" name="userName" id="userName" placeholder="Nombre de Usuario" value='<%= locals.old && old.userName ? old.userName : '' %>'>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre y apellido tiene que ser de 5 a 16 dígitos y solo puede letras.</p>                   
             </fieldset>  
 
-            <fieldset class="register-field">
-                <label for="dni">NUMERO DE DOCUMENTO</label>
-                <input type="text" name="dni" id="dni" placeholder="Dni" value='<%= locals.old && old.dni ? old.dni : '' %>'>                  
+            <fieldset class="formulario__grupo" id="grupo__dni">
+                <label for="dni" class="formulario__label">NUMERO DE DOCUMENTO</label>
+                <div class="formulario__grupo-input">
+                    <input class="formulario__input" type="text" name="dni" id="dni" placeholder="Dni" value='<%= locals.old && old.dni ? old.dni : '' %>'>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El dni tiene que ser de 8 números.</p>                  
             </fieldset> 
 
-            <fieldset class="register-field">
-                <label for="email">CORREO ELECTRONICO</label>
-                <input type="email" name="email" id="email" placeholder="E-mail" value='<%= locals.old && old.email ? old.email : '' %>'>              
+            <fieldset class="formulario__grupo" id="grupo__email">
+                <label for="email" class="formulario__label">CORREO ELECTRONICO</label>
+                <div class="formulario__grupo-input">
+                <input class="formulario__input" type="email" name="email" id="email" placeholder=" correo@correo.com" value='<%= locals.old && old.email ? old.email : '' %>'>              
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El email tiene que tener letras, números, puntos, guiones y guión bajo.</p> 
             </fieldset>     
 
-            <fieldset class="register-field">
-                <label for="domicilio"> DOMICILIO</label>
-                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" value='<%= locals.old && old.domicilio ? old.domicilio : '' %>'>                  
+            <fieldset class="formulario__grupo" id="grupo__domicilio">
+                <label for="domicilio" class="formulario__label"> DOMICILIO</label>
+                <div class="formulario__grupo-input">
+                <input class="formulario__input" type="text" name="domicilio" id="domicilio" placeholder=" calle nro 123" value='<%= locals.old && old.domicilio ? old.domicilio : '' %>'> 
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                 </div>
+                <p class="formulario__input-error">El domicilio puede tener letras, números, puntos, guiones y guión bajo.</p> 
             </fieldset> 
-            <fieldset class="register-field-select">  
-                <label> PROVINCIA</label>
-                <select name="provincia">           
-                    <option value="" selected disabled>Seleccione una Provincia</option>
-                    <%  
-                        let provinces = ['Buenos Aires', 'Catamarca', 'Chaco', 'Chubut', 'Ciudad de Buenos Aires', 'Córdoba', 'Corrientes', 'Entre Rios', 'Formosa', 'Jujuy',
-                        'La Pampa', 'La Rioja', 'Mendoza', 'Misiones', 'Neuquen', 'Rio Negro', 'Salta', 'San Juan', 'San Luis', 'Santa Cruz', 'Santiago del Estero', 'Tierra del Fuego', 'Tucuman'  ];
-                    %>
-                    <% for (const oneProvince of provinces) { %>
-                        <option 
-                            value="<%= oneProvince %>"> 
-                            <%= oneProvince %> 
-                        </option>
-                    <% } %>
-                </select>
+
+            <fieldset class="formulario__grupo" id="grupo__provincia">  
+                <label for="provincia" class="formulario__label"> PROVINCIA</label>
+                <div class="formulario__grupo-input">
+                    <select name="provincia" >           
+                        <option value="" selected disabled>Seleccione una Provincia</option>
+                        <%  
+                            let provinces = ['Buenos Aires', 'Catamarca', 'Chaco', 'Chubut', 'Ciudad de Buenos Aires', 'Córdoba', 'Corrientes', 'Entre Rios', 'Formosa', 'Jujuy',
+                            'La Pampa', 'La Rioja', 'Mendoza', 'Misiones', 'Neuquen', 'Rio Negro', 'Salta', 'San Juan', 'San Luis', 'Santa Cruz', 'Santiago del Estero', 'Tierra del Fuego', 'Tucuman'  ];
+                        %>
+                        <% for (const oneProvince of provinces) { %>
+                            <option 
+                                value="<%= oneProvince %>"> 
+                                <%= oneProvince %> 
+                            </option>
+                        <% } %>
+                    </select>
+                </div>
             </fieldset>
-            <fieldset class="register-field-select">  
-                <label>CIUDAD</label>
-                <select name="ciudad">
-                    <option value="#">S/D</option>
-                </select>
+
+            <fieldset class="formulario__grupo" id="grupo__ciudad">  
+                <label for="ciudad" class="formulario__label">CIUDAD</label>
+                <div class="formulario__grupo-input">
+                    <select name="ciudad">
+                        <option value="#">S/D</option>
+                    </select>
+                </div>    
             </fieldset>
            
-
-            <fieldset class="register-field">
-                <label for="password">CONTRASEÑA</label>
-                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña">                  
+            <fieldset class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label">CONTRASEÑA</label>
+                <div class="formulario__grupo-input">
+                    <input class="formulario__input" type="password" name="password" id="password" placeholder="Elegí tu contraseña">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>                  
             </fieldset> 
 
-            <fieldset class="register-field">
-                <label for="confirmarContraseña">CONFIRME SU CONTRASEÑA</label>
-                <input type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmá tu contraseña">                  
+            <fieldset class="formulario__grupo" id="grupo__confirmarContraseña">
+                <label for="confirmarContraseña" class="formulario__label">CONFIRME SU CONTRASEÑA</label>
+                <div class="formulario__grupo-input">
+                     <input class="formulario__input" type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmá tu contraseña">
+                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La confirmar contraseña tiene que ser igual a contraseña.</p>                  
             </fieldset> 
-
+            
             <h5>Subí tu avatar</h5>
-            <fieldset class="register-field-pic">
-                <input type="file" name="avatar" accept=".jpg">                  
+            <fieldset class="formulario__grupo" id="grupo__confirmarContraseña">
+                <div class="formulario__grupo-input">
+                    <input class="formulario__input" type="file" name="avatar" accept=".jpg">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Tienes que cargar una imagen en jpg.</p>                      
             </fieldset> 
 
             <h5>Términos y condiciones</h5>
-            <fieldset class="register-field-check">
-                <input type="checkbox" name="terminos" id="terminos"><span>Acepto términos y condiciones</span>                
+            <fieldset class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>               
             </fieldset> 
 
-            <fieldset class="register-field">
-                <button type="submit">Enviar</button>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor completa el formlario correctamente. </p>
+			</div>
+
+            <fieldset class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
             </fieldset>
 
             <h4>¿Ya tenes una cuenta?
@@ -126,6 +174,9 @@
     </main>
 
     <!-- Footer -->
-    <%- include('./includes/footer')%>  
+    <%- include('./includes/footer')%> 
+
+    <script src="js/validationRegister.js" type="text/JavaScript"></script>    
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
