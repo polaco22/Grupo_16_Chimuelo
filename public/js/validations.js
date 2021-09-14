@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
     const validarFormulario = (e) => {
         switch (e.target.name) {
             case "email":
-                validarCampo(validaciones.email, e.target, 'correo');
+                validarCampo(validaciones.email, e.target, 'email');
             break;
             case "password":
                 validarCampo(validaciones.password, e.target, 'password');
