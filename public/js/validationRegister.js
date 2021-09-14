@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
     const formulario = document.getElementById('register-form');
     const inputs = document.querySelectorAll('#register-form input');
 
-    const expresiones = {
+    const validaciones = {
         nombreApellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // solo letras con espacios y acentos.
         usuario:/^[a-zA-Z0-9\_\-]{5,16}$/,
         dni: /^.{8}$/,        
@@ -29,15 +29,15 @@ window.addEventListener('load', function () {
     const validarFormulario = (e) => {
         switch (e.target.name) {
             case "correo":
-                validarCampo(expresiones.correo, e.target, 'correo');
+                validarCampo(validaciones.correo, e.target, 'correo');
             break;
             case "password":
-                validarCampo(expresiones.password, e.target, 'password');
+                validarCampo(validaciones.password, e.target, 'password');
             break;            
         }
     }
-    const validarCampo = (expresion, input, campo) => {
-        if(expresion.test(input.value)){
+    const validarCampo = (validacion, input, campo) => {
+        if(validacion.test(input.value)){
             document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
             document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
             document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
