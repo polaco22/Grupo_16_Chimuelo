@@ -15,19 +15,21 @@ header {
     max-width: 100%;
     padding-bottom: 10px;
 }
-.logo {
-    width: 35%;
-}
 main, body {
     background-color: rgb(201, 201, 201); 
     background-image: linear-gradient(to bottom,rgb(201, 201, 201),rgb(201, 201, 201));
-    text-align: center;   
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 h2 {
     text-align: center;
     padding: 10px 10px;
     display: none;
     color: #003ef2;
+    font-size: 16px;
+}
+h3 {
     font-size: 16px;
 }
 h4 {
@@ -41,226 +43,254 @@ h5 {
 a {
     color: #003ef2;
 }
-
-fieldset {
-    border: none;
-}
-
 select {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+fieldset label {
     font-size: 13px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border: none;
-    height: 50px;
-    width: 660px;
-}
-
-/*---------------- ARMANDO CLASES CON ESTILOS PARA FORMULARIOS ----------------*/
-
-.formulario {
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 700px;
-    border: 2px #003ef2 solid;
-    padding: 40px;
-    position: relative;
-    left: 25%;
-}
-
-.formulario__label {
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: 700;
-	padding: 20px;
-	cursor: pointer;
-}
-
-.formulario__grupo-input {
-	position: relative;
-}
-
-.formulario__input {
-	width: 100%;
-	background: #fff;
-	border: 3px solid transparent;
-	border-radius: 3px;
-	height: 45px;
-	line-height: 45px;
-	padding: 0 40px 0 10px;
-	transition: .3s ease all;
+    max-width: 100%;
+    
 }
 ::placeholder{
     padding-left: 10px;
    }
-.formulario__input:focus {
-	border: 3px solid #003ef2;
-	outline: none;
-	box-shadow: 1px 0px 10px rgba(163,163,163, 0.4);
+/*---------------- ARMANDO CLASES CON ESTILOS PARA FORMULARIOS ----------------*/
+.register-form {
+    padding: 20px 15px;
+    margin-bottom: 30px; 
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    border: none;
 }
-
-.formulario__input-error {
-	font-size: 12px;
-	margin-bottom: 0;
-	display: none;
-    color: #E5E5E5;
+.register-field {
+    border: none;
+    padding: 20px 15px;
+    display:block;
+    margin: auto;
+    max-width: 80%;
+    text-align: center;
 }
-
-.formulario__input-error-activo {
-	display: block;
-
-}
-.formulario__validacion-estado {
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
-}
-
-.formulario__checkbox {
-	margin-right: 10px;
-    display: inline-block;
-    font-size: 13px;
-    
-}
-span {
+.register-field input {
     font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    border: #003ef2 solid 1px;
+    width: 100%;
+    height: 40px;
+    /*transition: all 1000ms;*/
+}
+.register-field-check {
+    border: none;
+    padding: 10px 10px;
+    display:flex;
+    flex-direction: row;  
+    margin-bottom: 15px;
+    justify-content: center;
+}
+.register-field-check input {
+    border: none;
+    padding: 10px 10px;
+    display: inline-flex;
+    flex-direction: row;  
+    margin-bottom: 10px;
+    justify-content: center;    
+    border: 1px solid blue;
 }
 
-.formulario__grupo-terminos, 
-.formulario__mensaje,
-.formulario__grupo-btn-enviar {
-	display: block;
+span {
+    font-size: 15px;
+    padding-left: 10px;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+    font-weight: normal;
 }
-
-.formulario__mensaje {
-	height: 45px;
-	line-height: 45px;
-	background: #F66060;
-	padding: 0 15px;
-	border-radius: 3px;
-	display: none;
-}
-
-.formulario__mensaje-activo {
-	display: block;
-}
-
-.formulario__mensaje p {
-	margin: 0;
-}
-
-.formulario__grupo-btn-enviar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.formulario__btn {
-	height: 50px;
-	line-height: 50px;
-    margin-left: 150px;
-    align-content: center;
-	width: 50%;
+.register-field button {
     background-color: #003ef2;
-	color: #fff;
-	font-weight: bold;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: 0.1s ease all;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+}
+.register-field-pic {
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    color: white;    
+    width: 300px;
+    height: 50px;    
+    border: none;
+    margin: auto;
+}
+input[type=file] {
+    width: 350px;
+    text-align: center;
+    background-color: #003cf28c;
+  }
+
+.register-field-select {
+    display:inline-block;
+    border: none;
+    padding: 20px 15px;
+    margin: auto;
+    max-width: 80%;
+    text-align: center;
+}
+select{
+    border: #003ef2 solid 1px;    
+    border-radius: 4px;
+    width: 300px;
+    height: 50px;
+    font-size: 14px;    
+    font-family: 'Open sans', sans-serif;
+    font-weight: normal;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.register-field input:hover {
+    height: 50px;
+    border: #003ef2 solid 1px;       
+    transition-duration: 0.4s;
+}
+.register-field button:hover {
+    background-color: #003cf28c;
+    color: white;
+    border: #003ef2 solid 1px;    
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
-.formulario__btn:hover {
-	box-shadow: 1px 0px 15px rgba(163,163,163, 1);
+/*---------------- DAMOS ESTILOS A LAS OPCIONES DEL HEADER ----------------*/
+.logo {
+    width: 140px;
+    height: 182px;
+    padding: 10px;
 }
-
-.formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
-	display: none;
-}
-
-.formulario__mensaje-exito-activo {
-	display: block;
-}
-
-/* ----- -----  Estilos para Validacion ----- ----- */
-.formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
-}
-
-.formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid #bb2929;
-}
-
-
-
 /*---------------- DAMOS ESTILO AL FORMULARIO DE BUSQUEDA----------------*/
 
 /*---------------- INCLUIMOS BANNER Y SU ESTILO ----------------*/
 
+/*---------------- ESTILOS AL FOOTER ----------------*/
 
+.contenedorfooter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.modos {
+  display: flex;
+  width: 100%;
+}
+
+.seguinos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.seguinos h3{
+  display: flex;
+  margin: 2px;
+  width: 100%;
+}
+
+ul.redes{
+  margin: 0px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+.modos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.modos h3{
+  margin: 0px;
+  width: 100%;
+}
+
+.formasdepago{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+footer i{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 15px;
+}
 /*---------------- GENERAMOS LAS MEDIAS QUERIES ----------------*/
 @media (min-width: 361px){
+    .register-field input {
+        font-size: 14px;
+    }
     h2 {
         font-size: 24px;
     }
-    p {
+    h3 {
         font-size: 20px;
     }
 }
 @media (min-width: 769px){
     h2 {
-        display: block;
-        font-size: 20px;
+        display: block
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 15px;
     }
     .logo {
-        width: 10%;
-        margin-left: 50px;
+        width: 250px;
+        height: 325px;
     }
-    .formulario {
+    .register-form {
         padding: 20px 15px;
         margin-bottom: 30px; 
-        max-width: 80%;
+        max-width: 60%;
         text-align: center;
         border: 4px solid #003ef2;
         border-radius: 4px;
-	}
-    .formulario__grupo-terminos, 
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
-		max-width: 80%;
-        text-align: center;
-        color: #E5E5E5;
-	}
-
-	.formulario__btn {
-        margin-left: 70px;
-	}
+    }
 }
 @media (min-width: 1200px){
-    .logo {
-        width: 10%;
-        margin-left: -50px;
-    }
-    .formulario__btn {
-        margin-left: 150px;
-	}
+ 
 }
-

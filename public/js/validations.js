@@ -5,19 +5,19 @@ window.addEventListener('load', function () {
     const inputs = document.querySelectorAll('#formulario input');
 
     const validaciones = {
-        correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+        email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
         password: /^.{8,12}$/ // 8 a 12 digitos.	
     }
 
     const campos = {
-        correo: false,
+        email: false,
         password: false
     }
 
     const validarFormulario = (e) => {
         switch (e.target.name) {
-            case "correo":
-                validarCampo(validaciones.correo, e.target, 'correo');
+            case "email":
+                validarCampo(validaciones.email, e.target, 'correo');
             break;
             case "password":
                 validarCampo(validaciones.password, e.target, 'password');
@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
         e.preventDefault();
 
         const recordarme = document.getElementById('terminos');
-        if(campos.correo && campos.password && recordarme.checked ){
+        if(campos.email && campos.password && recordarme.checked ){
             formulario.reset();
 
             document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo'); 
