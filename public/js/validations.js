@@ -35,16 +35,16 @@ window.addEventListener('load', function () {
         } else {
             document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
             document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
-            document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
-            document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
+            document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle'); //agrego icono /
+            document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle'); //saco icono x
             document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
             campos[campo] = false;
         }
     };
 
     inputs.forEach((input) => {
-        input.addEventListener('keyup', validarFormulario);
-        input.addEventListener('blur', validarFormulario);
+        input.addEventListener('keyup', validarFormulario); // tecla presionada 
+        input.addEventListener('blur', validarFormulario); // tecla suelta
     });
 
     formulario.addEventListener('submit', (e) => {
@@ -54,10 +54,10 @@ window.addEventListener('load', function () {
         if(campos.correo && campos.password && recordarme.checked ){
             formulario.reset();
 
-            document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+            document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo'); 
             setTimeout(() => {
                 document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-            }, 5000);
+            }, 5000); // tiempo de reseto de formulario
 
             document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
                 icono.classList.remove('formulario__grupo-correcto');
