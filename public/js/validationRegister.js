@@ -6,8 +6,8 @@ window.addEventListener('load', function () {
 
 
     const validaciones = {
-        fullName: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // solo letras con espacios y acentos.
-        userName:/^[a-zA-Z0-9\_\-]{5,16}$/,
+        fullName: /^[a-zA-ZÀ-ÿ\s]{2,40}$/, // solo letras con espacios y acentos.
+        userName:/^[a-zA-Z0-9\_\-]{2,16}$/,
         dni: /^[0-9]{8}$/,        //valida solo 8 numeros
         email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
         domicilio: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // solo letras con espacios y acentos.
@@ -114,11 +114,10 @@ const validarconfirmarContraseña = () => {
     });
 
     formulario.addEventListener('submit', (e) => {
-        e.preventDefault();
-
+        
         const terminos = document.getElementById('terminos'); // para el check de terminos y condiciones//&& campos.provincia   // 
         if(campos.fullName && campos.userName && campos.dni && campos.email && campos.domicilio && campos.password && terminos.checked ){
-            formulario.reset();
+            //formulario.reset();
 
             document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
             setTimeout(() => {
@@ -129,6 +128,7 @@ const validarconfirmarContraseña = () => {
                 icono.classList.remove('formulario__grupo-correcto');
             });
         } else {
+            e.preventDefault();
             document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
         }
     });

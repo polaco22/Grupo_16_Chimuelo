@@ -48,11 +48,10 @@ window.addEventListener('load', function () {
     });
 
     formulario.addEventListener('submit', (e) => {
-        e.preventDefault();
-
+        
         const recordarme = document.getElementById('terminos');
         if(campos.email && campos.password && recordarme.checked ){
-            formulario.reset();
+            //formulario.reset();
 
             document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo'); 
             setTimeout(() => {
@@ -63,6 +62,7 @@ window.addEventListener('load', function () {
                 icono.classList.remove('formulario__grupo-correcto');
             });
         } else {
+            e.preventDefault();
             document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
         }
     });

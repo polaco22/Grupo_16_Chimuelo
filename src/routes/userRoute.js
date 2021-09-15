@@ -11,6 +11,7 @@ const validateLogIn = require('../middlewares/validateLogInMiddleware');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const adminMiddleware = require('../middlewares/adminMiddleware');
 
+
 //Multer
 const multer = require('multer');
 const path = require('path');
@@ -33,7 +34,7 @@ router.get('/users/edit/:id', userController.userEdit); // formulario de edició
 router.get('/logout', userController.logout);
 router.post('/save', [upload.single('avatar'), validateRegister], userController.save);
 router.post('/', validateLogIn, userController.acess);
-router.put('/users/update/:id', upload.single('avatar'), userController.update); 
+router.put('/users/update/:id', [upload.single('avatar'), validateRegister], userController.update); 
 router.delete('/users/userDelete/:id', userController.userDelete); // acción de borrar usuario
 
 // Exports Router
