@@ -35,3 +35,4 @@ app.use(express.json());
 app.use(require('./routes/mainRoute.js'));
 app.use(require('./routes/userRoute.js'));
 app.use(require('./routes/productRoute.js'));
+app.use(require('./routes/cartRoute.js'));

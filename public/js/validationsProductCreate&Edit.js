@@ -45,9 +45,8 @@ window.addEventListener('load', function () {
             for (let i = 0; i < errors.length; i++) {
                 showErrors.innerHTML += "<li>" + errors[i] + "</li>"
         }
-
-        setTimeout(() => {document.getElementById('showErrors').remove();
-    }, 5000)
+            setTimeout(() => {document.getElementById('showErrors').remove();
+                }, 5000)
         }
 
     });

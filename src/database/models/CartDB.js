@@ -32,9 +32,22 @@ module.exports = (sequelize, dataTypes) => {
         }
     };
     let config = {
-        tableName: "cart_detail",
+        tableName: "cart_data",
         timestamps: false,
     };
     const Cart = sequelize.define(alias, cols, config);
+
+    Cart.associate = function (models) {
+      
+        Cart.belongsTo(models.User, {
+            as: "users",
+            foreignKey:"userId",
+        });
+
+        Cart.belongsTo(models.Product, {
+            as: "products",
+            foreignKey:"productId",
+        });
+    }
     return Cart;
 }

@@ -23,7 +23,7 @@ const productController = require('../controllers/productController');
 // Seteando la ruta de vista
 
 router.get('/product', productController.show); // listado de productos
-router.get('/product/cart/:id', productController.productCart); // 8 - CARRITO
+//router.get('/product/cart/:id', productController.productCart); // 8 - CARRITO
 router.get('/product/detail/:id', productController.productDetail); // detalle de un producto particular ??
 router.get('/product/create', productController.productCreate); // formulario creación
 router.post('/product', [upload.any(), validateProductCreateEdit], productController.store); // acción de creación (a donde se envía el formulario)
