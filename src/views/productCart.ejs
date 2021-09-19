@@ -62,15 +62,7 @@
             <% }) %>  
             </div>
             <section class="cart">
-                <% if (shopping.length > 0 ) { %> 
-                   <% shopping.forEach( shop => { %> 
-                        <%= shop.quantity %> 
-                        <%= shop.price %> 
-                        <%= shop.quantity * shop.price %> 
-                    <% }) %> 
-
-                <% } %> 
-                <!-- <h5 class="textoProducto">TOTAL: $<%= products[0].price   %>  </h5> -->
+                <h5 class="textoProducto">TOTAL: $<%= products[0].price   %>  </h5>
             </section>
             <section class="checkout">
                 <button class="custom-btn btn-10">Elegir mas productos</button>

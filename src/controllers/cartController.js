@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const db = require('../database/models');
 const sequelize = db.sequelize;
-const { Op, where } = require("sequelize");
+const { Op, where, NUMBER } = require("sequelize");
 
 
 const cartController = {
@@ -29,7 +29,8 @@ const cartController = {
                 quantity: req.body.quantity,
                 active: false,
             })
-            res.send(req.body)
+            const totals = (product.price * req.body.quantity)
+            res.send("GRACIAS POR TU COMPRA. El total a abonar es: " + totals)
             } 
         catch (err) { 
             console.log(err)}

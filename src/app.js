@@ -36,3 +36,5 @@ app.use(require('./routes/mainRoute.js'));
 app.use(require('./routes/userRoute.js'));
 app.use(require('./routes/productRoute.js'));
 app.use(require('./routes/cartRoute.js'));
+app.use(require('././routes/api/productApiRoute.js'));
+app.use(require('././routes/api/userApiRoute.js'));
