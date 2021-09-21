@@ -160,9 +160,6 @@ const productController = {
     }
         catch (error) { console.log(error) }
     },
-    // productCart: (req, res) => {
-    //     res.render('productCart')
-    // },
 }
 
 

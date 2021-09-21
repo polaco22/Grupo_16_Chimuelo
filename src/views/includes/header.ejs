@@ -34,11 +34,11 @@
                 </div>
                     <li><a href="/login"><i class="fas fa-glasses"></i></a></li>
                     <li><a href="/register"><i class="far fa-user"></i></a></li>
-                    <li><a href="/cart"><i class="fas fa-shopping-cart"></i></a></li>  
+                    <li><a href="/cart/<%= locals.user.id%>"><i class="fas fa-shopping-cart"></i></a></li>  
             <% } else { %>  
                     <li><a href="/login"><i class="fas fa-glasses"></i></a></li>
                     <li><a href="/register"><i class="far fa-user"></i></a></li>
-                    <li><a href="/product/cart/:id"><i class="fas fa-shopping-cart"></i></a></li>       
+                    <li><a href="/cart"><i class="fas fa-shopping-cart"></i></a></li>       
             <% } %>
      </ul>
     </nav>

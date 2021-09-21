@@ -6,7 +6,7 @@ const router = express.Router();
 const cartController = require('../controllers/cartController');
 
 // Seteando la ruta de vista
-router.get('/cart', cartController.index); // 
+router.get('/cart/:id', cartController.index); // 
 router.post('/cart/add', cartController.addToCart); // 
 router.post('/update/:id', cartController.updateCart); //  
 
