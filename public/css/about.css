@@ -8,8 +8,10 @@
 
 body, main{
     font-family: 'Open Sans', sans-serif;
-    color: black;
-    max-width: 100%;
+    color: black;   
+    background-color: rgb(201, 201, 201); 
+    background-image: linear-gradient(to bottom,rgb(201, 201, 201),rgb(201, 201, 201));
+    
 }
 .container {
   float: left;
