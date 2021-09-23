@@ -27,8 +27,7 @@
                 </div>
                 <div class="cart">
                     <% if (user) { %>
-                    Cantidad:
-                    <input type="number" placeholder="1" maxlength="3">
+                   
                     <button class="btn-add-cart"><a href="/cart/<%= locals.user.id%>"><span class="fa fa-shopping-cart"></span></a></button>
                     <% } %> 
                     <% if (user && user.admin == 1) { %>

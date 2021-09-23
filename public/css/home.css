@@ -16,7 +16,7 @@ body{
 
 .b-slider{     
     text-align: center;  
-    margin: 25px auto
+    margin: 5px auto
   }
   .b-slider__inner{
     position: relative; 
@@ -61,7 +61,9 @@ body{
   }
   [class*=b-slider__item-],
   [class*=b-slider__item-] > img{
-    position: absolute; top: 0; left: 0;
+    position: relative; 
+    top: 0; 
+    left: 0;
     width: 100%;
     
   }

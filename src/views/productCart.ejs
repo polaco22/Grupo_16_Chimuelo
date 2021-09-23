@@ -13,27 +13,24 @@
                 <% products.forEach(product =>  { %>
                 <div class="items">
                     <div class="contimg">
-                        <form action="/cart/add" method="post">
-                            <input type="hidden" name="product" value=<%= product.id %> ></input>
-                            <input type="hidden" name="user" value=<%= user.id %> ></input>
-                            <input type="number" name="quantity" id="quantity" min="1"></input>
-                            <button type="submit">Agregar</button>
-                        </form>
-                        <img class="cartimg" src="../../uploads/products/<%= product.imagenes[0].file %> ">
-                        
-                    </div>
-                    <div class="continfo">
+                          <img class="cartimg" src="../../uploads/products/<%= product.imagenes[0].file %> ">
+                     </div>
                     
+                <form action="/cart/add" method="post"> 
+                     <input class="inputcar" type="hidden" name="product" value=<%= product.id %> ></input>
+                     <input class="inputcar" type="hidden" name="user" value=<%= user.id %> ></input>
+                     <input class="inputcar" type="number" name="quantity" id="quantity" min="1"></input>
+                     <button class="btn-10" type="submit">Agregar</button>
+                     <div class="continfo">
                         <h5>Producto: <%= product.name %> </h5>
                         <h5>Precio: $<%= product.price %> </h5>
-                     
-                        
-                       
                     </div>
+                </form>
+                       
+               
                     <!-- <div class="conticon">
                         <i class="fas fa-times"></i>
                     </div> -->
-                  
                 </div>
                 <!-- <div class="items">
                     <div class="contimg">
@@ -61,13 +58,13 @@
                 </div> -->
             <% }) %>  
             </div>
-            <section class="cart">
+            <!-- <section class="cart">
                 <h5 class="textoProducto">TOTAL: $<%= products[0].price   %>  </h5>
             </section>
             <section class="checkout">
                 <button class="custom-btn btn-10">Elegir mas productos</button>
                 <button class="custom-btn btn-10">Finalizar compra</button>
-            </section>
+            </section> -->
     </main>
     <!-- Footer -->
    <%- include('./includes/footer')%>   
