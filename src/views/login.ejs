@@ -17,13 +17,14 @@
                 <img class="logo" src="/design/logofinal.png" alt="logo" />
             </a>
         </figure> 
+        <div>
+            <h2>Ingresá aquí <i class="far fa-hand-point-down"></i></h2>
+        </div>  
     </header>
 
     <main>
         
         <form action="/" method="POST"  class="formulario" id="formulario">
-            
-            <h2>Ingresá aquí <i class="far fa-hand-point-down"></i></h2>
             <% if(locals.errors && errors.email) { %>
                 <h4 style = color:red> <%= errors.email.msg %> </h4>
             <%  } %>

@@ -29,7 +29,7 @@
                     <% if (user) { %>
                     Cantidad:
                     <input type="number" placeholder="1" maxlength="3">
-                    <button class="btn-add-cart"><a href="/cart"><span class="fa fa-shopping-cart"></span></a></button>
+                    <button class="btn-add-cart"><a href="/cart/<%= locals.user.id%>"><span class="fa fa-shopping-cart"></span></a></button>
                     <% } %> 
                     <% if (user && user.admin == 1) { %>
                     <button class="btn-add-cart"><a href="/product/edit/<%= listToShow.id %>"><span class="fas fa-edit"></span></a> </button>

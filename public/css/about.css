@@ -14,8 +14,7 @@ body, main{
 .container {
   float: left;
   width: 33.33%;
-  padding: 0 15px;
-  
+  padding: 15px;
 }
 
 .box:after {
@@ -36,13 +35,19 @@ h4 {
  }
 p {
   color: black;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 10px;
 }
-
+span {
+  color: #003ef2;
+  font-weight: bold;
+  
+}
 .image{
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    padding: 15x;
+    width: 100%;
+    height: auto;
+    align-content: center;
   }
 
 .boton {

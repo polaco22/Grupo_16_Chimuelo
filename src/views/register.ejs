@@ -97,8 +97,8 @@
             <fieldset class="formulario__grupo" id="grupo__provincia">  
                 <label for="provincia" class="formulario__label"> PROVINCIA</label>
                 <div class="formulario__grupo-input">
-                    <select name="provincia" >           
-                        <option value="" selected disabled>Seleccione una Provincia</option>
+                    <select name="provincia" class="selectOption">           
+                        <option class="selectOption" value="" selected disabled>Seleccione una Provincia</option>
                         <%  
                             let provinces = ['Buenos Aires', 'Catamarca', 'Chaco', 'Chubut', 'Ciudad de Buenos Aires', 'Córdoba', 'Corrientes', 'Entre Rios', 'Formosa', 'Jujuy',
                             'La Pampa', 'La Rioja', 'Mendoza', 'Misiones', 'Neuquen', 'Rio Negro', 'Salta', 'San Juan', 'San Luis', 'Santa Cruz', 'Santiago del Estero', 'Tierra del Fuego', 'Tucuman'  ];
@@ -116,8 +116,8 @@
             <fieldset class="formulario__grupo" id="grupo__ciudad">  
                 <label for="ciudad" class="formulario__label">CIUDAD</label>
                 <div class="formulario__grupo-input">
-                    <select name="ciudad">
-                        <option value="#">S/D</option>
+                    <select class="selectOption" name="ciudad">
+                        <option class="selectOption" value="#">S/D</option>
                     </select>
                 </div>    
             </fieldset>
@@ -152,8 +152,10 @@
             <h5>Términos y condiciones</h5>
             <fieldset class="formulario__grupo" id="grupo__terminos">
                 <label class="formulario__label">
-					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-					Acepto los Terminos y Condiciones
+					<center>
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+    					Acepto los Terminos y Condiciones
+                    </center>
 				</label>               
             </fieldset> 
 
